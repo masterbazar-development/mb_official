@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    /* FAQ categories button css  */
+    .faq-cat{
+        @apply bg-[#F3F4F6] rounded-md p-3 font-medium cursor-pointer;
+    }
+}

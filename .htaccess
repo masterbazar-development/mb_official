@@ -1,0 +1,18 @@
+RewriteEngine on
+## hide .php extension from index.php
+# remove extension php from other remaining files
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^([^\.]+)$ $1.php [NC,L]  
+RewriteCond %{THE_REQUEST} ^GET\ /(.+)\.php [NC]
+
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+
+## Redirect blog/index to blog
+RewriteRule ^blog/index$ /blog [R=301,L]
+
+## Rewrite /blog to /blog/index.php
+RewriteRule ^blog/$ blog/index.php [L]
+# redirect services/designing/ to services/designing.php without .php in the url
+
+RewriteRule ^blogs/([a-zA-Z0-9-]+) blog/single-post.php?title=$1
