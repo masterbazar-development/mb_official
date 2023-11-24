@@ -90,9 +90,9 @@ include('../includes/navbar-top.php')
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $itemsPerPage = 2; // Adjust as needed
+                                        $itemsPerPage = 10;//always put same value for simple page 
                                         $page = isset($_POST['page']) ? $_POST['page'] : 1;
-                                        
+
                                         // Calculate the offset
                                         $offset = ($page - 1) * $itemsPerPage;
                                         $category = "SELECT gallery.*, categories.name as category_name
@@ -137,10 +137,43 @@ include('../includes/navbar-top.php')
                                             </tr>
                                         <?php
                                         }
-
                                         ?>
                                     </tbody>
                                 </table>
+                                <!-- pagi--->
+                                <div id="paginationContainer">
+                                    <?php
+                                    // Fetch total number of records
+                                    $totalRecordsQuery = "SELECT COUNT(*) as count FROM categories WHERE status!='2'";
+                                    $totalRecordsResult = mysqli_query($con, $totalRecordsQuery);
+                                    $totalRecords = mysqli_fetch_assoc($totalRecordsResult)['count'];
+
+                                    // Calculate total pages
+                                    $totalPages = ceil($totalRecords / $itemsPerPage);
+
+                                    // Output pagination links
+                                    for ($i = 1; $i <= $totalPages; $i++) {
+                                        echo '<a href="category-view?page=' . $i . '" class="pagination-link "  data-page="' . $i . '">' . $i . '</a>';
+                                    }
+                                    ?>
+                                    <style>
+                                        #paginationContainer a {
+                                            margin: 0 5px;
+                                            padding: 5px 10px;
+                                            text-decoration: none;
+                                            background-color: #e6e6e6;
+                                            color: #0D6EFD;
+                                            border-radius: 5px;
+                                            cursor: pointer;
+                                        }
+
+                                        #paginationContainer a:hover,
+                                        .active {
+                                            background-color: #0D6EFD !important;
+                                            color: #fff !important;
+                                        }
+                                    </style>
+                                </div>
                             </div>
 
                         </div>
@@ -192,6 +225,43 @@ include('../includes/navbar-top.php')
             .catch(error => {
                 console.error('Error:', error);
             });
+    });
+    //pagination
+    function loadPaginationData(page) {
+        fetch('pagination', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'page=' + page,
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('categoryTable').getElementsByTagName('tbody')[0].innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    // Initial load
+    loadPaginationData(1);
+
+    // Handle pagination click
+    document.getElementById('paginationContainer').addEventListener('click', function(e) {
+        if (e.target.classList.contains('pagination-link')) {
+            e.preventDefault();
+            // Remove the "active" class from all pagination links
+            var paginationLinks = document.querySelectorAll('.pagination-link');
+            paginationLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            // Add the "active" class to the clicked pagination link
+            e.target.classList.add('active');
+            var page = e.target.dataset.page;
+            loadPaginationData(page);
+        }
     });
 </script>
 
