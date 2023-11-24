@@ -44,9 +44,13 @@
                 </a>
                 <div class="collapse" id="collapseLayoutstestimonial" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/testimonial/testimonial-add">Add Testimonial</a>
+                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/testimonial/add-logo">Add Logo</a>
                         <!-- <a class="nav-link" href="post-edit">Edit Post</a> -->
-                        <a class="nav-link" href="">View Testimonial</a>
+                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/testimonial/view-logo">View Logo</a>
+                        
+                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/testimonial/client-testimonial">Add Testimonial</a>
+
+                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/testimonial/view-testimonial">View Testimonial</a>
                     </nav>
                 </div>
                    <!-- FAQ-->
