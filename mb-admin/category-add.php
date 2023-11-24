@@ -36,6 +36,7 @@ include('includes/navbar-top.php')
                                     <option>FAQ</option>
                                     <option>TESTIMONIAL</option>
                                     <option>REVIEW</option>
+                                    <option>GALLERY</option>
                                     <option>CLIENT's LOGO</option>
                                     <option>PROJECTS</option>
                                 </select>

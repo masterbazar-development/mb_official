@@ -2,9 +2,9 @@
             </div>
         </div>
   
-<script src="<?php echo $mainUrl; ?>mb-admin/assets/js/jquery.min.js"></script>
-<script src="<?php echo $mainUrl; ?>mb-admin/assets/js/bootstrap5.bundle.min.js"></script>
-<script src="<?php echo $mainUrl; ?>mb-admin/assets/js/scripts.js"></script>
+<script src="<?php echo $mainurl; ?>mb-admin/assets/js/jquery.min.js"></script>
+<script src="<?php echo $mainurl; ?>mb-admin/assets/js/bootstrap5.bundle.min.js"></script>
+<script src="<?php echo $mainurl; ?>mb-admin/assets/js/scripts.js"></script>
 
 <script src="<?php echo $mainurl;?>mb-admin/assets/js/jquery.min.js"></script>
 <script src="<?php echo $mainurl;?>mb-admin/assets/js/bootstrap5.bundle.min.js"></script>

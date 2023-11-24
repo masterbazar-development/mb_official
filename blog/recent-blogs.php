@@ -12,7 +12,7 @@
                 <div class="image-container flex gap-4 w-full items-start group/image">
                     <div class="img-wrapper trigger rounded-md w-[45%] h-full group-hover/image">
                         <a href="../blogs/<?= $result['slug'] ?>">
-                            <img src="../assets/client/images/blog/<?= $result['image'] ?>" class="">
+                            <img src="../assets/client/images/blog/<?= $result['image'] ?>" class="rounded-md">
                         </a>
                     </div>
                     <div class="w-[65%]">

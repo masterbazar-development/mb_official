@@ -8,13 +8,13 @@ include('../mb-admin/config/dbcon.php');
 <!-- Ellipse Starts From Here -->
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
 <!-- Ellipse ends Here -->
-
+<?php include('../components/menu.php');
+?>
 <!-- Navigation starts from Here -->
 <section role="banner">
   <div class="max-w-full  mx-[10vw]">
     <?php include('../components/heroheader.php'); ?>
-    <?php include('../components/menu.php');
-    ?>
+
   </div>
   <div class="py-20 px-5 sm:px-8 md:px-28 lg:px-20 xl:px-[14%] 2xl:px-[15%] text-black">
     <div class="lg:flex gap-20">
@@ -42,16 +42,16 @@ include('../mb-admin/config/dbcon.php');
             <div class="image-container trigger baksablog rounded-md">
               <div class="img-wrapper">
                 <a href="../blogs/<?= $results['slug'] ?>">
-                  <img src="../assets/client/images/blog/<?= $results['image'] ?>" class="w-full">
+                  <img src="../assets/client/images/blog/<?= $results['image'] ?>" class="w-full rounded-md">
                 </a>
               </div>
               <div class="p-3 md:p-6">
                 <a href="../blogs/<?= $results['slug'] ?>">
-                  <h1 class=" text-gray-800 text-xl xl:text-2xl font-medium transition duration-150 hover:underline hover:underline-offset-4 target"><?php echo  $results['name']; ?></h1>
+                  <h1 class=" text-head text-2xl font-semibold transition duration-150 hover:underline hover:underline-offset-4 target"><?php echo  $results['name']; ?></h1>
                 </a>
                 <a href="../blogs/<?= $results['slug'] ?>">
-                  <p class=" text-gray-800 text0-md lg:text-lg pt-3 cursor-text"><?php // echo $first50Words; 
-                                                                                  ?><a href="../blogs/<?= $results['slug'] ?>"><span>
+                  <p class=" text-gray-800 text0-md lg:text-lg pt-3 cursor-text font-livvic"><?php // echo $first50Words; 
+                                                                                              ?><a href="../blogs/<?= $results['slug'] ?>"><span>
                         Read More
                       </span>
                   </p>
@@ -104,7 +104,7 @@ include('../mb-admin/config/dbcon.php');
   }
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script defer>
+<script async>
   var loadingImages = false;
   var hasMoreImages = true;
 
@@ -113,20 +113,19 @@ include('../mb-admin/config/dbcon.php');
 
     // Function to handle the scroll event based on the screen width
     function handleScroll() {
+      var currentPage = parseInt($('#currentPage').val());
       if (window.matchMedia('(max-width: 1380px)').matches) {
         // For screens wider than or equal to 1380px, use the original scroll behavior
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 350) {
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
           if (hasMoreImages && !loadingImages) {
-            var currentPage = parseInt($('#currentPage').val());
             $('#currentPage').val(currentPage + 1);
             loadPosts();
           }
         }
       } else if (window.matchMedia('(max-width: 1280px)').matches) {
         // For screens narrower than 768px, use a different scroll behavior
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 400) {
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 600) {
           if (hasMoreImages && !loadingImages) {
-            var currentPage = parseInt($('#currentPage').val());
             $('#currentPage').val(currentPage + 1);
             loadPosts();
           }
@@ -135,8 +134,7 @@ include('../mb-admin/config/dbcon.php');
         // For screens narrower than 768px, use a different scroll behavior
         if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1600) {
           if (hasMoreImages && !loadingImages) {
-            var currentPage = parseInt($('#currentPage').val());
-            $('#currentPage').val(currentPage + 1);
+            $('#currentPage').val(currentPage + 1);  
             loadPosts();
           }
         }
@@ -144,14 +142,12 @@ include('../mb-admin/config/dbcon.php');
         // For screens narrower than above
         if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1600) {
           if (hasMoreImages && !loadingImages) {
-            var currentPage = parseInt($('#currentPage').val());
             $('#currentPage').val(currentPage + 1);
             loadPosts();
           }
         }
       }
     }
-
     // Call the handleScroll function on initial page load
     handleScroll();
 
@@ -164,11 +160,9 @@ include('../mb-admin/config/dbcon.php');
   function loadPosts() {
     if (loadingImages) return;
     loadingImages = true;
-
     $('#loadingIndicator').show();
-
     $.ajax({
-      url: 'load-more-images.php',
+      url: 'load-more-images',
       type: 'POST',
       data: $('#paginationForm').serialize(),
       dataType: 'json',

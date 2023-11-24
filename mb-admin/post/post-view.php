@@ -50,7 +50,8 @@ $offset = ($page - 1) * $limit;
                                             <td><?= $postItem['id']; ?></td>
                                             <td><?= $postItem['name']; ?></td>
                                             <!-- <td> < // $postItem['cname']; ?></td> -->
-                                            <td><img src="<?php echo $mainUrl;?>assets/client/images/blog/<?= $postItem['image'] ?>" class=""  width="140" alt=""></td>
+                                            <td><img src="<?php echo $mainurl; ?>assets/client/images/blog/<?= $postItem['image'] ?>" class="" width="140" alt=""></td>
+                                            <td><?= $postItem['name']; ?></td>
                                             <td>
 
                                                 <?= $postItem['status'] == '1' ? 'Hidden' : 'Visible' ?></td>
@@ -62,9 +63,6 @@ $offset = ($page - 1) * $limit;
                                             <td>
                                                 <a href="post-edit?id=<?= $postItem['id'] ?>" class="btn btn-success">Edit</a>
                                             </td>
-
-
-
                                             <td>
                                                 <form action="../code.php" method="POST">
                                                     <button type="submit" name="post_delete_btn" value="<?= $postItem['id'] ?>" class="btn btn-danger">Delete</button>

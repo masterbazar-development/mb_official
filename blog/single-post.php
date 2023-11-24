@@ -1,5 +1,6 @@
 <?php
 include('../mb-admin/config/dbcon.php');
+include('../components/header.php');
 $currentUrl =  $_SERVER['REQUEST_URI'];
 $path = parse_url($currentUrl, PHP_URL_PATH);
 $lastUrlSegment = pathinfo($path, PATHINFO_BASENAME);
@@ -29,6 +30,10 @@ define('DESCRIPTION', $meta_description);
 //   define('KEYWORDS', $meta_keywords);
 //   define('IMAGE', $og_image);
 ?>
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<?php include('../components/menu.php');?>
+<?php include('../components/heroheader.php'); ?>
+<!-- Ellipse ends Here -->
 <?php
 
 $currentTitle = 'Current Blog Title'; // Replace with the actual title of the current blog

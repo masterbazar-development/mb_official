@@ -15,11 +15,11 @@ if ($result->num_rows > 0) {
 		$posts[] = '<div class=" text-black image-container group/image">' .
 		'<div class="img-wrapper trigger rounded-md group-hover/image">' .
 		'<a href="../blogs/' . $row['slug'] . '">' .
-		'<img src="../assets/client/images/blog/' . $row['image'] . '" class="">' .
+		'<img src="../assets/client/images/blog/' . $row['image'] . '" class="rounded-md">' .
 		'</a>' .
 		'</div>' .
 		'<a href="../blogs/' . $row['slug'] . '">' .
-		'<h6 class="text-black text-lg font-medium font-oswald transition duration-150 hover:underline hover:underline-offset-4 target  group-hover/image:underline-offset-4 group-hover/image:underline ">' . $row['name'] . '</h6>' .
+		'<h6 class="text-head font-semibold  text-lg font-oswald transition duration-150 hover:underline hover:underline-offset-4 target  group-hover/image:underline-offset-4 group-hover/image:underline ">' . $row['name'] . '</h6>' .
 		'</a>' .
 		'</div>';
 }

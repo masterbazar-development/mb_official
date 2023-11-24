@@ -62,6 +62,19 @@
                         <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/faq/faq-view">View FAQ</a>
                     </nav>
                 </div>
+                <!-- gallery -->
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayoutsgallery" aria-expanded="false" aria-controls="collapseLayoutsgallery">
+                    <div class="sb-nav-link-icon"><i class="fas fa-blog"></i></div>
+                   Gallery
+                   <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="collapseLayoutsgallery" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/gallery/images-add">Add Images</a>
+
+                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/faq/images-view">View Images</a>
+                    </nav>
+                </div>
             </div>
         </div>
     </nav>

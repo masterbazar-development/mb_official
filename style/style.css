@@ -335,16 +335,17 @@ body {
         background:  #172554 ;
 		opacity: 1;
 		transform: translateX(-20rem);
+        transform-origin: right;
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         z-index: -10;
 	}
 }
-
 .dropdown-nav11 {
 	opacity: 0;
 	transition: transform .3s cubic-bezier(0.88,-0.72, 0, 1), opacity .3s ease-in-out;
 	transform: translateX(0);
 	position: absolute;
+    transform-origin: right;
     top: 0%;
     right: 30px;
 	z-index: -10;

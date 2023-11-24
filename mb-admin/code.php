@@ -298,26 +298,6 @@ if(isset($_POST['update_user']))
     }
 
 }
-// object oriented approach to inser data
-// if(isset($_POST['testimonial_add'] ))
-// {
-//     $client_name = $_POST['name'];
-//     $image = $_FILES['image']['name'];
-//     $short_comment = $_POST['com-head'];
-//     $comment = $_POST['comment'];
-//     $status = $_POST['status'] == true ? '1':'0';
-//     $sql = "INSERT INTO testimonials (client_name, comment_head, image_url, status) VALUES (?, ?, ?, ?)";
-//     move_uploaded_file($_FILES['image']['tmp_name'], 'testimonial/client-image/'.$image);
-//     $testimonial =$con->prepare($sql);
-//     // Bind parameters ssss defines the string values 
-//     $testimonial->bind_param("ssss", $client_name, $short_comment, $image, $status);
-//     if($testimonial->execute()){
-//         $_SESSION['message'] ="Testimonial Added Successfully";
-//          header('Location: testimonial/testimonial-add');
-//     }
-//     $testimonial->close();
-//     $con->close();
-// }
 if(isset($_POST['faq_add'] )){
         $category= $_POST['category'];
         $question = $_POST['question'];

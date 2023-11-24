@@ -93,7 +93,7 @@ include('includes/navbar-top.php')
 
                             // Output pagination links
                             for ($i = 1; $i <= $totalPages; $i++) {
-                                echo '<a href="category-view?page=<?= $i ?>" class="pagination-link "  data-page="' . $i . '">' . $i . '</a>';
+                                echo '<a href="category-view?page='.$i.'" class="pagination-link "  data-page="' . $i . '">' . $i . '</a>';
                             }
                             ?>
                             <style>
