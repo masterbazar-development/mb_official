@@ -90,7 +90,7 @@ include('../includes/navbar-top.php')
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $itemsPerPage = 10;//always put same value for simple page 
+                                        $itemsPerPage = 10;//always put same value 
                                         $page = isset($_POST['page']) ? $_POST['page'] : 1;
 
                                         // Calculate the offset

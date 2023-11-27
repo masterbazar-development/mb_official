@@ -2,7 +2,7 @@
 //ajax pagination pending
 include('config/dbcon.php');
 
-$itemsPerPage = 2; // Adjust as needed
+$itemsPerPage = 10; // Adjust as needed
 $page = isset($_POST['page']) ? $_POST['page'] : 1;
 
 // Calculate the offset
