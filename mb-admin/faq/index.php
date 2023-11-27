@@ -1,9 +1,15 @@
-<?php include('../components/header.php'); ?>
+<?php include('../../components/header.php'); 
+include('../authentication.php');
+include('../includes/header.php');
+include('../includes/navbar-top.php')
+
+?>
 <main class="max-w-4xl mx-auto my-8">
     <h3 class="text-4xl text-center mb-6 text-head font-extrabold">Frequently Asked Questions</h3>
     <form method="post" class="bg-[#F8FAFC] shadow-md p-4 rounded-md">
         <div class="flex justify-content items-center gap-4">
             <select name="events" id="events" class="w-full p-3 rounded-md">
+                <option value="">Select Category</option>
                 <option value="diwali">Diwali</option>
                 <option value="birthday">Birthday</option>
             </select>
@@ -18,7 +24,10 @@
             <textarea name="answer" id="answer" placeholder="Enter Your Answers" class="h-24 w-full p-2 rounded-md"></textarea>
         </div>
 
-        <button id="submit-btn" type="submit" class="text-white font-semibold bg-gray-800 p-3 rounded-md text-sm">Add FAQ</button>
+        <div class="flex justify-start items-center gap-4">
+        <button id="edit-btn" class="text-white hidden font-semibold bg-blue p-3 rounded-md text-sm">Edit Faq</button>
+        <button id="submit-btn" class="text-white font-semibold bg-gray-800 p-3 rounded-md text-sm">Add FAQ</button>
+        </div>
     </form>
 
     <div class="flex justify-center items-center gap-4 w-full bg-[#F8FAFC] p-4 rounded-md my-8 shadow-md">
@@ -35,10 +44,16 @@
 
 <script>
     const submitBtn = document.getElementById('submit-btn');
+    const editBtn = document.getElementById('edit-btn');
 
     submitBtn.addEventListener('click', addData);
+    editBtn.addEventListener('click', editfaqs)
+
     document.addEventListener('DOMContentLoaded', view_faq);
 
+    let idToEdit;
+
+    // Deletign FAQ from DB and DOM
     function deletefaqs(id) {
         const elementToRemove = document.getElementById(`faq-${id}`);
         elementToRemove.remove();
@@ -65,24 +80,66 @@
             });
     }
 
-    function editfaqs(category, question, answer) {
+    // Edit FAQ in DB and DOM
+    function editfaqs(event){
+        event.preventDefault();
+
+        const obj = {
+            id: idToEdit,
+            category: document.getElementById('events').value,
+            question: document.getElementById('question').value,
+            answer: document.getElementById('answer').value,
+            priority_order: document.getElementById('priority_order').value
+        };
+
+
+        fetch('edit_faq', {
+            method: 'POST',
+            headers: {
+                    'Content-Type': 'application/json',
+                },
+            body: JSON.stringify(obj),
+        })
+        .then(response => {
+            if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+            return response.json();
+        })
+        .then(data => {
+           
+        })
+        .catch(error => {
+                console.error('Fetch error:', error);
+        });
+
+        editBtn.style.display = "none";
+        submitBtn.style.display = "block";
+    }
+
+    // Set the Form values to FAQ going to edit
+    function setForEdit(id, category, question, answer) {
+        idToEdit = parseInt(id);
+        editBtn.style.display = "block";
+        submitBtn.style.display = "none";
+
         document.getElementById('question').value = question;
         document.getElementById('answer').value = answer;
         document.getElementById('events').value = category;
     }
 
+    // Map over faq data to display it in DOM
     function faqs(data) {
         data.map(el => {
             const html = `
-            <div id="faq-${el.id}" class="bg-[#F8FAFC] shadow-md p-4 rounded-md space-y-3">
-            <div class="w-full flex justify-between">
+            <div id="faq-${el.id}" class="bg-[#F8FAFC] shadow-md p-4 rounded-md space-y-3">            
                 <h4 class="font-semibold">
-                    ${el.question}</h4>
-            </div>
+                    ${el.question}
+                </h4>        
             <p class="font-normal">
             ${el.answer}</p>
             <div class="flex justify-end items-center gap-6">
-                <button onclick="editfaqs('${el.category}', '${el.question}', '${el.answer}')" class="bg-white p-3 text-gray-700 font-semibold rounded-md shadow text-sm">Edit FAQ</button>
+                <button onclick="setForEdit('${el.id}', '${el.category}', '${el.question}', '${el.answer}')" class="bg-white p-3 text-gray-700 font-semibold rounded-md shadow text-sm">Edit FAQ</button>
                 <button onclick="deletefaqs(${el.id})" class="bg-blue p-3 text-gray-200 font-semibold rounded-md shadow text-sm">Delete FAQ</button>
             </div>
             </div>
@@ -91,9 +148,9 @@
         })
     }
 
+    // Add FAQ to DB and to DOM
     function addData(event) {
         event.preventDefault();
-
         const obj = {
             category: document.getElementById('events').value,
             question: document.getElementById('question').value,
@@ -101,6 +158,7 @@
             priority_order: document.getElementById('priority_order').value
         };
 
+        faqs([obj]);
         fetch('add_faq.php', {
                 method: 'POST',
                 headers: {
@@ -114,15 +172,13 @@
                 }
                 return response.json();
             })
-            .then(data => {
-                faqs(data);
-                console.log(data);
-            })
+            .then(data => {console.log(data)})
             .catch(error => {
                 console.error('Fetch error:', error);
             });
     }
 
+    // Fetch the FAQ data from DB
     function view_faq() {
         fetch('view_faq', {
                 method: 'GET',

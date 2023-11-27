@@ -1,9 +1,9 @@
 <?php 
-include('../database.php');
+include('../config/dbcon.php');
 header('Content-Type: application/json');
 
 $sql = "SELECT * FROM mb_faq";
-$result = $conn->query($sql);
+$result = $con->query($sql);
 
 $data = array();
 
@@ -22,7 +22,7 @@ if ($result->num_rows > 0) {
     echo json_encode(array('status' => 'error', 'message' => 'No results found.'));
 }
 
-$conn->close();
+$con->close();
 
 $response = json_encode($data);
 echo $response;
