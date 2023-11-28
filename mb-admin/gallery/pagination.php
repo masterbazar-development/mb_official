@@ -32,9 +32,12 @@ if (mysqli_num_rows($category_run) > 0) {
             <td>
                 <a href="../masterbazar24/mb-admin/category-edit.php?id=<?= $item['id'] ?>" target="_self" class="btn btn-info">Edit</a>
             </td>
+            <!-- <td>
+                <a href="./images-add?id=<?= $item['id'] ?>" target="_self" class="btn btn-danger">Delete</a>
+            </td> -->
             <td>
-                <form action="code.php" method="POST">
-                    <button type="submit" name="category_delete" value="<?= $item['id'] ?>" class="btn btn-danger">Delete</button>
+                <form action="delete-images" method="POST">
+                    <button type="submit" name="delete_images" value="<?= $item['id'] ?>" class="btn btn-danger">Delete</button>
                 </form>
             </td>
         </tr>

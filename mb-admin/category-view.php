@@ -35,7 +35,7 @@ include('includes/navbar-top.php')
                             <tbody>
                                 <?php
                                 // this is just for exception pagination.php is real query but to make clear always put same values  itemsperpage same in both files.
-                                $itemsPerPage = 2; // Adjust as needed
+                                $itemsPerPage = 10; // Adjust as needed
                                 $page = isset($_POST['page']) ? $_POST['page'] : 1;
                                 // Calculate the offset
                                 $offset = ($page - 1) * $itemsPerPage;

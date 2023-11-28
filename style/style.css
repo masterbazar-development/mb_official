@@ -131,6 +131,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.nav-part{
+    background: linear-gradient(90deg, #172554 0%, #264CC5);     
+}
+
 /* Ball CSS */
 .ball {
     transform: translateY(5rem);
@@ -227,15 +231,9 @@ body {
 }
 
 /* Navigations */
-
-.navigation {
-    position: fixed;
-    right: -150vw;
-    height: 100%;
-    /* background: linear-gradient(45deg, #172554 40%, #264CC5); */
-    background:  #172554 ;
-    transition: .5s;
-    z-index: 100;
+ .nav-active{
+    transform: translateY(0) !important;
+    transition: transform 700ms ease-in-out;
 }
 
 .hamburger,
@@ -245,7 +243,6 @@ body {
 
 .hamburger {
     display: block;
-   
     width: 30px;
     height: 30px;
     transform: translateY(-50%);

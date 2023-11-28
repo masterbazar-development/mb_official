@@ -1,8 +1,6 @@
 <?php 
 session_start();
 include('config/dbcon.php');
-
-
 if(isset($_POST['post_delete_btn']))
 {
 

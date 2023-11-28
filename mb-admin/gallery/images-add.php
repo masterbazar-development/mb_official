@@ -90,7 +90,7 @@ include('../includes/navbar-top.php')
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $itemsPerPage = 10;//always put same value for simple page 
+                                        $itemsPerPage = 10;//always put same value 
                                         $page = isset($_POST['page']) ? $_POST['page'] : 1;
 
                                         // Calculate the offset
@@ -120,11 +120,13 @@ include('../includes/navbar-top.php')
                                                     <td>
                                                         <a href="category-edit?id=<?= $item['id'] ?>" class="btn btn-info">Edit</a>
                                                     </td>
-
                                                     <td>
-                                                        <form action="code.php" method="POST">
+                                                        <a href="images-addd?id=<?= $item['id'] ?>" class="btn btn-info">Edit</a>
+                                                    </td>
+                                                    <td>
+                                                        <!-- <form action="code.php" method="POST">
                                                             <button type="submit" name="category_delete" value="<?= $item['id'] ?>" class="btn btn-danger">Delete</button>
-                                                        </form>
+                                                        </form> -->
                                                     </td>
 
                                                 </tr>

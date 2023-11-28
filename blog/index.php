@@ -20,7 +20,7 @@ include('../mb-admin/config/dbcon.php');
     <div class="lg:flex gap-20">
       <div class="lg:w-[70%]">
         <?php
-        $post = "SELECT * FROM posts WHERE status='0' ORDER BY posts.id DESC LIMIT 1 offset 1";
+        $post = "SELECT * FROM posts WHERE status='0' ORDER BY posts.id DESC LIMIT 1 offset 0";
 
         $query = mysqli_query($con, $post);
 
@@ -63,6 +63,7 @@ include('../mb-admin/config/dbcon.php');
         ?>
         <div>
         </div>
+
         <div class="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 py-20 gap-10" id="imageContainer">
 
           <?php
@@ -103,91 +104,102 @@ include('../mb-admin/config/dbcon.php');
     toggle('active')
   }
 </script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script async>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script defer>
   var loadingImages = false;
   var hasMoreImages = true;
 
-  $(document).ready(function() {
+  document.addEventListener('DOMContentLoaded', function () {
     loadPosts();
-
-    // Function to handle the scroll event based on the screen width
-    function handleScroll() {
-      var currentPage = parseInt($('#currentPage').val());
-      if (window.matchMedia('(max-width: 1380px)').matches) {
-        // For screens wider than or equal to 1380px, use the original scroll behavior
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
-          if (hasMoreImages && !loadingImages) {
-            $('#currentPage').val(currentPage + 1);
-            loadPosts();
-          }
-        }
-      } else if (window.matchMedia('(max-width: 1280px)').matches) {
-        // For screens narrower than 768px, use a different scroll behavior
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 600) {
-          if (hasMoreImages && !loadingImages) {
-            $('#currentPage').val(currentPage + 1);
-            loadPosts();
-          }
-        }
-      } else if (window.matchMedia('(min-width: 768px)').matches) {
-        // For screens narrower than 768px, use a different scroll behavior
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1600) {
-          if (hasMoreImages && !loadingImages) {
-            $('#currentPage').val(currentPage + 1);  
-            loadPosts();
-          }
-        }
-      } else {
-        // For screens narrower than above
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1600) {
-          if (hasMoreImages && !loadingImages) {
-            $('#currentPage').val(currentPage + 1);
-            loadPosts();
-          }
-        }
-      }
-    }
-    // Call the handleScroll function on initial page load
     handleScroll();
 
-    // Attach the handleScroll function to the scroll event
-    $(window).scroll(function() {
+    window.addEventListener('scroll', function () {
       handleScroll();
     });
   });
 
-  function loadPosts() {
+  function handleScroll() {
     if (loadingImages) return;
-    loadingImages = true;
-    $('#loadingIndicator').show();
-    $.ajax({
-      url: 'load-more-images',
-      type: 'POST',
-      data: $('#paginationForm').serialize(),
-      dataType: 'json',
-      success: function(response) {
-        loadingImages = false;
-        $('#loadingIndicator').hide();
 
-        // Append new posts to the container
-        $('#imageContainer').append(response.posts);
+    var scrollThreshold;
+    if (window.matchMedia('(max-width: 1025px)').matches) {
+      scrollThreshold = 350;
+    } else if (window.matchMedia('(min-width: 1024px)').matches) {
+      scrollThreshold = 350;
+    } else if (window.matchMedia('(min-width: 768px)').matches) {
+      scrollThreshold = 1600;
+    } else {
+      scrollThreshold = 1600;
+    }
+
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - scrollThreshold) {
+      loadPosts();
+    }
+  }
+
+  function loadPosts() {
+    if (loadingImages || !hasMoreImages) return;
+    loadingImages = true;
+
+    document.getElementById('loadingIndicator').style.display = 'block';
+
+    var currentPage = parseInt(document.getElementById('currentPage').value);
+
+    fetch('load-more-images', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: 'page=' + currentPage,
+    })
+      .then(response => response.json())
+      .then(data => {
+        loadingImages = false;
+        document.getElementById('loadingIndicator').style.display = 'none';
 
         // Update the flag indicating whether more images are available
-        hasMoreImages = response.hasMoreImages;
+        hasMoreImages = data.hasMoreImages;
+
+        // Append new posts to the container with fade-in effect
+        var imageContainer = document.getElementById('imageContainer');
+        var newPosts = document.createRange().createContextualFragment(data.posts);
+        newPosts.childNodes.forEach(post => {
+          post.style.opacity = 0;
+          imageContainer.appendChild(post);
+          fadeIn(post);
+        });
+
+        // Update the current page only if more images are available
+        if (hasMoreImages) {
+          document.getElementById('currentPage').value = currentPage + 1;
+        }
 
         // Check if more images are available
         if (!hasMoreImages) {
-          $(window).off('scroll'); // Remove scroll event listener
+          window.removeEventListener('scroll', handleScroll);
         }
-      },
-      error: function(seerrorinconsole) {
+      })
+      .catch(error => {
+        console.error('Error:', error);
         loadingImages = false;
-        $('#loadingIndicator').hide();
-        console.log('Error:', seerrorinconsole.responseText);
+        document.getElementById('loadingIndicator').style.display = 'none';
+      });
+  }
+
+  function fadeIn(element) {
+    var opacity = 0;
+    var interval = setInterval(function () {
+      if (opacity < 1) {
+        opacity += 0.6;
+        element.style.opacity = opacity;
+      } else {
+        clearInterval(interval);
       }
-    });
+    }, 100);
   }
 </script>
+
+
+
 <hr class="border-t-2 border-gradientdivide">
 <?php include('../components/footer.php'); ?>

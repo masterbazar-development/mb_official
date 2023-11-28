@@ -1,11 +1,11 @@
 <?php 
-include('../database.php');
+include('../config/dbcon.php');
 header('Content-Type: application/json');
 $data = json_decode(file_get_contents("php://input"), true);
 
 $sql = "DELETE FROM mb_faq WHERE id = ". $data['id'];
-$conn->query($sql);
-$conn->close();
+$con->query($sql);
+$con->close();
 
 $json_data = [];
 $response = array(
