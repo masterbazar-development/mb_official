@@ -5,7 +5,7 @@
     </div>
 
     <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 max-w-6xl mx-auto md:mt-20 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow  hover:bg-gray-100 hover:shadow-lg hover:-translate-y-[6px] transition duration-300 ease-in-out">
             <div class="relative w-max">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/ellipse.png" class="w-16 mb-4">
                 <i class="fa-solid fa-pen-nib absolute text-3xl text-blue top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
@@ -15,7 +15,7 @@
             <button class="text-head px-6 py-2 mt-4 rounded-md bg-white text-sm font-bold">Read More</button>
         </div>
 
-        <div class="bg-gray-100 text-gray-800 px-4 py-6 rounded-lg shadow">
+        <div class="bg-gray-100 text-gray-800 px-4 py-6 rounded-lg shadow-md hover:-translate-y-[6px] transition duration-300 ease-in-out hover:shadow-[0_10px_15px_-2px_rgba(0,0,0,0.25)]">
             <div class="relative w-max">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/ellipse.png" class="w-16 mb-4">
                 <i class="fa-solid fa-phone absolute text-3xl text-blue top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>

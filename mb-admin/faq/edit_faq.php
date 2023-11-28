@@ -10,16 +10,15 @@ $answer = $data['answer'];
 $priority_order = $data['priority_order'];
 
 $sql = "UPDATE mb_faq 
-        SET category = '".$category."', question = '".$question."', answer = '".$answer."', priority_order = '".$priority_order."'
-        WHERE id = ".$id;
+        SET category = '" . $category . "', question = '" . $question . "', answer = '" . $answer . "', priority_order = '" . $priority_order . "'
+        WHERE id = " . $id;
 
 $con->query($sql);
 $con->close();
 
-
 $json_data = [];
 $response = array(
-    'id' => $id ,
+    'id' => $id,
     'category' => $category,
     'question' => $question,
     'answer' => $answer,

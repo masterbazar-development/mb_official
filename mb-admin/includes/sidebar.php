@@ -63,7 +63,7 @@
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/faq/">Add FAQ</a>
                         <!-- <a class="nav-link" href="post-edit">Edit Post</a> -->
-                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/faq/faq-view">View FAQ</a>
+    
                     </nav>
                 </div>
                 <!-- gallery -->

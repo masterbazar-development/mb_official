@@ -1,5 +1,5 @@
 <?php
-
+// include('../../components/header.php'); 
 include('../authentication.php');
 include('../includes/header.php');
 include('../includes/navbar-top.php')
@@ -12,7 +12,6 @@ include('../includes/navbar-top.php')
             <div class="card">
                 <div class="card-header">
                     <h4>Add Images
-                        <a href="view-register" class="btn btn-danger float-end">Back</a>
                     </h4>
                 </div>
                 <div class="card-body">
@@ -92,7 +91,6 @@ include('../includes/navbar-top.php')
                                         <?php
                                         $itemsPerPage = 10;//always put same value 
                                         $page = isset($_POST['page']) ? $_POST['page'] : 1;
-
                                         // Calculate the offset
                                         $offset = ($page - 1) * $itemsPerPage;
                                         $category = "SELECT gallery.*, categories.name as category_name
@@ -145,17 +143,14 @@ include('../includes/navbar-top.php')
                                 <!-- pagi--->
                                 <div id="paginationContainer">
                                     <?php
-                                    // Fetch total number of records
+                                    // Fetch total number of records 
                                     $totalRecordsQuery = "SELECT COUNT(*) as count FROM categories WHERE status!='2'";
                                     $totalRecordsResult = mysqli_query($con, $totalRecordsQuery);
                                     $totalRecords = mysqli_fetch_assoc($totalRecordsResult)['count'];
-
-                                    // Calculate total pages
                                     $totalPages = ceil($totalRecords / $itemsPerPage);
-
-                                    // Output pagination links
+                                    // Output pagination links but next page records from pagination.php on click
                                     for ($i = 1; $i <= $totalPages; $i++) {
-                                        echo '<a href="category-view?page=' . $i . '" class="pagination-link "  data-page="' . $i . '">' . $i . '</a>';
+                                        echo '<a class="pagination-link "  data-page="' . $i . '">' . $i . '</a>';
                                     }
                                     ?>
                                     <style>
@@ -190,7 +185,6 @@ include('../includes/navbar-top.php')
 <script async>
     function uploadFiles() {
         var formData = new FormData(document.getElementById('uploadForm'));
-
         fetch('upload-gallery', {
                 method: 'POST',
                 body: formData,
@@ -230,22 +224,28 @@ include('../includes/navbar-top.php')
     });
     //pagination
     function loadPaginationData(page) {
-        fetch('pagination', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: 'page=' + page,
-            })
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('categoryTable').getElementsByTagName('tbody')[0].innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    }
-
+    fetch('pagination', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'page=' + page,
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('categoryTable').getElementsByTagName('tbody')[0].innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Display an error message to the user
+            alert('Error loading pagination data. Please try again.');
+        });
+}
     // Initial load
     loadPaginationData(1);
 
@@ -265,6 +265,38 @@ include('../includes/navbar-top.php')
             loadPaginationData(page);
         }
     });
+        //edit-faq
+        document.getElementById('categoryTable').addEventListener('click', function(e) {
+        if(e.target.classList.contains('edit-btn')) {
+        e.preventDefault();
+        var editId = e.target.dataset.id;
+        console.log(editId);
+        fetch('edit-images?id=' + editId, {
+            method: 'POST',
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        
+        .then(data => {
+            console.log('Server Response:', data);
+            if (data.success) {
+                populateEditForm(data.imageData);
+                document.getElementById('editFormContainer').style.display = 'block';
+            } else {
+                console.error('Error: ', data); // Log the entire response for debugging
+                console.error('Error fetching image data');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+});
+
 </script>
 
 

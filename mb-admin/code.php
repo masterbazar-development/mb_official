@@ -1,8 +1,7 @@
-<?php 
+<?php
 session_start();
 include('config/dbcon.php');
-if(isset($_POST['post_delete_btn']))
-{
+if (isset($_POST['post_delete_btn'])) {
 
     $post_id = $_POST['post_delete_btn'];
 
@@ -14,27 +13,23 @@ if(isset($_POST['post_delete_btn']))
     $query = "DELETE FROM posts WHERE id='$post_id' LIMIT 1";
     $query_run = mysqli_query($con, $query);
 
-    if($query_run)
-    {
- 
-            if(file_exists('../images/blog/'.$image)){
-                unlink('../images/blog/'.$image);;
-            }
-  
+    if ($query_run) {
+
+        if (file_exists('../images/blog/' . $image)) {
+            unlink('../images/blog/' . $image);;
+        }
+
         $_SESSION['message'] = "Post Deleted Successfully";
         header('Location: post-view');
         exit(0);
-    }
-    else{
+    } else {
         $_SESSION['message'] = "Something Went Wrong!";
         header('Location: post-view');
         exit(0);
     }
-
 }
 
-if(isset($_POST['post_update']))
-{
+if (isset($_POST['post_update'])) {
     $post_id = $_POST['post_id'];
 
     $category_id = $_POST['category_id'];
@@ -50,16 +45,13 @@ if(isset($_POST['post_update']))
     $image = $_FILES['image']['name'];
 
     $update_filename = "";
-    if($image != NULL)
-    {        
+    if ($image != NULL) {
         // Rename this image
         $image_extension = pathinfo($image, PATHINFO_EXTENSION);
-        $filename = time().'.'.$image_extension;
+        $filename = time() . '.' . $image_extension;
 
         $update_filename = $filename;
-    }
-    else
-    {
+    } else {
         $update_filename = $old_filename;
     }
 
@@ -67,38 +59,33 @@ if(isset($_POST['post_update']))
     echo "Status: " . $status . "<br>";
 
     $query = "UPDATE posts SET category_id='$category_id', name='$name', slug='$slug', description='$description', image='$update_filename', meta_title='$meta_title', meta_description='$meta_description', meta_keyword='$meta_keyword', status='$status' WHERE id='$post_id'";
-            //   print_r($query);
-            $query = "UPDATE posts SET category_id=?, name=?, slug=?, description=?, image=?, meta_title=?, meta_description=?, meta_keyword=?, status=? WHERE id=?";
+    //   print_r($query);
+    $query = "UPDATE posts SET category_id=?, name=?, slug=?, description=?, image=?, meta_title=?, meta_description=?, meta_keyword=?, status=? WHERE id=?";
 
-            $stmt = mysqli_prepare($con, $query);
-            mysqli_stmt_bind_param($stmt, 'issssssssi', $category_id, $name, $slug, $description, $update_filename, $meta_title, $meta_description, $meta_keyword, $status, $post_id);
-            $query_run = mysqli_stmt_execute($stmt); 
-            
-            if($query_run)
-            {
-                if($image != NULL)
-                {  
-                    if(file_exists('../images/blog/'.$old_filename)){
-                        unlink("'../images/blog/'.$old_filename");
-                    }
-                    move_uploaded_file($_FILES['image']['tmp_name'], '../images/blog/'.$filename);
-         
-                }
-                $_SESSION['message'] = "Post Edited Successfully";
-                header('Location: post-view');
-                exit(0);
+    $stmt = mysqli_prepare($con, $query);
+    mysqli_stmt_bind_param($stmt, 'issssssssi', $category_id, $name, $slug, $description, $update_filename, $meta_title, $meta_description, $meta_keyword, $status, $post_id);
+    $query_run = mysqli_stmt_execute($stmt);
+
+    if ($query_run) {
+        if ($image != NULL) {
+            if (file_exists('../images/blog/' . $old_filename)) {
+                unlink("'../images/blog/'.$old_filename");
             }
-            else{
-                $_SESSION['message'] = "Something Went Wrong!";
-                header('Location: post-view');
-                exit(0);
-            }
+            move_uploaded_file($_FILES['image']['tmp_name'], '../images/blog/' . $filename);
+        }
+        $_SESSION['message'] = "Post Edited Successfully";
+        header('Location: post-view');
+        exit(0);
+    } else {
+        $_SESSION['message'] = "Something Went Wrong!";
+        header('Location: post-view');
+        exit(0);
+    }
 }
 
 
 
-if(isset($_POST['post_add']))
-{
+if (isset($_POST['post_add'])) {
     $category_id = $_POST['category_id'];
     $name = $_POST['name'];
     $slug = $_POST['slug'];
@@ -112,22 +99,22 @@ if(isset($_POST['post_add']))
     $filename = $image;
 
     $status = isset($_POST['status']) && $_POST['status'] == true ? '1' : '0';
-     echo "Status: " . $status . "<br>";
-    $created_at= date('Y-m-d H:i:s');
+    echo "Status: " . $status . "<br>";
+    $created_at = date('Y-m-d H:i:s');
     $query = "INSERT INTO posts (category_id, name, slug, description, image, meta_title, meta_description, meta_keyword, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
- 
+
     $stmt = mysqli_prepare($con, $query);
     mysqli_stmt_bind_param($stmt, 'isssssssi', $category_id, $name, $slug, $description, $filename, $meta_title, $meta_description, $meta_keyword, $status);
     $query_run = mysqli_stmt_execute($stmt);
     if ($query_run) {
-        move_uploaded_file($_FILES['image']['tmp_name'], '../images/blog/'.$filename);
+        move_uploaded_file($_FILES['image']['tmp_name'], '../images/blog/' . $filename);
         $_SESSION['message'] = "Post Created Successfully";
-        
+
         header('Location: post-add');
         exit(0);
     } else {
         echo "Error: " . mysqli_error($con);
-    }    
+    }
 }
 
 
@@ -147,12 +134,12 @@ if(isset($_POST['post_add']))
 //         $image_extension = pathinfo($image, PATHINFO_EXTENSION);
 //         $filename = time().'.'.$image_extension;
 
-        // $status = $_POST['status'] == true ? '1':'0';
+// $status = $_POST['status'] == true ? '1':'0';
 
-        // $query = "INSERT INTO posts (category_id, name, slug, description, image, meta_title, meta_description, meta_keyword, status) VALUES
-        //  ('$category_id', '$name', '$slug', '$description', '$image', '$meta_title', '$meta_description', '$meta_keyword', '$status')";
+// $query = "INSERT INTO posts (category_id, name, slug, description, image, meta_title, meta_description, meta_keyword, status) VALUES
+//  ('$category_id', '$name', '$slug', '$description', '$image', '$meta_title', '$meta_description', '$meta_keyword', '$status')";
 
-        //  $query_run = mysqli_query($con, $query);
+//  $query_run = mysqli_query($con, $query);
 
 //          if($query_run)
 //          {
@@ -170,147 +157,156 @@ if(isset($_POST['post_add']))
 //     }
 
 
-if(isset($_POST['category_delete']))
-{
+if (isset($_POST['category_delete'])) {
     $category_id = $_POST['category_delete'];
     // 2 delete
     $query = "DELETE FROM categories  WHERE id='$category_id' LIMIT 1";
     $query_run = mysqli_query($con, $query);
 
-    if($query_run)
-    {
+    if ($query_run) {
         $_SESSION['message'] = "Category Deleted Successfully";
         header('Location: category-view');
         exit(0);
-    }
-    else{
+    } else {
         $_SESSION['message'] = "Something Went Wrong!";
         header('Location: category-view');
         exit(0);
     }
-
-
 }
 
 
-if(isset($_POST['category_update']))
-{
+if (isset($_POST['category_update'])) {
     $category_id = $_POST['category_id'];
     $name = $_POST['name'];
     $slug = $_POST['slug'];
     $description = $_POST['description'];
-    $navbar_status = $_POST['navbar_status'] == true ? '1':'0';
-    $status = $_POST['status'] == true ? '1':'0';
+    $navbar_status = $_POST['navbar_status'] == true ? '1' : '0';
+    $status = $_POST['status'] == true ? '1' : '0';
 
-    $query= "UPDATE categories SET name='$name',slug='$slug',description='$description',navbar_status='$navbar_status',status='$status' WHERE id='$category_id'";
+    $query = "UPDATE categories SET name='$name',slug='$slug',description='$description',navbar_status='$navbar_status',status='$status' WHERE id='$category_id'";
     $query_run = mysqli_query($con, $query);
 
-    if($query_run)
-    {
+    if ($query_run) {
         $_SESSION['message'] = "Category Updated Successfully";
-        header('Location: category-edit.php?id='.$category_id);
+        header('Location: category-edit.php?id=' . $category_id);
         exit(0);
-    }
-    else{
+    } else {
         $_SESSION['message'] = "Something Went Wrong!";
-        header('Location: category-edit.php?id='.$category_id);
+        header('Location: category-edit.php?id=' . $category_id);
         exit(0);
     }
-
 }
 
-if(isset($_POST['category_add']))
-{
+if (isset($_POST['category_add'])) {
     $name = $_POST['name'];
     $slug = $_POST['slug'];
     $description = $_POST['description'];
     $main_category = $_POST['select-main'];
 
-    $navbar_status = $_POST['navbar_status'] == true ? '1':'0';
-    $status = $_POST['status'] == true ? '1':'0';
+    $navbar_status = $_POST['navbar_status'] == true ? '1' : '0';
+    $status = $_POST['status'] == true ? '1' : '0';
 
     $query = "INSERT INTO categories (name,slug,description,main_category,navbar_status,status) VALUES ('$name','$slug','$description','$main_category','$navbar_status','$status') ";
 
     $query_run = mysqli_query($con, $query);
 
 
-    if($query_run)
-    {
+    if ($query_run) {
         $_SESSION['message'] = "Category Added Successfully";
         header('Location: category-add');
         exit(0);
-    }
-    else{
+    } else {
         $_SESSION['message'] = "Something Went Wrong!";
         header('Location: category-add');
         exit(0);
     }
-
 }
 
 
-if(isset($_POST['add_user']))
-{
+if (isset($_POST['add_user'])) {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $role_as = $_POST['role_as'];
-    $status = $_POST['status'] == true ? '1':'0';
+    $status = $_POST['status'] == true ? '1' : '0';
 
     $query = "INSERT INTO users (fname,lname,email,password,role_as,status) VALUES ('$fname','$lname','$email','$password', '$role_as', '$status') ";
     $query_run = mysqli_query($con, $query);
 
-    if($query_run)
-    {
+    if ($query_run) {
         $_SESSION['message'] = "Admin or User Added Successfully";
         header('Location: view-register');
         exit(0);
-    }
-    else{
+    } else {
         $_SESSION['message'] = "Something Went Wrong!";
         header('Location: view-register');
         exit(0);
     }
 }
-
-if(isset($_POST['update_user']))
-{
+//gallery-edit-image
+if (isset($_POST['edit_add-image'])) {
+    $imageid= $_POST['id'];
+    $category = $_POST['category'];
+    $status = isset($_POST['status']) && $_POST['status'] == true ? '1' : '0';
+    // $status = $_POST['status'];
+    $uploadsDir = 'gallery/uploads/'; // Set your uploads directory
+    $uploadedFiles = [];
+    // alt tag for all files (assuming it's the same for all)
+    $altTag = $_POST['alt_tags'][0]; //assuming it as an array
+    foreach ($_FILES['files']['name'] as $key => $filename) {
+        $tmpName = $_FILES['files']['tmp_name'][$key];
+        $uploadPath = $uploadsDir . basename($filename);
+        if (move_uploaded_file($tmpName, $uploadPath)) {
+            $uploadedFiles[] = $filename;
+            $sql = "UPDATE gallery
+           SET category = '$category', filename = '$filename', alt_tag = '$altTag', status = '$status'
+             WHERE id = '$imageid'";
+            if($result = mysqli_query($con, $sql)){
+            $_SESSION['message'] = "Updated Successfully";
+            header('Location: gallery/images-add');
+            exit(0);
+            }else{
+                $_SESSION['message'] = "Something Went Wrong!";
+                header('Location: gallery/images-add');
+                exit(0); 
+            }
+        }
+    }
+};
+if (isset($_POST['update_user'])) {
     $user_id = $_POST['user_id'];
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $role_as = $_POST['role_as'];
-    $status = $_POST['status'] == true ? '1':'0';
+    $status = $_POST['status'] == true ? '1' : '0';
 
     $query = "UPDATE users SET fname='$fname', lname='$lname', email='$email', password='$password', role_as='$role_as', status='$status'
                      WHERE id='$user_id' ";
     $query_run = mysqli_query($con, $query);
 
-    if($query_run)
-    {
-        $_SESSION['message'] ="Updated Successfully";
+    if ($query_run) {
+        $_SESSION['message'] = "Updated Successfully";
         header('Location: view-register');
         exit(0);
     }
-
 }
-if(isset($_POST['faq_add'] )){
-        $category= $_POST['category'];
-        $question = $_POST['question'];
-        $answer = $_POST['answer'];
-        $order= $_POST['order'];
-        $status = $_POST['status'] == true ? '1':'0';
-        $sql = "INSERT INTO faq (category, question, answer,order_num, status) VALUES (?, ?, ?, ?,?)";
-        $faq =$con->prepare($sql);
-        // Bind parameters ssss defines the string values 
-        $faq->bind_param("sssss", $category, $question, $answer,$order, $status);
-        if($faq->execute()){
-            $_SESSION['message'] ="FAQ Added Successfully";
-             header('Location: faq/faq-add');
-        }
-        $faq->close();
-        $con->close();
+if (isset($_POST['faq_add'])) {
+    $category = $_POST['category'];
+    $question = $_POST['question'];
+    $answer = $_POST['answer'];
+    $order = $_POST['order'];
+    $status = $_POST['status'] == true ? '1' : '0';
+    $sql = "INSERT INTO faq (category, question, answer,order_num, status) VALUES (?, ?, ?, ?,?)";
+    $faq = $con->prepare($sql);
+    // Bind parameters ssss defines the string values 
+    $faq->bind_param("sssss", $category, $question, $answer, $order, $status);
+    if ($faq->execute()) {
+        $_SESSION['message'] = "FAQ Added Successfully";
+        header('Location: faq/faq-add');
     }
-?>
+    $faq->close();
+    $con->close();
+}
