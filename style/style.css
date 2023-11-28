@@ -559,8 +559,9 @@ body {
     }
 
     100% {
-        transform: translateX(50vw);
-        -webkit-transform: translateX(50vw);
+        transform: translateX(110vw);
+        -webkit-transform: translateX(110vw);
+        animation-timing-function: ease-out;
     }
 }
 

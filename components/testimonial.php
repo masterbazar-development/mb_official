@@ -11,27 +11,37 @@
     <!--Our Client Reviews Swiper -->
     <div class="swiper mySwiper sm:mx-10 mx-4">
         <div class="swiper-wrapper py-16">
+        <?php
+    $post = "SELECT * FROM testimonials ORDER BY testimonials.id DESC";
+    $query = mysqli_query($con, $post);
+
+    $query_run = mysqli_num_rows($query);
+    if ($post) {
+        while ($result = mysqli_fetch_assoc($query)) {
+    ?>
             <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
                 <div class="">
                     <div class="flex justify-between items-center mb-6">
                         <div class="">
-                            <img class="rounded-full w-32 h-32" src="<?php echo $mainUrl ?>assets/client/images/testimonial/profile2.webp" alt="">
+                            <img class="rounded-full w-32 h-32" src="<?php echo $mainUrl?>assets/client/images/testimonial/client-image/<?= $result['image'] ?>" alt="">
                         </div>
                         <div class="text-right text-white">
                             <i class="fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
 
-                            <p class="text-2xl font-semibold tracking-wide">Expert did A great job</p>
-                            <p class="font-normal text-gray-400">Magna j Bahadur</p>
+                            <p class="text-2xl font-semibold tracking-wide"><?= $result['title'] ?></p>
+                            <p class="font-normal text-gray-400"><?= $result['name'] ?></p>
                         </div>
                     </div>
                     <div class="text-white text-left font-light font-livvic">
                         <p>
-                            Master Bazar Experts did a great job on helping me with my website. They responded quickly
-                            to my questions and listened to all my feedback. I highly recommend their services.
+                        <?= $result['review'] ?>
                         </p>
                     </div>
                 </div>
             </div>
+            <?php        }
+    }
+    ?>  
 
             <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
                 <div class="">
@@ -153,7 +163,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>xl:
+                <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
