@@ -1,34 +1,43 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<<<<<<< HEAD
 <?php include('../../components/navmenu.php'); ?>
+=======
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
+
+>>>>>>> d3b574a10859b34a3993400a1d72be84b266dde6
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
 <?php include('../../components/menu.php'); ?>
 <!-- Navigation ends Here -->
 
+
 <!-- Hero Banner starts here Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:h-screen w-screen overflow-hidden">
-    <div class="max-w-full  mx-[10vw]">
+    <div class="max-w-full ">
         <?php include('../../components/heroheader.php'); ?>
 
-        <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 my-12 lg:my-40">
-
-            <div class="font-medium order-2 lg:order-1 2xl:py-20 flex flex-col justify-center max-w-7xl mx-auto text-center">
-
-                <h1 class="2xl:text-6xl text-3xl text-head font-extrabold leading-snug">
-                    Maximize Your <span class="text-blue">Social Media Impact</span>
+        <div class="flex flex-col items-center mt-10 lg:mt-32 lg:flex-row max-w-full mx-[5vw] gap-8 lg:gap-20 md:mx-[10vw] ">
+            <div class="lg:w-1/2 order-2 lg:order-1">
+                <h1 class="2xl:text-5xl text-3xl text-head font-extrabold ">
+                Maximize Your
+                    <span class="text-blue">Social Media Impact</span>
                 </h1>
-                <p class="text-xl font-livvic font-normal mt-5 text-[#334155] lg:px-20 w-full">Drive Engagement, Build Relationships, and Achieve s Your Social Media Goals<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
-                <div class="flex justify-center gap-3 mt-10 text-xl font-livvic font-normal text-[#334155] lg:px-20 w-full">
-                    <p>lets Super Charge Your Social Media </p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
+                <p class="lg:w-3/4 md:text-lg lg:text-xl md:mt-5 text-start">
+                Drive Engagement, Build Relationships, and Achieve s Your Social Media Goals
+                </p>
+                <div class="flex gap-2 md:gap-5 items-center justify-center lg:justify-start mt-5 lg:mt-16 mb-10 lg:mb-0">
+                    <button class="sm:text-sm text-xs white bg-[#264CC9] rounded-full text-white sm:px-3 px-6 md:px-6 py-3 md:py-3 sm:py-3">Lets Work Together</button>
+                    <p class="sm:text-sm text-xs">Come Join US</p>
                 </div>
+            </div>
+            <div class="lg:w-1/2 order-1 lg:order-2">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/smmban.png" alt="" class="w-full">
             </div>
         </div>
     </div>
@@ -42,7 +51,7 @@
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">
             Social Media Marketing Solutions That Work for Your Business</h2>
-        <p class="lg:text-lg xl:text-xl mt-5">
+        <p class="lg:text-lg font-livvic xl:text-xl mt-5">
             At MasterBazar, we offer comprehensive social media marketing solutions that are tailored to meet the unique needs of your business. Our team of social media experts will work with you to develop and implement customized strategies that drive engagement, build relationships with your target audience, and help you achieve your social media goals. From content creation and curation to social media advertising, community management, and analytics, we have the expertise and experience to deliver results for your brand on social media platforms.
         </p>
     </div>
@@ -58,7 +67,7 @@
     <div class="mt-5 my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">
             Social Media Marketing Solutions That Work for Your Business</h2>
-        <p class="md:text-xl mt-5">
+        <p class="md:text-xl font-livvic mt-5">
             At MasterBazar, we offer comprehensive social media marketing solutions that are tailored to meet the unique needs of your business. Our team of social media experts will work with you to develop and implement customized strategies that drive engagement, build relationships with your target audience, and help you achieve your social media goals. From content creation and curation to social media advertising, community management, and analytics, we have the expertise and experience to deliver results for your brand on social media platforms.
         </p>
     </div>
@@ -70,7 +79,7 @@
     </div>
     <div class="lg:w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Spark Desire and Drive Success</h2>
-        <p class="md:text-xl lg:text-lg xl:text-xl mt-5">
+        <p class="md:text-xl font-livvic lg:text-lg xl:text-xl mt-5">
             From creating buzz around your brand, generating leads, and driving website traffic to increasing your brand's visibility, engagement, and loyalty on social media platforms, we can help you achieve social media success. Let us craft compelling social media campaigns that captivate your audience and drive meaningful results for your business.
         </p>
     </div>

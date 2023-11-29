@@ -17,6 +17,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <!-- Hero Banner Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
+<<<<<<< HEAD
     <div class="max-w-full min-h-full mx-[3vw] md:mx-[10vw] relative flex justify-center it">
         <?php include('../../components/heroheader.php'); ?>
 
@@ -24,6 +25,15 @@ include('../../mb-admin/config/dbcon.php'); ?>
             <div class="flex-col items-center w-[60%] min-h-full flex justify-center">
                 <div class="">
                     <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">Engage, Persuade, and Convert<span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
+=======
+    <div class=" relative flex justify-center it">
+        <?php include('../../components/heroheader.php'); ?>
+
+        <div class="max-w-full min-h-full mx-[3vw] md:mx-[10vw] flex justify-center gap-20 max-h-full">
+            <div class="flex-col items-center w-[60%] min-h-full flex justify-center">
+                <div class="">
+                    <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">Engage, Persuade, and Convert <span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
+>>>>>>> d3b574a10859b34a3993400a1d72be84b266dde6
                     </h1>
                 </div>
                 <div>
@@ -41,7 +51,11 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <script>
     let contentImg = document.getElementById('contentImg');
     let imgList = ["contentban11", "contentban22", "contentban33", "contentban44", ];
+<<<<<<< HEAD
     const path = 'http://localhost/masterbazar24/assets/client/images/'
+=======
+    const path = 'http://localhost/mb_official/assets/client/images/'
+>>>>>>> d3b574a10859b34a3993400a1d72be84b266dde6
     let count = 0;
     function loopImg(){
         if(count >= imgList.length){

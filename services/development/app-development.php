@@ -1,9 +1,15 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<<<<<<< HEAD
 <?php include('../../components/navmenu.php'); ?>
+=======
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
+
+>>>>>>> d3b574a10859b34a3993400a1d72be84b266dde6
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
@@ -90,7 +96,7 @@
   </div>
   <div class="lg:w-[60%] my-auto">
     <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold mt-5 lg:mt-0 leading-snug">Leading Innovation - Tailored Solutions for Your Digital Success</h2>
-    <p class="md:text-xl font-livvic lg:text-lg xl:text-xl mt-5 ">
+    <p class="md:text-lg font-livvic lg:text-lg xl:text-xl mt-5 ">
       At MasterBazar, we pride ourselves on being at the forefront of technological innovation, offering a comprehensive suite of development services that cater to diverse business needs. Our dedicated team of developers, designers, and tech enthusiasts collaborate seamlessly to craft tailored solutions that elevate your digital presence. With a keen focus on leveraging cutting-edge technology, we're committed to driving your business growth through personalized strategies and innovative development. Our goal is not just to meet your expectations but to exceed them, ensuring that each solution we create is meticulously designed to propel your brand towards unparalleled success in the digital sphere.
     </p>
   </div>

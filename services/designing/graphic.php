@@ -1,9 +1,15 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<<<<<<< HEAD
 <?php include('../../components/navmenu.php'); ?>
+=======
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
+
+>>>>>>> d3b574a10859b34a3993400a1d72be84b266dde6
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
@@ -35,7 +41,7 @@
 <section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">Crafting Visual Narratives that Captivate Your Audience's Imagination</h2>
-        <p class="lg:text-lg xl:text-xl mt-5">
+        <p class="lg:text-lg xl:text-xl font-livvic mt-5">
         At MasterBazar, we understand that every brand has a unique story to tell. Our expert graphic designers specialize in creating captivating visual narratives that paint a picture, evoke emotions, and engage your audience on a deeper level. From concept to creation, we bring your brand's vision to life through stunning graphic designs that leave a lasting impression.
         </p>
     </div>
@@ -50,7 +56,7 @@
     </div>
     <div class="mt-5 my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Crafting Visual Narratives that Captivate Your Audience's Imagination</h2>
-        <p class="md:text-xl mt-5">
+        <p class="md:text-xl font-livvic mt-5">
         At MasterBazar, we understand that every brand has a unique story to tell. Our expert graphic designers specialize in creating captivating visual narratives that paint a picture, evoke emotions, and engage your audience on a deeper level. From concept to creation, we bring your brand's vision to life through stunning graphic designs that leave a lasting impression.
         </p>
     </div>
@@ -62,7 +68,7 @@
     </div>
     <div class="lg:w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Graphic Design Services for Your Every Need</h2>
-        <p class="md:text-xl lg:text-lg xl:text-xl mt-5">
+        <p class="md:text-xl font-livvic lg:text-lg xl:text-xl mt-5">
         With our experienced team of designers and cutting-edge tools, we deliver high-quality designs that are tailored to your specific requirements, helping you create a cohesive and impactful brand presence across all digital platforms.
         </p>
     </div>

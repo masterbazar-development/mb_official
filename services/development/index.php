@@ -1,15 +1,20 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<<<<<<< HEAD
 <?php include('../../components/navmenu.php'); ?>
+=======
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
+
+>>>>>>> d3b574a10859b34a3993400a1d72be84b266dde6
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
 <?php include('../../components/menu.php'); ?>
 <!-- Navigation ends Here -->
-
 
 <!-- css for development page typing text effect in h1 starts here  -->
 <style>
@@ -17,7 +22,6 @@
     color: #264CC5;
     position: relative;
   }
-
 
   .sentence::after {
     content: '';
@@ -34,7 +38,6 @@
     color: #264CC5;
     position: relative;
   }
-
 
   .sentence1::after {
     content: '';
