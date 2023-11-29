@@ -89,7 +89,7 @@ include('../includes/navbar-top.php')
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $itemsPerPage = 10;//always put same value 
+                                        $itemsPerPage = 10; //always put same value 
                                         $page = isset($_POST['page']) ? $_POST['page'] : 1;
                                         // Calculate the offset
                                         $offset = ($page - 1) * $itemsPerPage;
@@ -224,28 +224,28 @@ include('../includes/navbar-top.php')
     });
     //pagination
     function loadPaginationData(page) {
-    fetch('pagination', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: 'page=' + page,
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('categoryTable').getElementsByTagName('tbody')[0].innerHTML = data;
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            // Display an error message to the user
-            alert('Error loading pagination data. Please try again.');
-        });
-}
+        fetch('pagination', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'page=' + page,
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('categoryTable').getElementsByTagName('tbody')[0].innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Display an error message to the user
+                alert('Error loading pagination data. Please try again.');
+            });
+    }
     // Initial load
     loadPaginationData(1);
 
@@ -265,38 +265,37 @@ include('../includes/navbar-top.php')
             loadPaginationData(page);
         }
     });
-        //edit-faq
-        document.getElementById('categoryTable').addEventListener('click', function(e) {
-        if(e.target.classList.contains('edit-btn')) {
-        e.preventDefault();
-        var editId = e.target.dataset.id;
-        console.log(editId);
-        fetch('edit-images?id=' + editId, {
-            method: 'POST',
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        
-        .then(data => {
-            console.log('Server Response:', data);
-            if (data.success) {
-                populateEditForm(data.imageData);
-                document.getElementById('editFormContainer').style.display = 'block';
-            } else {
-                console.error('Error: ', data); // Log the entire response for debugging
-                console.error('Error fetching image data');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    }
-});
+    //edit-faq
+    document.getElementById('categoryTable').addEventListener('click', function(e) {
+        if (e.target.classList.contains('edit-btn')) {
+            e.preventDefault();
+            var editId = e.target.dataset.id;
+            console.log(editId);
+            fetch('edit-images?id=' + editId, {
+                    method: 'POST',
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
 
+                .then(data => {
+                    console.log('Server Response:', data);
+                    if (data.success) {
+                        populateEditForm(data.imageData);
+                        document.getElementById('editFormContainer').style.display = 'block';
+                    } else {
+                        console.error('Error: ', data); // Log the entire response for debugging
+                        console.error('Error fetching image data');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    });
 </script>
 
 

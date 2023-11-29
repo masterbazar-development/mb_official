@@ -1,5 +1,7 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
 
 
 <!-- Ellipse Starts From Here -->
@@ -257,7 +259,6 @@
         toggle('active')
     }
 </script>
-
 
 
 
