@@ -1,15 +1,16 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
 
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
 <?php include('../../components/menu.php'); ?>
 <!-- Navigation ends Here -->
-
 
 
 

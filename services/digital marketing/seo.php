@@ -1,36 +1,43 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
 
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
 <?php include('../../components/menu.php'); ?>
 <!-- Navigation ends Here -->
 
+
 <!-- Hero Banner starts here Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:h-screen w-screen overflow-hidden">
-    <div class="max-w-full  mx-[10vw]">
+    <div class="max-w-full  ">
         <?php include('../../components/heroheader.php'); ?>
 
-        <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 my-12 lg:my-40">
-            
-            <div class="font-medium order-2 lg:order-1 2xl:py-20 flex flex-col justify-center max-w-7xl mx-auto text-center">
-
-                <h1 class="2xl:text-6xl text-3xl text-head font-extrabold leading-snug">
-                Be Found  <span class="text-blue">On Internet</span>
+        <div class="flex flex-col items-center mt-10 lg:mt-32 lg:flex-row max-w-full mx-[5vw] gap-8 lg:gap-20 md:mx-[10vw] ">
+            <div class="lg:w-1/2 order-2 lg:order-1">
+                <h1 class="2xl:text-5xl text-3xl text-head font-extrabold ">
+                Be Found
+                    <span class="text-blue">On Internet</span>
                 </h1>
-                <p class="text-xl font-livvic font-normal mt-5 text-[#334155] lg:px-20 w-full">Drive Organic Traffic, Improve Rankings,<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
-                <div class="flex justify-center gap-3 mt-10 text-xl font-livvic font-normal text-[#334155] lg:px-20 w-full">
-                    <p>lets Optimize your Website for search Engines </p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
+                <p class="lg:w-3/4 md:text-lg lg:text-xl md:mt-5 text-start">
+                Drive Organic Traffic, Improve Rankings,
+                </p>
+                <div class="flex gap-2 md:gap-5 items-center justify-center lg:justify-start mt-5 lg:mt-16 mb-10 lg:mb-0">
+                    <button class="sm:text-sm text-xs white bg-[#264CC9] rounded-full text-white sm:px-3 px-6 md:px-6 py-3 md:py-3 sm:py-3">Lets Work Together</button>
+                    <p class="sm:text-sm text-xs">Come Join US</p>
                 </div>
             </div>
+            <div class="lg:w-1/2 order-1 lg:order-2">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/seoban.png" alt="" class="w-full">
+            </div>
         </div>
+
+
     </div>
 </section>
 <!-- Hero Banner Section ends here -->
@@ -41,7 +48,7 @@
 <section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">Improve Search Rankings and Increased Visibility</h2>
-        <p class="lg:text-lg xl:text-xl mt-5">
+        <p class="lg:text-lg font-livvic xl:text-xl mt-5">
         At MasterBazar, we offer cutting-edge SEO solutions that are designed to drive organic traffic, improve search rankings, and increase your brand's online presence. Our team of SEO experts utilizes industry-leading techniques, advanced tools, and data-driven insights to optimize your website for search engines. From on-page and off-page optimization to keyword research, competitor analysis, and technical SEO, our comprehensive approach ensures that your website is optimized to its full potential. Let us help you unlock the power of SEO and drive meaningful results for your business.
         </p>
     </div>
@@ -56,7 +63,7 @@
     </div>
     <div class="mt-5 my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Improve Search Rankings and Increased Visibility</h2>
-        <p class="md:text-xl mt-5">
+        <p class="md:text-xl font-livvic mt-5">
         At MasterBazar, we offer cutting-edge SEO solutions that are designed to drive organic traffic, improve search rankings, and increase your brand's online presence. Our team of SEO experts utilizes industry-leading techniques, advanced tools, and data-driven insights to optimize your website for search engines. From on-page and off-page optimization to keyword research, competitor analysis, and technical SEO, our comprehensive approach ensures that your website is optimized to its full potential. Let us help you unlock the power of SEO and drive meaningful results for your business.
         </p>
     </div>
@@ -68,7 +75,7 @@
     </div>
     <div class="lg:w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Dominate the Search Results with MasterBazar's Powerful SEO Strategies</h2>
-        <p class="md:text-xl lg:text-lg xl:text-xl mt-5">
+        <p class="md:text-xl font-livvic lg:text-lg xl:text-xl mt-5">
         Our SEO strategies are designed to build desire and paint a clear picture of the benefits of optimizing your website for search engines. With our expertise in keyword research, content optimization, link building, and technical SEO, we can help you dominate the search results and be found by your target audience. Outrank your competitors, drive more organic traffic, and increase your brand's visibility online with our powerful SEO solutions. Let us help you achieve search engine dominance and grow your business online.
         </p>
     </div>

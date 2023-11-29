@@ -1,9 +1,11 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
 
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
@@ -15,38 +17,43 @@
 
 <!-- Hero Banner Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
-    <div class="max-w-full mx-[3vw] md:mx-[10vw]">
+    <div class=" relative flex justify-center it">
         <?php include('../../components/heroheader.php'); ?>
 
-        <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 mb-12 mt-12 lg:mby-auto">
-            <div class="font-medium order-2 lg:order-1 flex flex-col justify-center max-w-7xl mx-auto text-center">
-                <img src="<?php echo $mainUrl; ?>assets/client/images/contbanner.png" class="w-[15rem] md:w-[30rem] mx-auto">
-                <div class="md:block hidden">
-                    <div class="flex max-w-5xl mx-auto mt-2">
-                        <h1 class="2xl:text-6xl md:text-3xl text-xl text-head font-extrabold leading-snug">
-                            Engage, Persuade, and Convert
-                            <span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
-
-                        </h1>
-                    </div>
+        <div class="max-w-full min-h-full mx-[3vw] md:mx-[10vw] flex justify-center gap-20 max-h-full">
+            <div class="flex-col items-center w-[60%] min-h-full flex justify-center">
+                <div class="">
+                    <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">Engage, Persuade, and Convert <span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
+                    </h1>
                 </div>
-
-                <div class="md:hidden block">
-                    <div class="flex max-w-5xl mx-auto mt-2">
-                        <h1 class="2xl:text-6xl md:text-3xl text-2xl text-head font-extrabold leading-snug">
-                            Engage, Persuade, and Convert
-                            <span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
-                        </h1>
-                    </div>
-
+                <div>
+                    <p class="md:text-xl font-livvic font-normal mt-5 text-[#334155]  w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
+                    <span class="text-center text-lg font-semibold underline text-head mt-4">Lets Connect With Us</span>
                 </div>
-                <p class="md:text-xl font-livvic font-normal mt-5 text-[#334155] lg:px-40 w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
-                <span class="text-center text-lg font-semibold underline text-head mt-4">Lets Connect With Us</span>
             </div>
-
+            <div class="w-[40%] min-h-full flex justify-center items-center">                
+                    <img id="contentImg" src="<?php echo $mainUrl; ?>assets/client/images/contentban11.png" alt="">             
+            </div>
         </div>
     </div>
 </section>
+
+<script>
+    let contentImg = document.getElementById('contentImg');
+    let imgList = ["contentban11", "contentban22", "contentban33", "contentban44", ];
+    const path = 'http://localhost/mb_official/assets/client/images/'
+    let count = 0;
+    function loopImg(){
+        if(count >= imgList.length){
+            count = 0;
+        }
+        console.log(count, contentImg.attributes.src)
+        contentImg.setAttribute('src',  `${path}${imgList[count]}.png`);   
+        count++;     
+    }
+
+    setInterval( loopImg, 1000);
+</script>
 
 
 

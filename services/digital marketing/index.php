@@ -1,14 +1,17 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
+<?php include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); ?>
 
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
 <?php include('../../components/menu.php'); ?>
 <!-- Navigation ends Here -->
+
 
 <!-- Hero Banner starts here Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
@@ -43,7 +46,7 @@
     </div>
     <div class="lg:w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold mt-5 lg:mt-0 leading-snug">From SEO and SEM to Social Media and Content Marketing, We Drive Your Online Success.</h2>
-        <p class="md:text-xl lg:text-lg xl:text-xl mt-5 ">
+        <p class="md:text-xl lg:text-lg font-livvic xl:text-xl mt-5 ">
             At MasterBazar we harness the power of digital channels to tell your brand's story in a way that resonates with your audience, evokes emotion, and builds strong connections. Our creative and strategic approach will help you captivate your audience, build brand loyalty, and achieve your business goals.
             As a professional digital marketing agency in USA, we offer a wide range of digital marketing services designed to boost your online presence and drive tangible results. Our seasoned team of digital marketing experts crafts customized strategies tailored to your business goals, we utilize cutting-edge tools and techniques to increase your website traffic.
             We improve your search rankings, engage your target audience, and drive conversions. We are dedicated towards you to increase your brand visibility, higher website performance, and a significant boost to your online business.
