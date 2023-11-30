@@ -41,7 +41,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <script>
     let contentImg = document.getElementById('contentImg');
     let imgList = ["contentban11", "contentban22", "contentban33", "contentban44", ];
-    const path = 'http://localhost/mb_official/assets/client/images/'
+    const path = 'http://localhost/masterbazar24/assets/client/images/'
     let count = 0;
     function loopImg(){
         if(count >= imgList.length){
@@ -59,7 +59,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <!-- second section starts here -->
 
-<section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
+<section class=" hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">
             Content Writing Solutions for Your Blog and Article Needs</h2>

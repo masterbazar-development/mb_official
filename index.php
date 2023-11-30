@@ -25,7 +25,7 @@ include('mb-admin/config/dbcon.php');?>
             </div>
 
             <div class="sm:flex hidden justify-center items-center gap-4 ">
-                <button role="button" class="mx-auto shadow-xl w-max py-3 px-8 font-medium font-livvic text-head bg-blue text-white rounded-full flex justify-center gap-4 items-center">
+                <button role="button" class="mx-auto shadow-xl w-max py-3 px-8 font-medium font-livvic text-head bg-blue rounded-full flex justify-center gap-4 items-center">
                     <span>Let's Have A Talk!
                     </span>
                     <span><i class="fa-solid fa-message text-xl text-white"></i></span>
