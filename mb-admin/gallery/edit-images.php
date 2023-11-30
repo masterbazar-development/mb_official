@@ -7,7 +7,7 @@ if (isset($_POST['id'])) {
     $editId = $_POST['id'];
 
     // Fetch data for the specified id from the database
-    $query = "SELECT * FROM gallery WHERE id = '$editId' LIMIT 1";
+    $query = "SELECT * FROM gallery WHERE id = '$editId' ";
     $result = mysqli_query($con, $query);
 
     if ($result) {

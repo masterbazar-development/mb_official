@@ -77,8 +77,17 @@
     font-weight: 600;
 }
 
-body {
+
+h1,h2,h3,h4,h5,h6{
     font-family: 'Gilroy';
+}
+
+p{
+    font-family: 'Livvic', sans-serif;
+}
+
+body {
+    /* font-family: 'Gilroy'; */
     overflow-x: hidden;
     position: relative;
 }
@@ -652,5 +661,14 @@ select::-ms-expand {
 		font-size: 15px;
 	}
 }
-
+.pagination-link.active-gallery{
+ background-color: #4DA1F8;
+ color: white;
+}
+/* Add this to your CSS file or style section */
+.category-item.active {
+    background-color: #264CC5; /* Change to your desired active state styles */
+    color: white;
+  }
+  
 /* our servives time line section css end */

@@ -12,14 +12,14 @@ $totalRows = $result->num_rows;
 if ($result->num_rows > 0) {
 	while ($row = $result->fetch_assoc()) {
 
-		$posts[] = '<div class=" text-black image-container group/image">' .
-			'<div class="img-wrapper trigger rounded-md group-hover/image">' .
-			'<a href="../blogs/' . $row['slug'] . '">' .
-			'<img src="../assets/client/images/blog/' . $row['image'] . '" class="rounded-md">' .
+		$posts[] = '<div class="text-head  image-container group/image">' .
+			'<div class="group-hover/image">' .
+			'<a href="../blogs/' . $row['slug'] . '" class="inline-block overflow-hidden">' .
+			'<img src="../assets/client/images/blog/' . $row['image'] . '" class="rounded-md transition-all duration-700 ease-in-out hover:scale-[1.01] hover:rounded-md">' .
 			'</a>' .
 			'</div>' .
 			'<a href="../blogs/' . $row['slug'] . '">' .
-			'<h6 class="text-head font-semibold  text-lg font-oswald transition duration-150 hover:underline hover:underline-offset-4 target  group-hover/image:underline-offset-4 group-hover/image:underline ">' . $row['name'] . '</h6>' .
+			'<h6 class="font-bold text-lg transition duration-150 hover:underline hover:underline-offset-4  group-hover/image:underline-offset-4 group-hover/image:underline ">' . $row['name'] . '</h6>' .
 			'</a>' .
 			'</div>';
 	}
