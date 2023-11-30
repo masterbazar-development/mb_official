@@ -23,6 +23,7 @@
                     <h6 class="mb-8 text-3xl flex items-center text-head justify-center font-extrabold text-gray-800 uppercase md:justify-start">
                         Follow Us
                     </h6>
+                    <p class="mb-1 text-xl font-bold text-head">Social Links</p>
                     <div class="mb-2 flex gap-5 justify-center md:justify-start text-blue">
                         <a href="https://www.instagram.com/themasterbazar?igshid=YmMyMTA2M2Y=" class="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-[#264CC5] hover:fill-[#264CC5] hover:scale-150" fill="currentColor" viewBox="0 0 24 24">
