@@ -54,7 +54,7 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4" id="galleryImages">
           <!-- images loaded here -->
         </div>
-        <div id="paginationContainer" class="text-center flex justify-center">
+        <div id="paginationContainer" class="text-center flex justify-center mt-6">
           <!-- Pagination loaded here -->
         </div>
       </div>
