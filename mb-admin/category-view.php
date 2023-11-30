@@ -65,7 +65,6 @@ include('includes/navbar-top.php')
                                                     <button type="submit" name="category_delete" value="<?= $item['id'] ?>" class="btn btn-danger">Delete</button>
                                                 </form>
                                             </td>
-
                                         </tr>
                                     <?php
                                     }

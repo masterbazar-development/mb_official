@@ -15,6 +15,55 @@ include('../includes/navbar-top.php')
                     </h4>
                 </div>
                 <div class="card-body">
+                    <!-- edit -->
+                    <form id="editFormContainer" class="d-none" method="POST" enctype="multipart/form-data">
+                        <div class="col-md-12 mb-3">
+                            <lable for="">Category List</lable>
+                            <?php
+                            $category = "SELECT * FROM categories WHERE status='0' AND main_category='GALLERY'";
+                            $category_run = mysqli_query($con, $category);
+                            // print_r($category_run);
+                            if (mysqli_num_rows($category_run) > 0) {
+                            ?>
+                                <select name="category" class="form-control">
+                                    <option value="">-- Select Category --</option>
+                                    <?php
+                                    foreach ($category_run as $categoryitem) {
+                                    ?>
+                                        <option value="<?php echo  $categoryitem['id'] ?>">
+                                            <?php echo  $categoryitem['name'] ?>
+                                        </option>
+                                    <?php
+                                    }
+                                    ?>
+                                </select>
+                            <?php
+                            } else {
+                            ?>
+                                <h6>No Category Available</h6>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <lable for="">Upload Images</lable>
+                                <input type="file" name="files[]" class="form-control" id="files" multiple required>
+                            </div>
+                            <div class="col-md-5 mb-3" id="altTagsContainer">
+                                <lable for="">Alt Tag</lable>
+                                <input type="text" name="alt_tags[]" class="form-control" placeholder="Enter alt tag" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <lable for="">Status</lable>
+                                <input type="checkbox" name="status" width="70px" height="70px" />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <button type="submit" name="images_add" onclick="uploadFiles()" class="btn btn-primary">Add Images</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- edit -->
                     <form id="uploadForm" method="POST" enctype="multipart/form-data">
                         <div class="col-md-12 mb-3">
                             <lable for="">Category List</lable>
@@ -59,6 +108,7 @@ include('../includes/navbar-top.php')
                             </div>
                             <div class="col-md-12 mb-3">
                                 <button type="submit" name="images_add" onclick="uploadFiles()" class="btn btn-primary">Add Images</button>
+                                <button type= "submit" class="d-none" name="edit_add" onclick="" class="btn btn-primary">Edit Image</button>
                             </div>
                         </div>
                     </form>
@@ -270,7 +320,10 @@ include('../includes/navbar-top.php')
         if (e.target.classList.contains('edit-btn')) {
             e.preventDefault();
             var editId = e.target.dataset.id;
+<<<<<<< HEAD
+=======
             console.log(editId);
+>>>>>>> 694124e47b38471224e88e34a7e3af050de6bcf9
             fetch('edit-images?id=' + editId, {
                     method: 'POST',
                 })
@@ -280,7 +333,10 @@ include('../includes/navbar-top.php')
                     }
                     return response.json();
                 })
+<<<<<<< HEAD
+=======
 
+>>>>>>> 694124e47b38471224e88e34a7e3af050de6bcf9
                 .then(data => {
                     console.log('Server Response:', data);
                     if (data.success) {
@@ -297,6 +353,4 @@ include('../includes/navbar-top.php')
         }
     });
 </script>
-
-
 <?php include('../includes/footer.php') ?>

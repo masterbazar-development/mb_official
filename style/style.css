@@ -201,8 +201,6 @@ body {
 }
 
 #gradientblob {
-    background-color: #5078f2;
-    background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
     animation: animateGradient 5s ease-in-out infinite;
     box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -663,5 +661,14 @@ select::-ms-expand {
 		font-size: 15px;
 	}
 }
-
+.pagination-link.active-gallery{
+ background-color: #4DA1F8;
+ color: white;
+}
+/* Add this to your CSS file or style section */
+.category-item.active {
+    background-color: #264CC5; /* Change to your desired active state styles */
+    color: white;
+  }
+  
 /* our servives time line section css end */

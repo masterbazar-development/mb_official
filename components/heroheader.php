@@ -10,10 +10,17 @@
     </div>
 
     <div class="hidden  lg:flex justify-center items-center gap-4">
+<<<<<<< HEAD
         <button role="button" class="mx-auto w-max py-3 px-8 font-bold text-head bg-gradient-to-br bg-blue rounded-full flex justify-center gap-4 items-center">
             <span>Let's Have A Talk!
             </span>
             <span><i class="fa-solid fa-message text-xl text-head"></i></span>
+=======
+        <button role="button" class="mx-auto w-max py-3 px-8 font-semibold text-head bg-blue text-white rounded-full flex justify-center gap-4 items-center">
+            <span>Let's Have A Talk!
+            </span>
+            <span><i class="fa-solid fa-message text-xl text-white"></i></span>
+>>>>>>> 2402166f8e6f52c061118abc373df90affba211c
         </button>
     </div>
 </header>
