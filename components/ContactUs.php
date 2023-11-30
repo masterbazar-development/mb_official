@@ -79,7 +79,7 @@
     <div class="rounded-lg ">
             <img src="<?php echo $mainUrl; ?>assets/client/images/contact1.png" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
         </div>
-        <div class="flex mt-4 gap-8">
+        <div class="flex mt-2 gap-8">
             <div class="w-1/2">
                 <h2 class="text-3xl font-extrabold mt-5 text-head ">INDIA</h2>
                 <p class="text-lg max-w-2/3 mt-2 font-livvic">P-67, Top Floor, Block E Pandav Nagar Rd, Block P, Mayur Vihar,
@@ -96,7 +96,7 @@
     <div class="md:w-1/2">
         <div class="flex items-center ">
             <div class="container mx-auto">
-                <div class="max-w-xl mx-auto bg-white shadow-sm">
+                <div class="max-w-xl mx-auto bg-white">
                 <div class="text-center">
                         <h1 class="mb-3 text-5xl font-extrabold text-head ">
                             Contact Us
@@ -113,18 +113,18 @@
 
                             <div class="sm:flex mb-6 sm:space-x-4">
                                 <div class="w-full md:w-1/2">
-                                    <label for="fname" class="block text-sm text-gray-600 dark:text-gray-400 font-semibold">
+                                    <label for="fname" class="block  text-gray-600 dark:text-gray-400 font-semibold">
                                         Name</label>
                                     <input type="text" name="name" id="first_name" placeholder="John Legend" required class="font-livvic w-full px-3 py-2 placeholder-gray-300 border-b-2 border-gray-200  focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
-                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                    <div class="empty-feedback invalid-feedback text-red-400  mt-1">
                                         Please provide your first name.
                                     </div>
                                 </div>
                                 <div class="w-full md:w-1/2 sm:mt-0 mt-2">
-                                    <label for="email" class="block text-sm text-gray-600 dark:text-gray-400 font-semibold">Email
+                                    <label for="email" class="block text-gray-600 dark:text-gray-400 font-semibold">Email
                                         Address</label>
                                     <input type="email" name="email" id="email" placeholder="you@company.com" required class="font-livvic w-full px-3 py-2 placeholder-gray-300 border-b-2 border-gray-200 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
-                                    <div class="empty-feedback text-red-400 text-sm mt-1">
+                                    <div class="empty-feedback text-red-400  mt-1">
                                         Please provide your email address.
                                     </div>
                                     <div class="invalid-feedback text-red-400 text-sm mt-1">
@@ -135,7 +135,7 @@
 
                             <div class="sm:flex mb-6 sm:space-x-4">
                                 <div class="w-full md:w-1/2">
-                                    <label for="service" class="block text-sm text-gray-600 dark:text-gray-400 font-semibold">Select Your
+                                    <label for="service" class="block text-gray-600 dark:text-gray-400 font-semibold">Select Your
                                         Service</label>
                                     <div class="select py-2 placeholder-gray-300 border-b-2 border-gray-200 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300">
                                         <select name="format" id="format" class="text-black font-livvic">
@@ -151,17 +151,17 @@
                                     </div>
                                 </div>
                                 <div class="w-full md:w-1/2 sm:mt-0 mt-2">
-                                    <label for="phone" class="block text-sm text-gray-600 dark:text-gray-400 font-semibold">Phone
+                                    <label for="phone" class="block  text-gray-600 dark:text-gray-400 font-semibold">Phone
                                         Number</label>
                                     <input type="text" name="phone" id="phone" placeholder="+91 986XXXXXXX" required class="font-livvic w-full px-3 py-2 placeholder-gray-300 border-b-2 border-gray-200 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
 
-                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                    <div class="empty-feedback invalid-feedback text-red-400  mt-1">
                                         Please provide your phone number.
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-6">
-                                <label for="message" class="block text-sm text-gray-600 dark:text-gray-400 font-semibold">Your
+                                <label for="message" class="block  text-gray-600 dark:text-gray-400 font-semibold">Your
                                     Message</label>
 
                                 <textarea rows="5" name="message" id="message" placeholder="Your Message" class="font-livvic w-full px-3 py-2 placeholder-gray-300 border-b-2 border-gray-200 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
