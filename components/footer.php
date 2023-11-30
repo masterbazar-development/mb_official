@@ -1,6 +1,6 @@
 <footer class="lg:text-left border-t-2 border-gray-400 mt-32">
     <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-    <div class="mx-6 py-20 text-center flex justify-center md:text-left">
+    <div class="mx-6 py-12 text-center flex justify-center md:text-left">
         <div class="max-w-screen-xl">
             <div class="grid-1 grid gap-4 lg:gap-32 md:grid-cols-3">
                 <div class="text-center grid items-center md:my-0 my-6  ">
@@ -23,7 +23,7 @@
                     <h6 class="mb-8 text-3xl flex items-center text-head justify-center font-extrabold text-gray-800 uppercase md:justify-start">
                         Follow Us
                     </h6>
-                    <p class="mb-1 text-xl font-bold text-head">Social Links</p>
+                    <h4 class="mb-2 text-xl font-bold text-head">Social Links</h4>
                     <div class="mb-2 flex gap-5 justify-center md:justify-start text-blue">
                         <a href="https://www.instagram.com/themasterbazar?igshid=YmMyMTA2M2Y=" class="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-[#264CC5] hover:fill-[#264CC5] hover:scale-150" fill="currentColor" viewBox="0 0 24 24">
@@ -45,6 +45,17 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-[#264CC5] hover:fill-[#264CC5] hover:scale-150" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                             </svg>
+                        </a>
+                    </div>
+
+                    <h4 class="mb-1 mt-6 text-xl font-bold text-head">Quick Links</h4>
+                    <div class="flex justify-start items-start flex-col gap-1 text-gray-700  font-semibold">
+                    <a href="https://www.linkedin.com/company/masterbazar/" class=" hover:text-blue">
+                        <h4>Terms & Conditions</h4>    
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/masterbazar/" class=" hover:text-blue">
+                         <h4>Privacy Policy</h4>   
                         </a>
                     </div>
                 </div>
