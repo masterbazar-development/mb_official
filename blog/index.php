@@ -39,10 +39,10 @@ include('../mb-admin/config/dbcon.php');
         ?>
             <p class=" text-gray-800"><?php // echo $first50Words; 
                                       ?></p>
-            <div class="image-container trigger baksablog rounded-md">
-              <div class="img-wrapper">
-                <a href="../blogs/<?= $results['slug'] ?>">
-                  <img src="../assets/client/images/blog/<?= $results['image'] ?>" class="w-full rounded-md">
+            <div class="image-container rounded-md">
+              <div class="img-wrapper ">
+                <a href="../blogs/<?= $results['slug'] ?>" class="inline-block overflow-hidden">
+                  <img src="../assets/client/images/blog/<?= $results['image'] ?>" class="w-full rounded-md transition-all duration-700 ease-in-out hover:scale-[1.01]">
                 </a>
               </div>
               <div class="p-3 md:p-6">

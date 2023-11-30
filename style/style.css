@@ -654,5 +654,14 @@ select::-ms-expand {
 		font-size: 15px;
 	}
 }
-
+.pagination-link.active-gallery{
+ background-color: #4DA1F8;
+ color: white;
+}
+/* Add this to your CSS file or style section */
+.category-item.active {
+    background-color: #264CC5; /* Change to your desired active state styles */
+    color: white;
+  }
+  
 /* our servives time line section css end */

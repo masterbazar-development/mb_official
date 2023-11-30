@@ -15,7 +15,8 @@ include('../includes/navbar-top.php')
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form id="uploadForm" method="POST" enctype="multipart/form-data">
+                    <!-- edit -->
+                    <form id="editFormContainer" class="d-none" method="POST" enctype="multipart/form-data">
                         <div class="col-md-12 mb-3">
                             <lable for="">Category List</lable>
                             <?php
@@ -62,6 +63,55 @@ include('../includes/navbar-top.php')
                             </div>
                         </div>
                     </form>
+                    <!-- edit -->
+                    <form id="uploadForm" method="POST" enctype="multipart/form-data">
+                        <div class="col-md-12 mb-3">
+                            <lable for="">Category List</lable>
+                            <?php
+                            $category = "SELECT * FROM categories WHERE status='0' AND main_category='GALLERY'";
+                            $category_run = mysqli_query($con, $category);
+                            // print_r($category_run);
+                            if (mysqli_num_rows($category_run) > 0) {
+                            ?>
+                                <select name="category" class="form-control">
+                                    <option value="">-- Select Category --</option>
+                                    <?php
+                                    foreach ($category_run as $categoryitem) {
+                                    ?>
+                                        <option value="<?php echo  $categoryitem['id'] ?>">
+                                            <?php echo  $categoryitem['name'] ?>
+                                        </option>
+                                    <?php
+                                    }
+                                    ?>
+                                </select>
+                            <?php
+                            } else {
+                            ?>
+                                <h6>No Category Available</h6>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <lable for="">Upload Images</lable>
+                                <input type="file" name="files[]" class="form-control" id="files" multiple required>
+                            </div>
+                            <div class="col-md-5 mb-3" id="altTagsContainer">
+                                <lable for="">Alt Tag</lable>
+                                <input type="text" name="alt_tags[]" class="form-control" placeholder="Enter alt tag" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <lable for="">Status</lable>
+                                <input type="checkbox" name="status" width="70px" height="70px" />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <button type="submit" name="images_add" onclick="uploadFiles()" class="btn btn-primary">Add Images</button>
+                                <button type= "submit" class="d-none" name="edit_add" onclick="" class="btn btn-primary">Edit Image</button>
+                            </div>
+                        </div>
+                    </form>
                     <!-- images list -->
                     <!-- Display uploaded images -->
                     <div id="imageList">
@@ -89,7 +139,7 @@ include('../includes/navbar-top.php')
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $itemsPerPage = 10;//always put same value 
+                                        $itemsPerPage = 10; //always put same value 
                                         $page = isset($_POST['page']) ? $_POST['page'] : 1;
                                         // Calculate the offset
                                         $offset = ($page - 1) * $itemsPerPage;
@@ -224,28 +274,28 @@ include('../includes/navbar-top.php')
     });
     //pagination
     function loadPaginationData(page) {
-    fetch('pagination', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: 'page=' + page,
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('categoryTable').getElementsByTagName('tbody')[0].innerHTML = data;
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            // Display an error message to the user
-            alert('Error loading pagination data. Please try again.');
-        });
-}
+        fetch('pagination', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'page=' + page,
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('categoryTable').getElementsByTagName('tbody')[0].innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Display an error message to the user
+                alert('Error loading pagination data. Please try again.');
+            });
+    }
     // Initial load
     loadPaginationData(1);
 
@@ -265,39 +315,34 @@ include('../includes/navbar-top.php')
             loadPaginationData(page);
         }
     });
-        //edit-faq
-        document.getElementById('categoryTable').addEventListener('click', function(e) {
-        if(e.target.classList.contains('edit-btn')) {
-        e.preventDefault();
-        var editId = e.target.dataset.id;
-        console.log(editId);
-        fetch('edit-images?id=' + editId, {
-            method: 'POST',
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        
-        .then(data => {
-            console.log('Server Response:', data);
-            if (data.success) {
-                populateEditForm(data.imageData);
-                document.getElementById('editFormContainer').style.display = 'block';
-            } else {
-                console.error('Error: ', data); // Log the entire response for debugging
-                console.error('Error fetching image data');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    }
-});
-
+    //edit-faq
+    document.getElementById('categoryTable').addEventListener('click', function(e) {
+        if (e.target.classList.contains('edit-btn')) {
+            e.preventDefault();
+            var editId = e.target.dataset.id;
+            fetch('edit-images?id=' + editId, {
+                    method: 'POST',
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Server Response:', data);
+                    if (data.success) {
+                        populateEditForm(data.imageData);
+                        document.getElementById('editFormContainer').style.display = 'block';
+                    } else {
+                        console.error('Error: ', data); // Log the entire response for debugging
+                        console.error('Error fetching image data');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    });
 </script>
-
-
 <?php include('../includes/footer.php') ?>
