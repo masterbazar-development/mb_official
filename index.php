@@ -48,8 +48,8 @@
                     </a>
             </div>
             <div class="wrapper w-full relative lg:flex hidden justify-end items-center lg:h-[100vh]">
-                <div id="gradientblob" class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[500px] xl:w-[400px] lg:w-[300px] 2xl:h-[500px] xl:h-[400px] lg:[300px]"></div>
-                <div id="imageblob" class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[450px] xl:w-[350px] lg:w-[250px] 2xl:h-[450px] xl:h-[350px] lg:h-[250px]"></div>
+                <div id="gradientblob" class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[600px] xl:w-[400px] lg:w-[300px] 2xl:h-[600px] xl:h-[400px] lg:[300px]"></div>
+                <div id="imageblob" class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[550px] xl:w-[350px] lg:w-[250px] 2xl:h-[550px] xl:h-[350px] lg:h-[250px]"></div>
             </div>
         </div>
     </div>
