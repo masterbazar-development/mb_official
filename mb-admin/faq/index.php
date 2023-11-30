@@ -109,13 +109,6 @@ include('../includes/navbar-top.php')
     function editfaqs(event){
         event.preventDefault();
 
-        // const obj = {
-        //     id: idToEdit,
-        //     category: document.getElementById('events').value,
-        //     question: document.getElementById('question').value,
-        //     answer: document.getElementById('answer').value,
-        //     priority_order: document.getElementById('priority_order').value
-        // };
         const obj = {
             id: idToEdit,
             category: events.value,
@@ -123,8 +116,6 @@ include('../includes/navbar-top.php')
             answer: answer.value,
             priority_order: priority_order.value
         };
-
-        let dataToEdit;
         fetch('edit_faq', {
             method: 'POST',
             headers: {

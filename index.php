@@ -1,10 +1,11 @@
 <?php include('./components/header.php'); ?>
 <?php include('./components/loader.php'); ?>
-<?php include('./components/navmenu.php'); ?>
+<?php include('./components/navmenu.php'); 
+include('mb-admin/config/dbcon.php');?>
 
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 sm:-right-40 -right-40 z-[95]">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
@@ -23,11 +24,11 @@
                 </div>
             </div>
 
-            <div class="sm:flex hidden justify-center items-center gap-4">
-                <button role="button" class="mx-auto w-max py-3 px-8 font-bold text-head bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] rounded-full flex justify-center gap-4 items-center">
+            <div class="sm:flex hidden justify-center items-center gap-4 ">
+                <button role="button" class="mx-auto shadow-xl w-max py-3 px-8 font-medium font-livvic text-head bg-blue text-white rounded-full flex justify-center gap-4 items-center">
                     <span>Let's Have A Talk!
                     </span>
-                    <span><i class="fa-solid fa-message text-xl text-blue"></i></span>
+                    <span><i class="fa-solid fa-message text-xl text-white"></i></span>
                 </button>
             </div>
         </header>
@@ -37,18 +38,18 @@
                 <h1 class="text-left 2xl:text-6xl md:text-5xl text-4xl text-head md:font-extrabold sm:font-black font-semibold">Accelerate <br /> Your Business Growth With <br /> <span class="text-[#264CC5] italic md:font-extrabold sm:font-black font-extrabold"> Master Bazar.</span></h1>
                 <p class="sm:text-lg font-livvic font-normal mt-5  text-[#334155] w-full">From Web Development to Digital Marketing, We'll Help You Grow Your Business at Lightning Speed. We understand how challenging it can be to sail through the vast sea of the digital world, which is why we are here to be your captain in your digital journey and bring growth to your business.</p>
 
-                    <a href=""><button class="mx-auto w-max py-3 px-8 font-bold md:mt-10 mt-6 text-head bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] rounded-full">
-                            <span class="button__label flex justify-center items-center gap-4">Boost Your Business
+                    <a href=""><button class="mx-auto shadow-xl w-max py-3 px-8 font-medium md:mt-10 mt-6 text-white bg-blue  rounded-full">
+                            <span class="button__label flex justify-center items-center font-livvic gap-4">Boost Your Business
                                 <span class="relative flex  h-[12px] w-[12px] ml-[-8px]">
-                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2563EB]  opacity-75"></span>
-                                    <span class="relative inline-flex rounded-full h-[4px] w-[4px] bg-[#2563EB] ml-[4px] mt-[4px]"></span>
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white  opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-[4px] w-[4px] bg-white ml-[4px] mt-[4px]"></span>
                                 </span>
                             </span>
                         </button>
                     </a>
             </div>
             <div class="wrapper w-full relative lg:flex hidden justify-end items-center lg:h-[100vh]">
-                <div id="gradientblob" class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[600px] xl:w-[400px] lg:w-[300px] 2xl:h-[600px] xl:h-[400px] lg:[300px]"></div>
+                <div id="gradientblob" class="blob bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[600px] xl:w-[400px] lg:w-[300px] 2xl:h-[600px] xl:h-[400px] lg:[300px]"></div>
                 <div id="imageblob" class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[550px] xl:w-[350px] lg:w-[250px] 2xl:h-[550px] xl:h-[350px] lg:h-[250px]"></div>
             </div>
         </div>
@@ -145,66 +146,100 @@
 <?php include('./components/blogsSection.php') ?>
 
 <!-- FAQs Section Starts From Here -->
-<section class="sm:my-28 my-10 z-[40] bg-white py-20">
-    <h4 class="text-center md:text-5xl text-4xl sm:mb-12 mb-6 text-head font-extrabold">Frequently Asked
-        Question</h4>
 
-    <div class="sm:text-lg max-w-5xl mx-auto">
-        <div class="space-y-6">
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl space-y-6">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-right"></i>
-                </div>
-                <p class="font-normal">
-                    Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa
-                    Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum
-                    Dolore Fu Fugiat Nulla Pariatur</p>
-            </div>
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <p></p>
-            </div>
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts
-                        And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <p></p>
-            </div>
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts
-                        And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <p></p>
-            </div>
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts
-                        And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <p></p>
-            </div>
-        </div>
+<section class="sm:my-28 my-10 z-[40] bg-white py-20">
+    <div class="flex flex-row justify-center items-center">
+        <h4 class="text-center md:text-5xl text-4xl sm:mb-12 mb-6 text-head font-extrabold">Frequently Asked Question</h4>
     </div>
+    <div id="faqContainer" class="grid divide-y divide-neutral-200 max-w-5xl mx-auto mt-10">
+        <!-- JavaScript will populate this container -->
+    </div>
+
+    <script>
+        // Example data (replace this with data fetched from an API or another source)
+        var faqData = [
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            // Add more FAQ items as needed
+        ];
+
+        // Function to create a FAQ item
+        function createFAQItem(question, answer) {
+            var details = document.createElement('details');
+            details.className = 'group w-full bg-[#F8FAFC] sm:p-10 p-3 rounded-xl';
+
+            var summary = document.createElement('summary');
+            summary.className = 'flex justify-between items-center font-medium cursor-pointer list-none text-xl font-lora';
+
+            var questionSpan = document.createElement('span');
+            questionSpan.textContent = question;
+
+            var iconSpan = document.createElement('span');
+            iconSpan.className = 'transition group-open:rotate-180';
+
+            var iconSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            iconSvg.setAttribute('fill', 'none');
+            iconSvg.setAttribute('height', '24');
+            iconSvg.setAttribute('shape-rendering', 'geometricPrecision');
+            iconSvg.setAttribute('stroke', 'currentColor');
+            iconSvg.setAttribute('stroke-linecap', 'round');
+            iconSvg.setAttribute('stroke-linejoin', 'round');
+            iconSvg.setAttribute('stroke-width', '1.5');
+            iconSvg.setAttribute('viewBox', '0 0 24 24');
+            iconSvg.setAttribute('width', '24');
+
+            var iconPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            iconPath.setAttribute('d', 'M6 9l6 6 6-6');
+
+            iconSvg.appendChild(iconPath);
+            iconSpan.appendChild(iconSvg);
+
+            summary.appendChild(questionSpan);
+            summary.appendChild(iconSpan);
+            details.appendChild(summary);
+
+            var answerParagraph = document.createElement('p');
+            answerParagraph.className = 'font-normal';
+            answerParagraph.textContent = answer;
+
+            details.appendChild(answerParagraph);
+
+            return details;
+        }
+
+        // Function to populate FAQ items
+        function populateFAQ() {
+            var faqContainer = document.getElementById('faqContainer');
+
+            faqData.forEach(function (item) {
+                var faqItem = createFAQItem(item.question, item.answer);
+                faqContainer.appendChild(faqItem);
+            });
+        }
+
+        // Call the function to populate FAQ items
+        populateFAQ();
+    </script>
 </section>
+
 <!-- FAQs Section Ends Here -->
 
 <!-- Contact us Starts from here -->
@@ -217,22 +252,22 @@
 <!-- Subscribe to us Ends Here -->
 
 <!-- this is a hamburger script -->
-<script>
+<!-- <script>
     function show() {
         document.querySelector('.hamburger').classList.
         toggle('open')
         document.querySelector('.navigation').classList.
         toggle('active')
     }
-</script>
+</script> -->
 
 <!-- this is a script for blur -->
-<script>
+<!-- <script>
     document.getElementById('blurButton').addEventListener('click', function() {
         var targetDiv = document.getElementById('targetDiv');
         targetDiv.classList.toggle('filter-blur');
     });
-</script>
+</script> -->
 
 <?php include('./components/cursor.php'); ?>
 <?php include('./components/footer.php'); ?>

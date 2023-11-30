@@ -1,4 +1,4 @@
-<header class="flex justify-between items-center">
+<header class="flex justify-between items-center px-[10vw] absolute left-0 top-3 w-full">
     <div class="flex justify-start items-center gap-2 py-4">
         <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="2xl:w-20 w-16 2xl:h-20 h-16" alt="masterbazar-logo">
         <div class="">
@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div class="flex justify-center items-center gap-4">
+    <div class="hidden lg:block flex justify-center items-center gap-4">
         <button role="button" class="mx-auto w-max py-3 px-8 font-bold text-head bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] rounded-full flex justify-center gap-4 items-center">
             <span>Let's Have A Talk!
             </span>

@@ -10,11 +10,11 @@
             </div>
 
             <nav class="2xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-extrabold flex justify-start items-start 2xl:gap-4 md:gap-2 flex-col ">
-                <a href="">Home</a>
-                <a href="" class="text-blue">About Us</a>
+            <a href="<?php echo $mainUrl; ?>">Home</a>
+                <a href="<?php echo $mainUrl; ?>aboutus" class="text-blue">About Us</a>
                 <a href="">Career</a>
-                <a href="">Blog</a>
-                <a href="">Contact Us</a>
+                <a href="<?php echo $mainUrl; ?>blog">Blog</a>
+                <a href="<?php echo $mainUrl; ?>contactus">Contact Us</a>
 
                 <div class="lg:block hidden">
                     <h3 class="text-head font-extrabold text-2xl mt-10">Social Links
@@ -47,50 +47,50 @@
             <nav class="2xl:text-2xl text-xl font-medium flex justify-start items-start flex-col">
                 <h3 class="2xl:text-4xl md:text-3xl text-2xl text-blue font-extrabold 2xl:mb-4 mb-2">What We Do!</h3>
                 <ul class="space-y-2">
-                    <li> <a href="" class="font-bold">Development</a>
+                    <li> <a href="http://localhost/mb_official/services/development/" class="font-bold">Development</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="">Software Development</a>
+                                <a href="http://localhost/mb_official/services/development/software-development">Software Development</a>
                             </li>
                             <li>
-                                <a href="">Application Development</a>
+                                <a href="http://localhost/mb_official/services/development/app-development">Application Development</a>
                             </li>
                             <li>
-                                <a href="">Website Development</a>
+                                <a href="http://localhost/mb_official/services/development/web-development">Website Development</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="" class="font-bold">Designing</a>
+                    <li> <a href="http://localhost/mb_official/services/designing/" class="font-bold">Designing</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="">UI UX Designing</a>
+                                <a href="http://localhost/mb_official/services/designing/uiux">UI UX Designing</a>
                             </li>
                             <li>
-                                <a href="">Graphics Designing</a>
+                                <a href="http://localhost/mb_official/services/designing/graphic">Graphics Designing</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="" class="font-bold">Digital Marketing</a>
+                    <li> <a href="http://localhost/mb_official/services/digital%20marketing/" class="font-bold">Digital Marketing</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="">Search Engine Optimization</a>
+                                <a href="http://localhost/mb_official/services/digital%20marketing/seo">Search Engine Optimization</a>
                             </li>
                             <li>
-                                <a href="">Social Media Marketing</a>
+                                <a href="http://localhost/mb_official/services/digital%20marketing/smm">Social Media Marketing</a>
                             </li>
                             <li>
-                                <a href="">Social Media Optimization</a>
+                                <a href="http://localhost/mb_official/services/digital%20marketing/smo">Social Media Optimization</a>
                             </li>
                             <li>
-                                <a href="">Paid Adverstisment</a>
+                                <a href="http://localhost/mb_official/services/digital%20marketing/paidads">Paid Adverstisment</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="" class="font-bold">Sales and Support</a></li>
-                    <li> <a href="" class="font-bold">Content Writing</a></li>
+                    <li> <a href="http://localhost/mb_official/services/sales-and-support/" class="font-bold">Sales and Support</a></li>
+                    <li> <a href="http://localhost/mb_official/services/content-writing/" class="font-bold">Content Writing</a></li>
                 </ul>
             </nav>
             <nav class="2xl:text-2xl text-xl font-medium flex justify-start items-start flex-col ">

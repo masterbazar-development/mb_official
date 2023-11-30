@@ -13,21 +13,21 @@ if ($result->num_rows > 0) {
 	while ($row = $result->fetch_assoc()) {
 
 		$posts[] = '<div class=" text-black image-container group/image">' .
-		'<div class="img-wrapper trigger rounded-md group-hover/image">' .
-		'<a href="../blogs/' . $row['slug'] . '">' .
-		'<img src="../assets/client/images/blog/' . $row['image'] . '" class="rounded-md">' .
-		'</a>' .
-		'</div>' .
-		'<a href="../blogs/' . $row['slug'] . '">' .
-		'<h6 class="text-head font-semibold  text-lg font-oswald transition duration-150 hover:underline hover:underline-offset-4 target  group-hover/image:underline-offset-4 group-hover/image:underline ">' . $row['name'] . '</h6>' .
-		'</a>' .
-		'</div>';
-}
-// Check if there are more images available
-$hasMoreImages = $result->num_rows >= $limit;
+			'<div class="img-wrapper trigger rounded-md group-hover/image">' .
+			'<a href="../blogs/' . $row['slug'] . '">' .
+			'<img src="../assets/client/images/blog/' . $row['image'] . '" class="rounded-md">' .
+			'</a>' .
+			'</div>' .
+			'<a href="../blogs/' . $row['slug'] . '">' .
+			'<h6 class="text-head font-semibold  text-lg font-oswald transition duration-150 hover:underline hover:underline-offset-4 target  group-hover/image:underline-offset-4 group-hover/image:underline ">' . $row['name'] . '</h6>' .
+			'</a>' .
+			'</div>';
+	}
+	// Check if there are more images available
+	$hasMoreImages = $result->num_rows >= $limit;
 } else {
-// No more images
-$hasMoreImages = false;
+	// No more images
+	$hasMoreImages = false;
 }
 
 // Close the database connection
@@ -35,8 +35,8 @@ $con->close();
 
 // Return the posts and the flag indicating whether more images are available
 $response = array(
-'posts' => implode('', $posts),
-'hasMoreImages' => $hasMoreImages
+	'posts' => implode('', $posts),
+	'hasMoreImages' => $hasMoreImages
 );
 
 // Send the response as JSON

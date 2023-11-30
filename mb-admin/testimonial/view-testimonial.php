@@ -4,13 +4,13 @@ include('../authentication.php');
 include('../includes/header.php');
 include('../includes/navbar-top.php');
 
-if (!isset($_GET['page'])) {
-    $page = 1;
-} else {
-    $page = $_GET['page'];
-}
-$limit = 10;
-$offset = ($page - 1) * $limit;
+// if (!isset($_GET['page'])) {
+//     $page = 1;
+// } else {
+//     $page = $_GET['page'];
+// }
+// $limit = 1;
+// $offset = ($page - 1) * $limit;
 ?>
 <div class="container-fluid px-4">
     <div class="row my-4">
@@ -39,7 +39,8 @@ $offset = ($page - 1) * $limit;
                             </thead>
                             <tbody>
                                 <?php
-                                $post = "SELECT * FROM testimonials ORDER BY testimonials.id DESC limit $offset,$limit";
+                                // $post = "SELECT * FROM testimonials ORDER BY testimonials.id DESC limit $offset,$limit";
+                                $post = "SELECT * FROM testimonials ORDER BY testimonials.id DESC ";
                                 // $post = "SELECT p.*, c.name AS cname FROM posts p JOIN categories c ON c.id = p.category_id";
                                 $posts_run = mysqli_query($con, $post);
 
@@ -86,22 +87,22 @@ $offset = ($page - 1) * $limit;
                         </table>
                         <!-- Pagination begin -->
                         <?php
-                        $pagination = "SELECT * FROM posts";
-                        $run_q = mysqli_query($con, $pagination);
-                        $total_post = mysqli_num_rows($run_q);
-                        $pages = ceil($total_post / $limit);
-                        if ($total_post > $limit) {
-                        ?>
-                            <ul class="pagination pt-2 pb-5">
-                                <?php for ($i = 1; $i <= $pages; $i++) { ?>
-                                    <li class="page-item <?= ($i == $page) ? $active = "active" : ""; ?>">
-                                        <a href="/post-view.php?page=<?= $i ?>" class="page-link"><?= $i ?>
-                                        </a>
-                                    </li>
-                                <?php } ?>
-                            </ul>
+                        // $pagination = "SELECT * FROM testimonials";
+                        // $run_q = mysqli_query($con, $pagination);
+                        // $total_post = mysqli_num_rows($run_q);
+                        // $pages = ceil($total_post / $limit);
+                        // if ($total_post > $limit) {
+                        // ?>
+                        <!-- //     <ul class="pagination pt-2 pb-5">
+                        //         <?php for ($i = 1; $i <= $pages; $i++) { ?>
+                        //             <li class="page-item <?= ($i == $page) ? $active = "active" : ""; ?>">
+                        //                 <a href="./view-testimonials?page=<?= $i ?>" class="page-link"><?= $i ?>
+                        //                 </a>
+                        //             </li>
+                        //         <?php } ?>
+                        //     </ul> -->
                         <?php
-                        }
+                        // }
                         ?>
                         <!-- Pagination End -->
                     </div>

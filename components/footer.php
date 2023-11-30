@@ -1,9 +1,27 @@
-
-<footer class="lg:text-left border-t-2 border-gray-400">
+<footer class="lg:text-left border-t-2 border-gray-400 mt-32">
     <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
     <div class="mx-6 py-10 text-center flex justify-center md:text-left">
         <div class="max-w-screen-xl">
+            <!-- Subscription -->
+
+            <!-- Subscription -->
+
             <div class="grid-1 grid gap-4 lg:gap-32 md:grid-cols-3">
+            <div class="text-center grid items-center md:my-0 my-6 order-2 md:order-1">
+                    <a href="<?php echo $mainUrl; ?>" class=" ">
+                        <img src="<?php echo $mainUrl ?>assets/client/images/Master.png" class="md:w-64 mb-6  sm:w-[16rem]">
+                    </a>
+
+                    <h3 class="text-2xl font-extrabold text-start text-head">Don't Miss Out Our New <span class="text-blue">Blog Post!</span></h3>
+                    <p class="font-livvic  text-start text-gray-700 mt-1">SignUp to join our newsletters and get the current trends and news of business and digital world.</p>
+
+                    <form action="" class="my-4">
+                        <div class="flex justify-center items-center flex-col gap-4">
+                            <input type="text" class="p-3 rounded-md bg-slate-100 w-full text-lg font-livvic" placeholder="Email Id">
+                            <button class="py-3 px-6 w-full rounded-md bg-[#7DA5FB33] text-head text-lg font-semibold w-full font-livvic">Submit</button>
+                        </div>
+                    </form>
+                </div>
                 <!-- Tailwind Elements section -->
                 <div class="md:order-1 order-2 mb-6">
                     <h6 class="mb-8 text-2xl flex items-center justify-center font-extrabold text-gray-800 uppercase md:justify-start">
@@ -34,12 +52,7 @@
                     </p>
                 </div>
                 <!-- Products section -->
-                <div class="text-center grid items-center md:my-0 my-6 order-1 md:order-2">
-    <a href="<?php echo $mainUrl; ?>" class=" ">
-
-                        <img src="<?php echo $mainUrl ?>assets/client/images/Master.png" class="md:w-full  sm:w-[20rem]">
-                    </a>
-                </div>
+                
 
                 <div class="md:ml-[-2rem] lg:ml-[0rem] grid justify-center order-3">
                     <h6 class="md:mb-8 mb-3 text-2xl flex justify-center font-extrabold uppercase md:justify-start">
@@ -80,9 +93,9 @@
 </footer>
 
 <div class="lg:visible hidden">
-<?php include('../../components/cursor.php'); ?>
+    <?php include('../../components/cursor.php'); ?>
 </div>
-
+<script src="<?php echo $mainUrl; ?>script.js" defer></script>
 </body>
 
 </html>
