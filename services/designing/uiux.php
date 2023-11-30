@@ -35,7 +35,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
         </div>
       </div>
       <div class="lg:w-2/3 order-1 lg:order-2">
-        <img src="<?php echo $mainUrl; ?>assets/client/images/designbanner.png" alt="" class="w-full">
+        <img src="<?php echo $mainUrl; ?>assets/client/images/designbanner.png" alt="" class="w-full pt-14">
       </div>
     </div>
 
@@ -61,7 +61,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <section class="lg:hidden block  max-w-full mx-[5vw] md:mx-[10vw] mt-16 md:mt-32">
   <div class=" ">
-    <img src="<?php echo $mainUrl; ?>assets/client/images/uiuxsec.jpg" alt="" class="w-full">
+    <img src="<?php echo $mainUrl; ?>assets/client/images/uiuxsec.jpg" alt="" class="w-full pt-14">
   </div>
   <div class="mt-5 my-auto">
     <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">We Craft Interfaces That Delight Users and Drive Business Success</h2>
@@ -73,7 +73,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <section class="lg:flex gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-20 md:mt-32">
   <div class="lg:w-[40%]">
-    <img src="<?php echo $mainUrl; ?>assets/client/images/desmainsec2.jpg" alt="" class="w-full">
+    <img src="<?php echo $mainUrl; ?>assets/client/images/desmainsec2.jpg" alt="" class="w-full ">
   </div>
   <div class="lg:w-[60%] my-auto">
     <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Make Users Fall in Love</h2>

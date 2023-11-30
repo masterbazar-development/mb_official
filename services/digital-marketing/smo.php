@@ -33,7 +33,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
                 </div>
             </div>
             <div class="lg:w-1/2 order-1 lg:order-2">
-                <img src="<?php echo $mainUrl; ?>assets/client/images/smoban.png" alt="" class="w-full">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/smoban.png" alt="" class="w-full pt-14">
             </div>
         </div>
 
@@ -44,7 +44,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <!-- second section starts here -->
 
-<section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
+<section class="hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">Optimization Solutions for Your Brand's Success</h2>
         <p class="lg:text-lg font-livvic xl:text-xl mt-5">

@@ -64,7 +64,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
     <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 mb-12 mt-12 lg:mby-auto">
       <div class="font-medium order-2 lg:order-1 flex flex-col justify-center max-w-7xl mx-auto text-center">
-        <img src="<?php echo $mainUrl; ?>assets/client/images/development-banner.png" class="w-[15rem] md:w-[30rem] mx-auto">
+        <img src="<?php echo $mainUrl; ?>assets/client/images/development-banner.png" class="w-[15rem] md:w-[30rem] mx-auto pt-10">
         <div class="md:block hidden">
           <div class="flex max-w-5xl mx-auto mt-2">
             <h1 class="2xl:text-6xl md:text-3xl text-xl text-head font-extrabold leading-snug">
