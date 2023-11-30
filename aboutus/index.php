@@ -16,11 +16,11 @@
     <?php include('../components/heroheader.php'); ?>
 
     <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 my-12 lg:my-auto">
-      <div class="lg:w-[60%] font-medium order-2 lg:order-1 2xl:py-20 flex flex-col justify-center">
+      <div class="lg:w-[50%] font-medium order-2 lg:order-1 2xl:py-20 flex flex-col justify-center">
         <h1 class="text-left 2xl:text-7xl text-5xl text-head font-extrabold">About Us</h1>
         <p class="text-lg font-livvic font-normal mt-5 text-[#334155] w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
       </div>
-      <div class="w-full lg:w-[40%] wrapper order-1 lg:order-2 relative flex justify-center items-center lg:h-[80vh]">
+      <div class="w-full lg:w-[50%] wrapper order-1 lg:order-2 relative flex justify-center items-center lg:h-[80vh]">
         <img src="<?php echo $mainUrl; ?>assets/client/images/about-us.png" alt="" class="hover:scale-[1.04] transition duration-500 ease-in-out">
       </div>
     </div>
