@@ -91,8 +91,6 @@ include('../includes/navbar-top.php')
             answer: document.getElementById('answer').value,
             priority_order: document.getElementById('priority_order').value
         };
-
-
         fetch('edit_faq', {
             method: 'POST',
             headers: {

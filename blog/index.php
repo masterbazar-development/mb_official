@@ -5,6 +5,8 @@ include('../components/header.php');
 include('../components/loader.php');
 include('../mb-admin/config/dbcon.php');
 ?>
+<?php include('../components/navmenu.php'); ?>
+
 <!-- Ellipse Starts From Here -->
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
 <!-- Ellipse ends Here -->
