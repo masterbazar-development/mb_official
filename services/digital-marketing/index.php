@@ -33,7 +33,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
         <div class="lg:w-1/2 order-1 lg:order-2">
-            <img src="<?php echo $mainUrl; ?>assets/client/images/marketting-banner.png" alt="" class="w-full">
+            <img src="<?php echo $mainUrl; ?>assets/client/images/marketting-banner.png" alt="" class="w-full pt-14">
         </div>
     </div>
 </section>

@@ -20,7 +20,7 @@ include('../mb-admin/config/dbcon.php');
   </div>
   <div class="py-20 px-5 sm:px-8 md:px-28 lg:px-20 xl:px-[14%] 2xl:px-[15%] text-black">
     <div class="lg:flex gap-20">
-      <div class="lg:w-[70%]">
+      <div class="lg:w-[70%] pt-14">
         <?php
         $post = "SELECT * FROM posts WHERE status='0' ORDER BY posts.id DESC LIMIT 1 offset 0";
 
@@ -91,7 +91,7 @@ include('../mb-admin/config/dbcon.php');
       </div>
 
       <!--sidebar short-->
-      <div class="lg:w-[34%] lg:flex lg:flex-col lg:justify-start text-gray-800 ">
+      <div class="lg:w-[34%] lg:flex lg:flex-col lg:justify-start text-gray-800 pt-14">
         <?php include('r-sidebar.php'); ?>
         <!--sidebar short end-->
       </div>
