@@ -47,50 +47,50 @@
             <nav class="2xl:text-2xl text-xl font-medium flex justify-start items-start flex-col">
                 <h3 class="2xl:text-4xl md:text-3xl text-2xl text-blue font-extrabold 2xl:mb-4 mb-2">What We Do!</h3>
                 <ul class="space-y-2">
-                    <li> <a href="http://localhost/mb_official/services/development/" class="font-bold">Development</a>
+                    <li> <a href="<?php echo $mainUrl; ?>services/development" class="font-bold">Development</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="http://localhost/mb_official/services/development/software-development">Software Development</a>
+                                <a href="<?php echo $mainUrl; ?>services/development/software-development">Software Development</a>
                             </li>
                             <li>
-                                <a href="http://localhost/mb_official/services/development/app-development">Application Development</a>
+                                <a href="<?php echo $mainUrl; ?>services/development/app-development">Application Development</a>
                             </li>
                             <li>
-                                <a href="http://localhost/mb_official/services/development/web-development">Website Development</a>
+                                <a href="<?php echo $mainUrl; ?>services/development/web-development">Website Development</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="http://localhost/mb_official/services/designing/" class="font-bold">Designing</a>
+                    <li> <a href="<?php echo $mainUrl; ?>services/designing" class="font-bold">Designing</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="http://localhost/mb_official/services/designing/uiux">UI UX Designing</a>
+                                <a href="<?php echo $mainUrl; ?>services/designing/uiux">UI UX Designing</a>
                             </li>
                             <li>
-                                <a href="http://localhost/mb_official/services/designing/graphic">Graphics Designing</a>
+                                <a href="<?php echo $mainUrl; ?>services/designing/graphic">Graphics Designing</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="http://localhost/mb_official/services/digital%20marketing/" class="font-bold">Digital Marketing</a>
+                    <li> <a href="<?php echo $mainUrl; ?>services/digital marketing" class="font-bold">Digital Marketing</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="http://localhost/mb_official/services/digital%20marketing/seo">Search Engine Optimization</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital marketing/seo">Search Engine Optimization</a>
                             </li>
                             <li>
-                                <a href="http://localhost/mb_official/services/digital%20marketing/smm">Social Media Marketing</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital marketing/smm">Social Media Marketing</a>
                             </li>
                             <li>
-                                <a href="http://localhost/mb_official/services/digital%20marketing/smo">Social Media Optimization</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital marketing/smo">Social Media Optimization</a>
                             </li>
                             <li>
-                                <a href="http://localhost/mb_official/services/digital%20marketing/paidads">Paid Adverstisment</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital marketing/paidads">Paid Adverstisment</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="http://localhost/mb_official/services/sales-and-support/" class="font-bold">Sales and Support</a></li>
-                    <li> <a href="http://localhost/mb_official/services/content-writing/" class="font-bold">Content Writing</a></li>
+                    <li> <a href="<?php echo $mainUrl; ?>services/sales-and-support" class="font-bold">Sales and Support</a></li>
+                    <li> <a href="<?php echo $mainUrl; ?>services/content-writing" class="font-bold">Content Writing</a></li>
                 </ul>
             </nav>
             <nav class="2xl:text-2xl text-xl font-medium flex justify-start items-start flex-col ">
