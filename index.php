@@ -1,11 +1,11 @@
 <?php include('./components/header.php'); ?>
 <?php include('./components/loader.php'); ?>
 <?php include('./components/navmenu.php'); 
-include('mb-admin/config/dbcon.php');?>
+include('./mb-admin/config/dbcon.php');?>
 
 
 <!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 sm:-right-40 -right-40 z-[95]">
+<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
@@ -146,66 +146,100 @@ include('mb-admin/config/dbcon.php');?>
 <?php include('./components/blogsSection.php') ?>
 
 <!-- FAQs Section Starts From Here -->
-<section class="sm:my-28 my-10 z-[40] bg-white py-20">
-    <h4 class="text-center md:text-5xl text-4xl sm:mb-12 mb-6 text-head font-extrabold">Frequently Asked
-        Question</h4>
 
-    <div class="sm:text-lg max-w-5xl mx-auto">
-        <div class="space-y-6">
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl space-y-6">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-right"></i>
-                </div>
-                <p class="font-normal">
-                    Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa
-                    Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum
-                    Dolore Fu Fugiat Nulla Pariatur</p>
-            </div>
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <p></p>
-            </div>
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts
-                        And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <p></p>
-            </div>
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts
-                        And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <p></p>
-            </div>
-            <div class="bg-[#F8FAFC] sm:p-10 p-3 rounded-xl">
-                <div class="w-full flex justify-between">
-                    <h4 class="font-semibold">
-                        Commonly Used In The Graphic, Print, And Publishing Industries For Previewing
-                        Layouts
-                        And
-                        Visual Mockups.</h4><i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <p></p>
-            </div>
-        </div>
+<section class="sm:my-28 my-10 z-[40] bg-white py-20">
+    <div class="flex flex-row justify-center items-center">
+        <h4 class="text-center md:text-5xl text-4xl sm:mb-12 mb-6 text-head font-extrabold">Frequently Asked Question</h4>
     </div>
+    <div id="faqContainer" class="grid divide-y divide-neutral-200 max-w-5xl mx-auto mt-10">
+        <!-- JavaScript will populate this container -->
+    </div>
+
+    <script>
+        // Example data (replace this with data fetched from an API or another source)
+        var faqData = [
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            {
+                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+                answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
+            },
+            // Add more FAQ items as needed
+        ];
+
+        // Function to create a FAQ item
+        function createFAQItem(question, answer) {
+            var details = document.createElement('details');
+            details.className = 'group w-full bg-[#F8FAFC] sm:p-10 p-3 rounded-xl';
+
+            var summary = document.createElement('summary');
+            summary.className = 'flex justify-between items-center font-medium cursor-pointer list-none text-xl font-lora';
+
+            var questionSpan = document.createElement('span');
+            questionSpan.textContent = question;
+
+            var iconSpan = document.createElement('span');
+            iconSpan.className = 'transition group-open:rotate-180';
+
+            var iconSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            iconSvg.setAttribute('fill', 'none');
+            iconSvg.setAttribute('height', '24');
+            iconSvg.setAttribute('shape-rendering', 'geometricPrecision');
+            iconSvg.setAttribute('stroke', 'currentColor');
+            iconSvg.setAttribute('stroke-linecap', 'round');
+            iconSvg.setAttribute('stroke-linejoin', 'round');
+            iconSvg.setAttribute('stroke-width', '1.5');
+            iconSvg.setAttribute('viewBox', '0 0 24 24');
+            iconSvg.setAttribute('width', '24');
+
+            var iconPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            iconPath.setAttribute('d', 'M6 9l6 6 6-6');
+
+            iconSvg.appendChild(iconPath);
+            iconSpan.appendChild(iconSvg);
+
+            summary.appendChild(questionSpan);
+            summary.appendChild(iconSpan);
+            details.appendChild(summary);
+
+            var answerParagraph = document.createElement('p');
+            answerParagraph.className = 'font-normal';
+            answerParagraph.textContent = answer;
+
+            details.appendChild(answerParagraph);
+
+            return details;
+        }
+
+        // Function to populate FAQ items
+        function populateFAQ() {
+            var faqContainer = document.getElementById('faqContainer');
+
+            faqData.forEach(function (item) {
+                var faqItem = createFAQItem(item.question, item.answer);
+                faqContainer.appendChild(faqItem);
+            });
+        }
+
+        // Call the function to populate FAQ items
+        populateFAQ();
+    </script>
 </section>
+
 <!-- FAQs Section Ends Here -->
 
 <!-- Contact us Starts from here -->
@@ -218,22 +252,22 @@ include('mb-admin/config/dbcon.php');?>
 <!-- Subscribe to us Ends Here -->
 
 <!-- this is a hamburger script -->
-<script>
+<!-- <script>
     function show() {
         document.querySelector('.hamburger').classList.
         toggle('open')
         document.querySelector('.navigation').classList.
         toggle('active')
     }
-</script>
+</script> -->
 
 <!-- this is a script for blur -->
-<script>
+<!-- <script>
     document.getElementById('blurButton').addEventListener('click', function() {
         var targetDiv = document.getElementById('targetDiv');
         targetDiv.classList.toggle('filter-blur');
     });
-</script>
+</script> -->
 
 <?php include('./components/cursor.php'); ?>
 <?php include('./components/footer.php'); ?>

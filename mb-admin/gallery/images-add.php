@@ -320,6 +320,10 @@ include('../includes/navbar-top.php')
         if (e.target.classList.contains('edit-btn')) {
             e.preventDefault();
             var editId = e.target.dataset.id;
+<<<<<<< HEAD
+=======
+            console.log(editId);
+>>>>>>> 694124e47b38471224e88e34a7e3af050de6bcf9
             fetch('edit-images?id=' + editId, {
                     method: 'POST',
                 })
@@ -329,6 +333,10 @@ include('../includes/navbar-top.php')
                     }
                     return response.json();
                 })
+<<<<<<< HEAD
+=======
+
+>>>>>>> 694124e47b38471224e88e34a7e3af050de6bcf9
                 .then(data => {
                     console.log('Server Response:', data);
                     if (data.success) {

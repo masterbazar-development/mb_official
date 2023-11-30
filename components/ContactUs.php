@@ -76,18 +76,18 @@
 
 <section class="flex justify-center md:flex-row flex-col md:gap-6 gap-12 max-w-7xl mx-auto">
     <div class="md:w-1/2 md:mx-0 sm:mx-8 mx-4">
-        <div class="responsive-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14010.766499127663!2d77.2919306!3d28.6090266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3181e5fef5d%3A0x17a776446f5d945e!2sMaster%20Bazar%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1699517538650!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="rounded-lg ">
+            <img src="<?php echo $mainUrl; ?>assets/client/images/contact1.png" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
         </div>
         <div class="flex mt-4 gap-8">
             <div class="w-1/2">
-                <h2 class="text-3xl font-extrabold mt-5 text-[#294497] ">INDIA</h2>
+                <h2 class="text-3xl font-extrabold mt-5 text-head ">INDIA</h2>
                 <p class="text-lg max-w-2/3 mt-2 font-livvic">P-67, Top Floor, Block E Pandav Nagar Rd, Block P, Mayur Vihar,
                     New
                     Delhi, Delhi, 110091</p>
             </div>
             <div class="w-1/2">
-                <h2 class="text-3xl font-extrabold mt-5 text-[#294497]">America</h2>
+                <h2 class="text-3xl font-extrabold mt-5 text-head">America</h2>
                 <p class="text-lg max-w-2/3 mt-2 font-livvic">+1-443-478-3833</p>
             </div>
         </div>
@@ -97,8 +97,8 @@
         <div class="flex items-center ">
             <div class="container mx-auto">
                 <div class="max-w-xl mx-auto bg-white shadow-sm">
-                    <div class="text-center">
-                        <h1 class="mb-3 text-4xl font-bold text-head ">
+                <div class="text-center">
+                        <h1 class="mb-3 text-5xl font-extrabold text-head ">
                             Contact Us
                         </h1>
                         <p class="text-gray-400 dark:text-gray-400 font-livvic">
@@ -170,7 +170,7 @@
                                 </div>
                             </div>
                             <div class="mb-6">
-                                <button type="submit" class="w-full px-3 py-4 text-white font-medium font-livvic bg-[#264CC5] rounded-md focus:bg-indigo-600 focus:outline-none">
+                                <button type="submit" class="w-full px-3 py-4 shadow text-head font-bold font-livvic bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33]  rounded-md focus:bg-indigo-600 focus:outline-none">
                                     Send Message
                                 </button>
                             </div>

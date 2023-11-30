@@ -1,6 +1,8 @@
 <?php include('../components/header.php'); ?>
 <?php include('../components/loader.php'); ?>
 
+<?php include('../components/navmenu.php'); ?>
+
 <!-- Ellipse Starts From Here -->
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 sm:-right-40 -right-40 z-[99]">
 <!-- Ellipse ends Here -->
@@ -79,18 +81,18 @@
 
 <!-- description -->
 
-<section class="">
-    <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-        <h2 class="max-w-2xl mx-auto text-5xl font-bold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
-            Get in Touch Today and Let's Create <span class="text-[#294497]">Something Extraordinary.</span>
+<section class="2xl:max-w-5xl mx-auto my-32">
+    <div class="container flex flex-col items-center  mx-auto text-center ">
+        <h2 class=" mx-auto lg:text-3xl font-bold tracking-tight text-head 2xl:text-5xl dark:text-white">
+            Get in Touch Today and Let's Create <span class="text-blue">Something Extraordinary.</span>
         </h2>
 
-        <p class="max-w-4xl mt-6 text-center text-gray-900 dark:text-gray-300 font-livvic">
+        <p class="max-w-4xl 2xl:text-lg lg:text-base mt-8 text-center text-gray-700 dark:text-gray-300 font-livvic">
             Lorem, ipsum dolor sit amet consectetur
             adipisicing elit. Cum quidem officiis reprehenderit, aperiam veritatis non, quod veniam fuga possimus hic
             explicabo laboriosam nam. A tempore totam ipsa nemo adipisci iusto!
         </p>
-        <p class="max-w-4xl mt-4 text-center text-gray-900 dark:text-gray-300 pb-10">
+        <p class="max-w-4xl 2xl:text-lg lg:text-base font-livvic text-gray-700 mt-4 text-center  dark:text-gray-300 pb-10">
             Please fill out the form below and we will get back to you as soon as possible. We value your time and strive to provide quick responses to all inquiries.
         </p>
     </div>
@@ -99,18 +101,18 @@
 <!-- form -->
 <section class="flex justify-center md:flex-row flex-col md:gap-6 gap-12 max-w-7xl mx-auto">
     <div class="md:w-1/2 md:mx-0 sm:mx-8 mx-4">
-        <div class="responsive-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14010.766499127663!2d77.2919306!3d28.6090266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3181e5fef5d%3A0x17a776446f5d945e!2sMaster%20Bazar%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1699517538650!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="rounded-lg ">
+            <img src="<?php echo $mainUrl; ?>assets/client/images/contact1.png" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
         </div>
         <div class="flex mt-4 gap-8">
             <div class="w-1/2">
-                <h2 class="text-3xl font-extrabold mt-5 text-[#294497] ">INDIA</h2>
+                <h2 class="text-3xl font-extrabold mt-5 text-head ">INDIA</h2>
                 <p class="text-lg max-w-2/3 mt-2 font-livvic">P-67, Top Floor, Block E Pandav Nagar Rd, Block P, Mayur Vihar,
                     New
                     Delhi, Delhi, 110091</p>
             </div>
             <div class="w-1/2">
-                <h2 class="text-3xl font-extrabold mt-5 text-[#294497]">America</h2>
+                <h2 class="text-3xl font-extrabold mt-5 text-head">America</h2>
                 <p class="text-lg max-w-2/3 mt-2 font-livvic">+1-443-478-3833</p>
             </div>
         </div>
@@ -121,7 +123,7 @@
             <div class="container mx-auto">
                 <div class="max-w-xl mx-auto bg-white shadow-sm">
                     <div class="text-center">
-                        <h1 class="mb-3 text-4xl font-bold text-head ">
+                        <h1 class="mb-3 text-5xl font-extrabold text-head ">
                             Contact Us
                         </h1>
                         <p class="text-gray-400 dark:text-gray-400 font-livvic">
@@ -193,7 +195,7 @@
                                 </div>
                             </div>
                             <div class="mb-6">
-                                <button type="submit" class="w-full px-3 py-4 text-white font-medium font-livvic bg-[#264CC5] rounded-md focus:bg-indigo-600 focus:outline-none">
+                                <button type="submit" class="w-full px-3 py-4 shadow text-head font-bold font-livvic bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33]  rounded-md focus:bg-indigo-600 focus:outline-none">
                                     Send Message
                                 </button>
                             </div>

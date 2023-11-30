@@ -82,7 +82,7 @@
 <div class="lg:visible hidden">
 <?php include('../../components/cursor.php'); ?>
 </div>
-
+<script src="<?php echo $mainUrl; ?>script.js" defer></script>
 </body>
 
 </html>
