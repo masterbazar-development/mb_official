@@ -19,9 +19,21 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!-- Hero Banner Section starts here-->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
     <div class="max-w-full mx-[10vw]">
-        <?php include('../../components/heroheader.php'); ?>
+    <header class="flex justify-between items-center px-[10vw] absolute left-0 top-3 w-full z-[110]">
+    <div class="flex justify-start items-center gap-2 py-4">
+        <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="2xl:w-20 w-16 2xl:h-20 h-16" alt="masterbazar-logo">
+        <div class="">
+            <h4 class="2xl:text-4xl text-3xl text-head font-extrabold">Master<span class="text-[#264CC5]">Bazar</span></h4>
+            <p class="text-xs text-head font-medium text-center">Masters of the digital world!</p>
+        </div>
     </div>
-    <div class="flex flex-col lg:flex-row max-w-full mx-[5vw] md:mx-[10vw] mt-4 md:mt-7 lg:mt-0">
+
+    <div class=" lg:block flex justify-center items-center gap-4">
+        
+    </div>
+</header>
+    </div>
+    <div class="flex flex-col lg:flex-row max-w-full mx-[5vw] md:mx-[10vw] mt-4 md:mt-7 lg:mt-0 space-x-16">
         <div class="lg:w-1/2 my-auto order-2 lg:order-1">
             <h1 class="2xl:text-5xl text-center mt-8 lg:mt-0 lg:text-start md:text-3xl text-2xl text-head font-extrabold leading-snug">
                 Leading UI UX Design Agency & Technology Innovation Firm
@@ -30,113 +42,116 @@ include('../../mb-admin/config/dbcon.php'); ?>
                 Creating game-changing products that invoke a sense of excitement, closeness, and satisfaction for the user invoke a sense of excitement, closeness, and satisfaction for the user.
             </p>
             <div class="flex gap-2 md:gap-5 items-center justify-center lg:justify-start mt-5 lg:mt-8 mb-10 lg:mb-0">
-                <button class="sm:text-sm text-xs white bg-[#264CC9] rounded-full text-white sm:px-3 px-6 md:px-6 py-3 md:py-3 sm:py-3">Lets Work Together</button>
-                <p class="sm:text-sm text-xs">Come Join US</p>
+            <button role="button" class=" w-max py-3 px-8 font-bold text-head bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] rounded-full flex justify-center gap-4 items-center">
+            <span>Let's Have A Talk!
+            </span>
+            <span><i class="fa-solid fa-message text-xl text-blue"></i></span>
+        </button>
             </div>
         </div>
         <div class="lg:w-1/2 order-1 lg:order-2 marquee-container h-screen overflow-hidden relative">
-            <div class="marquee-content -z-[100] flex-col">
+            <div class="marquee-content -z-[100] px-20 flex-col">
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the first item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban1.png" alt="Image 1">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design1.jpg" class="rounded-2xl shadow-xl" alt="Image 1">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban2.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design2.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <!-- Add more marquee items as needed -->
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban3.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design3.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban4.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design4.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the first item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban1.png" alt="Image 1">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design5.jpg" class="rounded-2xl shadow-xl" alt="Image 1">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban2.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design6.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <!-- Add more marquee items as needed -->
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban3.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design1.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban4.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design2.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the first item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban1.png" alt="Image 1">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design3.jpg" class="rounded-2xl shadow-xl" alt="Image 1">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban2.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design4.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <!-- Add more marquee items as needed -->
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban3.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design5.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban4.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design6.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the first item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban1.png" alt="Image 1">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design1.jpg" class="rounded-2xl shadow-xl" alt="Image 1">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban2.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design2.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <!-- Add more marquee items as needed -->
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban3.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design3.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban4.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design4.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the first item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban1.png" alt="Image 1">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design5.jpg" class="rounded-2xl shadow-xl" alt="Image 1">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban2.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design6.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <!-- Add more marquee items as needed -->
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban3.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design1.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban4.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design2.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the first item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban1.png" alt="Image 1">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design3.jpg" class="rounded-2xl shadow-xl" alt="Image 1">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban2.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design4.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <!-- Add more marquee items as needed -->
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban3.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design5.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
                 <div class="marquee-item p-5 h-full">
                     <!-- Content of the second item goes here -->
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/desban4.png" alt="Image 2">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/design6.jpg" class="rounded-2xl shadow-xl" alt="Image 2">
                 </div>
             </div>
         </div>
@@ -165,7 +180,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!-- css for marque in banner ends here -->
 
 
-<section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
+<section class=" hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">We Craft Interfaces That Delight Users and Drive Business Success</h2>
         <p class="lg:text-lg font-livvic xl:text-xl mt-5">

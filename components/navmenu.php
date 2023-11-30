@@ -2,9 +2,11 @@
     <div class="lg:w-2/3 sm:w-1/2 w-full overflow-y-auto h-full 2xl:px-20  px-6 lg:py-0 py-8 sm:px-8  bg-[#DAE5FC] text-head flex lg:justify-center justify-start items-start flex-col">
         <div class="flex lg:flex-row flex-col lg:justify-between justify-start items-start w-full xl:gap-8 lg:gap-2 gap-4">
             <div class="sm:hidden flex justify-start items-center gap-2">
+                <div class="">
             <a href="<?php echo $mainUrl; ?>" class=" ">
 <img src="<?php echo $mainUrl ?>assets/client/images/Master.png" class="md:w-full  sm:w-[20rem]">
 </a>
+</div>
                 <div class="">
                     <h4 class="2xl:text-4xl sm:text-3xl text-2xl text-head font-extrabold">Master<span class="text-[#264CC5]">Bazar</span></h4>
                     <p class="text-xs text-head font-medium text-center">Masters of the digital world!</p>
@@ -52,47 +54,47 @@
                     <li> <a href="<?php echo $mainUrl; ?>services/development" class="font-bold">Development</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/development/software-development">Software Development</a>
+                                <a href="<?php echo $mainUrl; ?>services/development/software-development">Software Development</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/development/app-development">Application Development</a>
+                                <a href="<?php echo $mainUrl; ?>services/development/app-development">Application Development</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/development/web-development">Website Development</a>
+                                <a href="<?php echo $mainUrl; ?>services/development/web-development">Website Development</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="<?php echo $mainUrl; ?>/services/designing" class="font-bold">Designing</a>
+                    <li> <a href="<?php echo $mainUrl; ?>services/designing" class="font-bold">Designing</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/designing/uiux">UI UX Designing</a>
+                                <a href="<?php echo $mainUrl; ?>services/designing/uiux">UI UX Designing</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/designing/graphic">Graphics Designing</a>
+                                <a href="<?php echo $mainUrl; ?>services/designing/graphic">Graphics Designing</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="<?php echo $mainUrl; ?>/services/digital-marketing" class="font-bold">Digital Marketing</a>
+                    <li> <a href="<?php echo $mainUrl; ?>services/digital-marketing" class="font-bold">Digital Marketing</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/digital-marketing/seo">Search Engine Optimization</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital-marketing/seo">Search Engine Optimization</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/digital-marketing/smm">Social Media Marketing</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital-marketing/smm">Social Media Marketing</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/digital-marketing/smo">Social Media Optimization</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital-marketing/smo">Social Media Optimization</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>/services/digital-marketing/paidads">Paid Adverstisment</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital-marketing/paidads">Paid Adverstisment</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li> <a href="<?php echo $mainUrl; ?>/services/sales-and-support" class="font-bold">Sales and Support</a></li>
-                    <li> <a href="<?php echo $mainUrl; ?>/services/content-writing" class="font-bold">Content Writing</a></li>
+                    <li> <a href="<?php echo $mainUrl; ?>services/sales-and-support" class="font-bold">Sales and Support</a></li>
+                    <li> <a href="<?php echo $mainUrl; ?>services/content-writing" class="font-bold">Content Writing</a></li>
                 </ul>
             </nav>
             <nav class="2xl:text-2xl text-xl font-medium flex justify-start items-start flex-col ">
