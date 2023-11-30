@@ -28,7 +28,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
         </div>
     </div>
 
-    <div class="hidden lg:block flex justify-center items-center gap-4">
+    <div class=" lg:block flex justify-center items-center gap-4">
         
     </div>
 </header>
@@ -180,7 +180,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!-- css for marque in banner ends here -->
 
 
-<section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
+<section class=" hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">We Craft Interfaces That Delight Users and Drive Business Success</h2>
         <p class="lg:text-lg font-livvic xl:text-xl mt-5">
