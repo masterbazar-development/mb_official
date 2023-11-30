@@ -1,8 +1,12 @@
 <section class="navigation sm:h-screen h-full transition-all duration-700 w-full z-[90] fixed top-0 left-0 -translate-y-[100%] flex justify-start items-start sm:flex-row flex-col">
-    <div class="lg:w-2/3 sm:w-1/2 w-full overflow-y-auto h-full 2xl:px-20 sm:px-10 px-6 lg:py-0 py-8 sm:px-8  bg-[#DAE5FC] text-head flex lg:justify-center justify-start items-start flex-col">
+    <div class="lg:w-2/3 sm:w-1/2 w-full overflow-y-auto h-full 2xl:px-20  px-6 lg:py-0 py-8 sm:px-8  bg-[#DAE5FC] text-head flex lg:justify-center justify-start items-start flex-col">
         <div class="flex lg:flex-row flex-col lg:justify-between justify-start items-start w-full xl:gap-8 lg:gap-2 gap-4">
             <div class="sm:hidden flex justify-start items-center gap-2">
-                <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="w-10 h-10" alt="masterbazar-logo">
+                <div class="">
+            <a href="<?php echo $mainUrl; ?>" class=" ">
+<img src="<?php echo $mainUrl ?>assets/client/images/Master.png" class="md:w-full  sm:w-[20rem]">
+</a>
+</div>
                 <div class="">
                     <h4 class="2xl:text-4xl sm:text-3xl text-2xl text-head font-extrabold">Master<span class="text-[#264CC5]">Bazar</span></h4>
                     <p class="text-xs text-head font-medium text-center">Masters of the digital world!</p>
@@ -72,19 +76,19 @@
                         </ul>
                     </li>
 
-                    <li> <a href="<?php echo $mainUrl; ?>services/digital marketing" class="font-bold">Digital Marketing</a>
+                    <li> <a href="<?php echo $mainUrl; ?>services/digital-marketing" class="font-bold">Digital Marketing</a>
                         <ul class="2xl:text-xl text-lg">
                             <li>
-                                <a href="<?php echo $mainUrl; ?>services/digital marketing/seo">Search Engine Optimization</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital-marketing/seo">Search Engine Optimization</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>services/digital marketing/smm">Social Media Marketing</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital-marketing/smm">Social Media Marketing</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>services/digital marketing/smo">Social Media Optimization</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital-marketing/smo">Social Media Optimization</a>
                             </li>
                             <li>
-                                <a href="<?php echo $mainUrl; ?>services/digital marketing/paidads">Paid Adverstisment</a>
+                                <a href="<?php echo $mainUrl; ?>services/digital-marketing/paidads">Paid Adverstisment</a>
                             </li>
                         </ul>
                     </li>

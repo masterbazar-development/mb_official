@@ -106,6 +106,13 @@ include('../../mb-admin/config/dbcon.php'); ?>
 </section>
 <!------------ our services for digital maketiing ends here --------------->
 
+<div class="my-32">
+    <?php include('../../components/testimonial.php'); ?>
+</div>
+
+<?php include('../../components/ContactUs.php'); ?>
+<?php include('../../components/subscription.php'); ?>
+
 <script>
     function show() {
         document.querySelector('.hamburger').classList.

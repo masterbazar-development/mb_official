@@ -160,7 +160,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
         </div>
     </div>
 </section>
-<!------------ our services for digital maketiing ends here --------------->
+<!------------ our services for content writing  ends here --------------->
 
 
 
