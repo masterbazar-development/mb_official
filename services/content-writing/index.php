@@ -3,22 +3,13 @@
 <?php include('../../components/navmenu.php');
 include('../../mb-admin/config/dbcon.php'); ?>
 
-
-<!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
-<!-- Ellipse ends Here -->
-
-<!-- Navigation starts from Here -->
-<?php include('../../components/menu.php'); ?>
-<!-- Navigation ends Here -->
-
-
-
-
 <!-- Hero Banner Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
-    <div class=" relative flex justify-center it">
+    <div class="max-w-full mx-[10vw]">
         <?php include('../../components/heroheader.php'); ?>
+    </div>
+    <div class=" relative flex justify-center it">
+
 
         <div class="max-w-full min-h-full mx-[3vw] md:mx-[10vw] flex justify-center gap-20 max-h-full">
             <div class="flex-col items-center w-[60%] min-h-full flex justify-center">
@@ -31,8 +22,8 @@ include('../../mb-admin/config/dbcon.php'); ?>
                     <span class="text-center text-lg font-semibold underline text-head mt-4">Lets Connect With Us</span>
                 </div>
             </div>
-            <div class="w-[40%] min-h-full flex justify-center items-center">                
-                    <img id="contentImg" src="<?php echo $mainUrl; ?>assets/client/images/contentban11.png" alt="">             
+            <div class="w-[40%] min-h-full flex justify-center items-center">
+                <img id="contentImg" src="<?php echo $mainUrl; ?>assets/client/images/contentban11.png" alt="">
             </div>
         </div>
     </div>
@@ -41,18 +32,19 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <script>
     let contentImg = document.getElementById('contentImg');
     let imgList = ["contentban11", "contentban22", "contentban33", "contentban44", ];
-    const path = 'http://localhost/masterbazar24/assets/client/images/'
+    const path = 'http://localhost/mb_official/assets/client/images/'
     let count = 0;
-    function loopImg(){
-        if(count >= imgList.length){
+
+    function loopImg() {
+        if (count >= imgList.length) {
             count = 0;
         }
         console.log(count, contentImg.attributes.src)
-        contentImg.setAttribute('src',  `${path}${imgList[count]}.png`);   
-        count++;     
+        contentImg.setAttribute('src', `${path}${imgList[count]}.png`);
+        count++;
     }
 
-    setInterval( loopImg, 1000);
+    setInterval(loopImg, 1000);
 </script>
 
 

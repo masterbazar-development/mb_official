@@ -1,3 +1,8 @@
+<div class="lg:visible hidden">
+    <?php include('../../components/cursor.php'); ?>
+</div>
+<script src="<?php echo $mainUrl; ?>script.js" async></script>
+</body>
 <footer class="lg:text-left border-t-2 border-gray-400 mt-32">
     <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
     <div class="mx-6 py-12 text-center flex justify-center md:text-left">
@@ -13,8 +18,8 @@
 
                     <form action="" class="my-4">
                         <div class="flex justify-center items-center flex-col gap-4">
-                            <input type="text" class="p-3 rounded-md bg-slate-100 w-full text-lg font-livvic" placeholder="Email Id">
-                            <button class="py-3 px-6 w-full rounded-md bg-[#7DA5FB33] text-head text-lg font-semibold w-full font-livvic">Submit</button>
+                            <input type="text" class="p-3 border-b-2 border-gray-300 bg-gray-100 w-full text-lg font-livvic" placeholder="Email Id">
+                            <button class="py-3 px-6 w-full bg-blue text-white text-lg font-semibold w-full font-livvic">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -96,7 +101,7 @@
             </div>
         </div>
     </div>
-    <div class="flex items-center text-center justify-center border-t-2  p-6 bg-[#294397] lg:justify-center">
+    <div class="flex items-center text-center justify-center border-t-2  p-6 bg-blue lg:justify-center">
         <div class="lg:mr-12 ">
             <span class="sm:text-lg font-medium  text-white">Copyright @2022-23 | Master Bazar Pvt. Ltd. | All Rights Reserved</span>
         </div>
@@ -105,10 +110,6 @@
 
 </footer>
 
-<div class="lg:visible hidden">
-    <?php include('../../components/cursor.php'); ?>
-</div>
-<script src="<?php echo $mainUrl; ?>script.js" defer></script>
-</body>
+
 
 </html>

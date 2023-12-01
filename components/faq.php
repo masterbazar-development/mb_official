@@ -2,10 +2,10 @@
 ?>
 <section class="sm:my-28 my-10 z-[40] bg-white py-20">
     
-        <h4 class="text-center md:text-5xl text-4xl sm:mb-3 mb-6 text-head font-extrabold">Frequently Asked  Question</h4>
+        <h4 class="text-center md:text-5xl text-4xl sm:mb-3 mb-6 text-head font-extrabold">Frequently Asked <span class="text-blue">Questions</span> </h4>
         <p class="text-center max-w-5xl text-lg mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ab quae! Mollitia illum tenetur ducimus voluptate, et ipsum fuga debitis sit nam laudantium nisi. Repudiandae accusantium ratione eos ea eligendi?</p>
 
-    <div id="faqContainer" class="grid divide-y divide-neutral-200 max-w-5xl mx-auto space-y-2 mt-10">
+    <div id="faqContainer" class="grid divide-y divide-neutral-200 max-w-5xl mx-auto space-y-3 mt-10">
     </div>
     <?php
     $faq = "SELECT * FROM mb_faq ORDER BY mb_faq.id ASC";
@@ -33,7 +33,7 @@
         // Function to create a FAQ item
         function createFAQItem(question, answer) {
             var details = document.createElement('details');
-            details.className = 'group w-full bg-[#F8FAFC] sm:p-10 p-3 border-0 rounded-xl';
+            details.className = 'group w-full bg-[#F8FAFC] sm:p-10 p-3 border-none rounded-md';
 
             var summary = document.createElement('summary');
             summary.className = 'flex justify-between items-center font-medium cursor-pointer list-none text-xl font-lora';
