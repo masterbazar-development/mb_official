@@ -1,20 +1,13 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
-<<<<<<< HEAD
-<?php include('../../components/navmenu.php'); ?>
-=======
 <?php include('../../components/navmenu.php');
 include('../../mb-admin/config/dbcon.php'); ?>
 
->>>>>>> d3b574a10859b34a3993400a1d72be84b266dde6
 
 <!-- Ellipse Starts From Here -->
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
-<!-- Navigation starts from Here -->
-<?php include('../../components/menu.php'); ?>
-<!-- Navigation ends Here -->
 
 <!-- Hero Banner Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:h-screen w-screen overflow-hidden">
@@ -23,7 +16,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
     <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 mb-12 mt-12 lg:mby-auto">
             <div class="font-medium order-2 lg:order-1 flex flex-col justify-center max-w-7xl mx-auto text-center">
-                <img src="<?php echo $mainUrl; ?>assets/client/images/webdevbanner.png" class="w-[15rem] md:w-[45rem] mx-auto">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/webdevbanner.png" class="w-[15rem] md:w-[45rem] mx-auto pt-10">
                 <div class="md:block hidden">
                     <div class="flex justify-center max-w-5xl mx-auto mt-2">
                         <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">

@@ -1,27 +1,24 @@
 <?php include('../../components/header.php'); ?>
 <?php include('../../components/loader.php'); ?>
-<<<<<<< HEAD
-<?php include('../../components/navmenu.php'); ?>
-=======
 <?php include('../../components/navmenu.php');
 include('../../mb-admin/config/dbcon.php'); ?>
 
->>>>>>> d3b574a10859b34a3993400a1d72be84b266dde6
+
+
+
 
 <!-- Ellipse Starts From Here -->
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
-<!-- Navigation starts from Here -->
-<?php include('../../components/menu.php'); ?>
-<!-- Navigation ends Here -->
-
 <!-- Hero Banner starts here Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:h-screen w-screen overflow-hidden">
   <div class="max-w-full ">
-    <?php include('../../components/heroheader.php'); ?>
+  <div class="max-w-full mx-[10vw]">
+        <?php include('../../components/heroheader.php'); ?>
+    </div>
 
-    <div class="flex flex-col items-center mt-10 lg:mt-32 lg:flex-row max-w-full mx-[5vw] gap-8 lg:gap-20 md:mx-[10vw] ">
+    <div class="flex flex-col items-center lg:flex-row max-w-full mx-[5vw] gap-8 lg:gap-20 md:mx-[10vw] ">
       <div class="lg:w-1/3 order-2 lg:order-1">
         <h1 class="2xl:text-5xl text-3xl text-head font-extrabold ">
         We Create Interfaces That
@@ -36,7 +33,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
         </div>
       </div>
       <div class="lg:w-2/3 order-1 lg:order-2">
-        <img src="<?php echo $mainUrl; ?>assets/client/images/designbanner.png" alt="" class="w-full">
+        <img src="<?php echo $mainUrl; ?>assets/client/images/designbanner.png" alt="" class="w-full pt-14">
       </div>
     </div>
 
@@ -48,7 +45,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <!-- second section starts here -->
 
-<section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
+<section class=" hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
   <div class="w-[60%] my-auto">
     <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">We Craft Interfaces That Delight Users and Drive Business Success</h2>
     <p class="lg:text-lg font-livvic xl:text-xl mt-5">
@@ -62,7 +59,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <section class="lg:hidden block  max-w-full mx-[5vw] md:mx-[10vw] mt-16 md:mt-32">
   <div class=" ">
-    <img src="<?php echo $mainUrl; ?>assets/client/images/uiuxsec.jpg" alt="" class="w-full">
+    <img src="<?php echo $mainUrl; ?>assets/client/images/uiuxsec.jpg" alt="" class="w-full pt-14">
   </div>
   <div class="mt-5 my-auto">
     <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">We Craft Interfaces That Delight Users and Drive Business Success</h2>
@@ -74,7 +71,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <section class="lg:flex gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-20 md:mt-32">
   <div class="lg:w-[40%]">
-    <img src="<?php echo $mainUrl; ?>assets/client/images/desmainsec2.jpg" alt="" class="w-full">
+    <img src="<?php echo $mainUrl; ?>assets/client/images/desmainsec2.jpg" alt="" class="w-full ">
   </div>
   <div class="lg:w-[60%] my-auto">
     <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Make Users Fall in Love</h2>

@@ -77,6 +77,32 @@
     font-weight: 600;
 }
 
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    z-index: 95;
+}
+
+
+#navbar.scrolled {
+    background-color: #fff;
+    /* Change to your desired color */
+    color: black;
+    box-shadow: 0px 2px 3px #cecece;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Gilroy';
+}
+
+p{
+    font-family: 'Livvic', sans-serif!important;
+}
+
 body {
     font-family: 'Gilroy';
     overflow-x: hidden;
@@ -192,8 +218,6 @@ body {
 }
 
 #gradientblob {
-    background-color: #5078f2;
-    background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
     animation: animateGradient 5s ease-in-out infinite;
     box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -654,5 +678,14 @@ select::-ms-expand {
 		font-size: 15px;
 	}
 }
-
+.pagination-link.active-gallery{
+ background-color: #4DA1F8;
+ color: white;
+}
+/* Add this to your CSS file or style section */
+.category-item.active {
+    background-color: #264CC5; /* Change to your desired active state styles */
+    color: white;
+  }
+  
 /* our servives time line section css end */

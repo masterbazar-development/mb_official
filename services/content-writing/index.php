@@ -8,22 +8,20 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
-<!-- Navigation starts from Here -->
-<?php include('../../components/menu.php'); ?>
-<!-- Navigation ends Here -->
-
-
 
 
 <!-- Hero Banner Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
-    <div class="max-w-full min-h-full mx-[3vw] md:mx-[10vw] relative flex justify-center it">
+<div class="max-w-full mx-[10vw]">
         <?php include('../../components/heroheader.php'); ?>
+    </div>
+    <div class=" relative flex justify-center it">
+        
 
-        <div class="flex gap-20 max-h-full">
+        <div class="max-w-full min-h-full mx-[3vw] md:mx-[10vw] flex justify-center gap-20 max-h-full">
             <div class="flex-col items-center w-[60%] min-h-full flex justify-center">
                 <div class="">
-                    <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">Engage, Persuade, and Convert<span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
+                    <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">Engage, Persuade, and Convert <span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
                     </h1>
                 </div>
                 <div>
@@ -59,7 +57,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <!-- second section starts here -->
 
-<section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
+<section class=" hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">
             Content Writing Solutions for Your Blog and Article Needs</h2>
@@ -160,7 +158,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
         </div>
     </div>
 </section>
-<!------------ our services for digital maketiing ends here --------------->
+<!------------ our services for content writing  ends here --------------->
 
 
 
