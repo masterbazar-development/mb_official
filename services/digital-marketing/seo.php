@@ -4,19 +4,12 @@
 include('../../mb-admin/config/dbcon.php'); ?>
 
 
-<!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
-<!-- Ellipse ends Here -->
-
-<!-- Navigation starts from Here -->
-<?php include('../../components/menu.php'); ?>
-<!-- Navigation ends Here -->
-
-
 <!-- Hero Banner starts here Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:h-screen w-screen overflow-hidden">
     <div class="max-w-full  ">
+    <div class="max-w-full mx-[10vw]">
         <?php include('../../components/heroheader.php'); ?>
+    </div>
 
         <div class="flex flex-col items-center mt-10 lg:mt-32 lg:flex-row max-w-full mx-[5vw] gap-8 lg:gap-20 md:mx-[10vw] ">
             <div class="lg:w-1/2 order-2 lg:order-1">
@@ -91,9 +84,9 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="max-w-7xl grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect">
             <div class="relative w-max">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser1.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/icons8-keyword-research-64.png" class="w-16 mb-4">
             </div>
             <div class="flex-col justify-between">
                 <h3 class="text-2xl text-head font-bold mb-1">Keyword Research & Strategy</h3>
@@ -101,41 +94,41 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 flex justify-between items-start flex-col services-effect">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser2.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/icons8-link-64.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Link Building</h3>
                 <p class="font-livvic">Backlinks are essential to rank your website higher in search results. That's why we increase your website's authority and visibility in search results by building high-quality backlinks from other relevant websites.</p>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser3.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/technical-seo.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Technical SEO</h3>
                 <p class="font-livvic">We help you optimize your website’s performance, speed, security, and usability. We also help you fix any technical issues that may affect your SEO, such as crawl errors, broken links, duplicate content, etc.</p>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col ">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seosec4.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/local-seo.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Local SEO</h3>
                 <p class="font-livvic">We help you rank higher for local searches and attract more customers in your area. We optimize your Google My Business profile, local citations, reviews, and geo-targeted keywords.</p>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col ">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser5.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/on-page-seo.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">On-Page SEO</h3>
                 <p class="font-livvic">We help you optimize your web pages for both users and search engines by improving your title tags, meta descriptions, headings, images, content quality, and internal links.</p>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser6.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/off-page-seo.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Off-Page SEO</h3>
                 <p class="font-livvic">We help you increase your online reputation and authority by guest posting, social bookmarking, influencer outreach and more. We also help you monitor and manage your online reviews and feedback.</p>
             </div>

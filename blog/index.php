@@ -7,11 +7,8 @@ include('../mb-admin/config/dbcon.php');
 ?>
 <?php include('../components/navmenu.php'); ?>
 
-<!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
-<!-- Ellipse ends Here -->
-<?php include('../components/menu.php');
-?>
+
+
 <!-- Navigation starts from Here -->
 <section role="banner">
   <div class="max-w-full  mx-[10vw]">

@@ -2,6 +2,7 @@
 <?php include('./components/loader.php'); ?>
 <?php include('./components/navmenu.php');
 include('mb-admin/config/dbcon.php'); ?>
+<<<<<<< HEAD
 
 
 <!-- Ellipse Starts From Here -->
@@ -11,10 +12,13 @@ include('mb-admin/config/dbcon.php'); ?>
 <!-- Navigation starts from Here -->
 <?php include('./components/menu.php'); ?>
 <!-- Navigation ends Here -->
+=======
+>>>>>>> 0fb39b3bcac2339388605c54ae606f064d5a8fc5
 
 <!-- Hero Banner Section -->
 <section id="targetDiv" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-screen  w-screen overflow-hidden">
     <div class="2xl:max-w-full xl:max-w-7xl lg:max-w-6xl  2xl:mx-[10vw] mx-auto px-4 h-full">
+<<<<<<< HEAD
         <header class="flex justify-between items-center">
 
             <div class="flex justify-start items-center gap-2 py-4">
@@ -35,6 +39,13 @@ include('mb-admin/config/dbcon.php'); ?>
                 </button>
             </div>
         </header>
+=======
+
+
+        <!-- Navigation starts from Here -->
+        <?php include('./components/heroheader.php'); ?>
+        <!-- Navigation ends Here -->
+>>>>>>> 0fb39b3bcac2339388605c54ae606f064d5a8fc5
 
         <div class="flex lg:items-center items-end h-full lg:justify-between justify-end lg:flex-row flex-col 2xl:gap-16 lg:gap-8 lb:pb-0 pb-40">
             <div class="font-medium 2xl:py-20 flex flex-col justify-center">
@@ -127,10 +138,6 @@ include('mb-admin/config/dbcon.php'); ?>
 <?php include('./components/clientslogo.php'); ?>
 <!-- Clients Logo Section ends Here! -->
 
-
-
-
-
 <!-- Testimonial Section Starts From Here -->
 <?php include('./components/testimonial.php'); ?>
 <!-- Testimonial Section Ends From Here -->
@@ -151,6 +158,7 @@ include('mb-admin/config/dbcon.php'); ?>
 $how= "cow"; ?>
 
 <!-- FAQs Section Starts From Here -->
+<<<<<<< HEAD
 
 <section class="sm:my-28 my-10 z-[40] bg-white py-20">
     <div class="flex flex-row justify-center items-center">
@@ -243,34 +251,14 @@ $how= "cow"; ?>
     </script>
 </section>
 
+=======
+<?php include('./components/faq.php'); ?>
+>>>>>>> 0fb39b3bcac2339388605c54ae606f064d5a8fc5
 <!-- FAQs Section Ends Here -->
 
 <!-- Contact us Starts from here -->
 <?php include('./components/ContactUs.php'); ?>
 <!-- Contact us Ends Here -->
-
-
-<!-- Subscribe to us Starts from here -->
-<?php include('./components/subscription.php'); ?>
-<!-- Subscribe to us Ends Here -->
-
-<!-- this is a hamburger script -->
-<!-- <script>
-    function show() {
-        document.querySelector('.hamburger').classList.
-        toggle('open')
-        document.querySelector('.navigation').classList.
-        toggle('active')
-    }
-</script> -->
-
-<!-- this is a script for blur -->
-<!-- <script>
-    document.getElementById('blurButton').addEventListener('click', function() {
-        var targetDiv = document.getElementById('targetDiv');
-        targetDiv.classList.toggle('filter-blur');
-    });
-</script> -->
 
 <?php include('./components/cursor.php'); ?>
 <?php include('./components/footer.php'); ?>

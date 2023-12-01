@@ -3,21 +3,13 @@
 
 <?php include('../components/navmenu.php'); ?>
 
-<!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 sm:-right-40 -right-40 z-[99]">
-<!-- Ellipse ends Here -->
-
-<!-- Navigation starts from Here -->
-<?php include('../components/menu.php'); ?>
-<!-- Navigation ends Here -->
-
-<div class="justify-center flex ">
-    <div class="container mx-auto max-w-7xl px-0">
-        <?php include('../components/heroheader.php'); ?>
-    </div>
+<div class="container mx-auto max-w-7xl px-0">
+    <?php include('../components/heroheader.php'); ?>
 </div>
+
 <!-- main content -->
-<section class="flex bg-[url('<?php echo $mainUrl; ?>assets/client/images/contact-us.jpg')] bg-center bg-cover h-[65vh] items-center justify-center bg-[#294497] font-bold text-white">
+<section class="fading flex bg-[url('<?php echo $mainUrl; ?>assets/client/images/contact-us.jpg')] bg-center bg-cover h-[65vh] bg-[#294497] font-bold text-white">
+    <div class="fade"></div>
 </section>
 
 <style>

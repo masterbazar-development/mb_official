@@ -74,22 +74,10 @@
     }
 </style>
 
-<section class="flex justify-center md:flex-row flex-col md:gap-6 gap-12 max-w-7xl mx-auto">
-    <div class="md:w-1/2 md:mx-0 sm:mx-8 mx-4">
+<section class="flex justify-center items-center md:flex-row flex-col md:gap-6 gap-12 max-w-7xl mx-auto">
+    <div class="md:w-1/2 md:mx-0 sm:mx-0 mx-4">
     <div class="rounded-lg ">
-            <img src="<?php echo $mainUrl; ?>assets/client/images/contact1.png" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-        </div>
-        <div class="flex mt-2 gap-8">
-            <div class="w-1/2">
-                <h2 class="text-3xl font-extrabold mt-5 text-head ">INDIA</h2>
-                <p class="text-lg max-w-2/3 mt-2 font-livvic">P-67, Top Floor, Block E Pandav Nagar Rd, Block P, Mayur Vihar,
-                    New
-                    Delhi, Delhi, 110091</p>
-            </div>
-            <div class="w-1/2">
-                <h2 class="text-3xl font-extrabold mt-5 text-head">America</h2>
-                <p class="text-lg max-w-2/3 mt-2 font-livvic">+1-443-478-3833</p>
-            </div>
+            <img src="<?php echo $mainUrl; ?>assets/client/images/contact-us.png" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
         </div>
     </div>
 
@@ -99,7 +87,7 @@
                 <div class="max-w-xl mx-auto bg-white">
                 <div class="text-center">
                         <h1 class="mb-3 text-5xl font-extrabold text-head ">
-                            Contact Us
+                            Contact <span class="text-blue">Us</span> 
                         </h1>
                         <p class="text-gray-400 dark:text-gray-400 font-livvic">
                             Fill up the form below to send us a message.
@@ -113,17 +101,17 @@
 
                             <div class="sm:flex mb-6 sm:space-x-4">
                                 <div class="w-full md:w-1/2">
-                                    <label for="fname" class="block  text-gray-600 dark:text-gray-400 font-semibold">
+                                    <label for="fname" class="block text-lg text-gray-900 dark:text-gray-400 font-semibold">
                                         Name</label>
-                                    <input type="text" name="name" id="first_name" placeholder="John Legend" required class="font-livvic w-full px-3 py-2 placeholder-gray-300 border-b-2 border-gray-200  focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    <input type="text" name="name" id="first_name" placeholder="John Legend" required class="font-livvic w-full p-3 placeholder-gray-300 border-b-2 border-slate-300  bg-gray-100" />
                                     <div class="empty-feedback invalid-feedback text-red-400  mt-1">
                                         Please provide your first name.
                                     </div>
                                 </div>
                                 <div class="w-full md:w-1/2 sm:mt-0 mt-2">
-                                    <label for="email" class="block text-gray-600 dark:text-gray-400 font-semibold">Email
+                                    <label for="email" class="block text-lg text-gray-900 dark:text-gray-400 font-semibold">Email
                                         Address</label>
-                                    <input type="email" name="email" id="email" placeholder="you@company.com" required class="font-livvic w-full px-3 py-2 placeholder-gray-300 border-b-2 border-gray-200 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    <input type="email" name="email" id="email" placeholder="you@company.com" required class="font-livvic w-full p-3 placeholder-gray-300 border-b-2 border-slate-300  bg-gray-100" />
                                     <div class="empty-feedback text-red-400  mt-1">
                                         Please provide your email address.
                                     </div>
@@ -135,10 +123,10 @@
 
                             <div class="sm:flex mb-6 sm:space-x-4">
                                 <div class="w-full md:w-1/2">
-                                    <label for="service" class="block text-gray-600 dark:text-gray-400 font-semibold">Select Your
+                                    <label for="service" class="block  text-lg text-gray-900 dark:text-gray-400 font-semibold">Select Your
                                         Service</label>
-                                    <div class="select py-2 placeholder-gray-300 border-b-2 border-gray-200 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300">
-                                        <select name="format" id="format" class="text-black font-livvic">
+                                    <div class="select p-3 placeholder-gray-300 border-b-2 border-slate-300 bg-gray-100">
+                                        <select name="format" id="format" class="text-black font-livvic bg-slate-100">
                                             <option selected disabled>Choose Service</option>
                                             <option value="soft">Software Development</option>
                                             <option value="webd">Website Designing</option>
@@ -151,9 +139,9 @@
                                     </div>
                                 </div>
                                 <div class="w-full md:w-1/2 sm:mt-0 mt-2">
-                                    <label for="phone" class="block  text-gray-600 dark:text-gray-400 font-semibold">Phone
+                                    <label for="phone" class="block text-lg text-gray-900 dark:text-gray-400 font-semibold">Phone
                                         Number</label>
-                                    <input type="text" name="phone" id="phone" placeholder="+91 986XXXXXXX" required class="font-livvic w-full px-3 py-2 placeholder-gray-300 border-b-2 border-gray-200 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+                                    <input type="text" name="phone" id="phone" placeholder="+91 986XXXXXXX" required class="font-livvic w-full p-3 placeholder-gray-300 border-b-2 border-slate-300  bg-gray-100" />
 
                                     <div class="empty-feedback invalid-feedback text-red-400  mt-1">
                                         Please provide your phone number.
@@ -161,16 +149,16 @@
                                 </div>
                             </div>
                             <div class="mb-6">
-                                <label for="message" class="block  text-gray-600 dark:text-gray-400 font-semibold">Your
+                                <label for="message" class="block text-lg text-gray-900 dark:text-gray-400 font-semibold">Your
                                     Message</label>
 
-                                <textarea rows="5" name="message" id="message" placeholder="Your Message" class="font-livvic w-full px-3 py-2 placeholder-gray-300 border-b-2 border-gray-200 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
+                                <textarea rows="5" name="message" id="message" placeholder="Your Message" class="font-livvic w-full p-3 placeholder-gray-300 border-b-2 border-slate-300  bg-gray-100" required></textarea>
                                 <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
                                     Please enter your message.
                                 </div>
                             </div>
                             <div class="mb-6">
-                                <button type="submit" class="w-full px-3 py-4 shadow text-head font-bold font-livvic bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33]  rounded-md focus:bg-indigo-600 focus:outline-none">
+                                <button type="submit" class="w-full px-3 py-4 shadow text-white text-lg font-medium font-livvic bg-[#264CC5]">
                                     Send Message
                                 </button>
                             </div>

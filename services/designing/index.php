@@ -1,16 +1,20 @@
-<?php include('../../components/header.php'); ?>
-<?php include('../../components/loader.php'); ?>
-<?php include('../../components/navmenu.php');
-include('../../mb-admin/config/dbcon.php'); ?>
+<?php 
+include('../../components/header.php');
+include('../../components/loader.php'); 
+include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); 
+?>
 
 
 <!-- Ellipse Starts From Here -->
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
-<!-- Navigation starts from Here -->
-<?php include('../../components/menu.php'); ?>
-<!-- Navigation ends Here -->
+<div id="blurButton" class="hamburger top-[3rem] right-8 cursor-pointer z-[99]">
+        <div id="bar1" class="bar bg-[#264CC5] rounded-md"></div>
+        <div id="bar2" class="bar bg-[#264CC5] w-1/2 rounded-md"></div>
+        <div id="bar3" class="bar bg-[#264CC5] rounded-md"></div>
+    </div>
 
 
 
@@ -19,7 +23,8 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!-- Hero Banner Section starts here-->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
     <div class="max-w-full mx-[10vw]">
-    <header class="flex justify-between items-center px-[10vw] absolute left-0 top-3 w-full z-[110]">
+    <a href="<?php echo $mainUrl; ?>">
+    <header class="flex justify-between items-center px-[10vw] absolute left-0 top-3 w-full z-[80]">
     <div class="flex justify-start items-center gap-2 py-4">
         <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="2xl:w-20 w-16 2xl:h-20 h-16" alt="masterbazar-logo">
         <div class="">
@@ -27,6 +32,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             <p class="text-xs text-head font-medium text-center">Masters of the digital world!</p>
         </div>
     </div>
+    </a>
 
     <div class=" lg:block flex justify-center items-center gap-4">
         
@@ -222,7 +228,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="parent lg:w-1/3">
         <div class="is-sticky mt-20 mb-10">
             <h2 class="lg:w-2/3 text-head text-4xl lg:text-6xl font-bold">What Do We Do</h2>
-            <p class="text-sm mt-6 lg:w-2/3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
+            <p class="text-base mt-6 lg:w-full font-livvic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
             <div class="flex items-center text-head text-xl mt-2 hover:translate-x-3 transition-transform duration-300 ">
                 <p class="font-semibold">see our work </p>
                 <p class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -296,6 +302,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
         height: 150px;
         margin: 1em;
         padding: .5em;
+        border-radius: 0.5rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -303,8 +310,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     }
 
     .Marquee-tag:hover {
-        background: rgba(255, 255, 255, .5);
-        transform: scale(1.1);
+        background: #4FD8EF;
         cursor: pointer;
     }
 
@@ -322,28 +328,32 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <!----------------- development marqquee tools we use section starts from here ------------->
 <section class="mt-32 overflow-hidden">
+    <div class="2xl:max-w-full 2xl:mx-[10vw]">
+        <h3 class="text-head text-5xl font-extrabold">Tools We Use To <span class="text-blue">Design.</span> </h3>
+        <p class="text-lg text-gray-700 font-livvic w-1/3 mt-3 mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aperiam laudantium. Modi, non! Ipsam molestiae ducimus ullam sapiente enim molestias.</p>
+    </div>
     <div class="Marquee flex ">
 <!-------- marquee running ---------->
 <div class="Marquee-content flex">
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool1.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
             </div>
 
@@ -353,29 +363,27 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!--------- marquee reverse ---------->
 <div class="Marquee flex overflow-hidden">
         <div class="Marquee-content1 flex ">
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool1.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
             </div>
-
-
         </div>
     </div>
 </section>

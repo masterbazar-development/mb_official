@@ -1,3 +1,3 @@
 <?php
-$mainUrl = "http://localhost/masterbazar24/"
+$mainUrl = "http://localhost/mb_official/"
 ?>

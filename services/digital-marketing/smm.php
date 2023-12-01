@@ -4,20 +4,12 @@
 include('../../mb-admin/config/dbcon.php'); ?>
 
 
-<!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
-<!-- Ellipse ends Here -->
-
-<!-- Navigation starts from Here -->
-<?php include('../../components/menu.php'); ?>
-<!-- Navigation ends Here -->
-
-
 <!-- Hero Banner starts here Section -->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:h-screen w-screen overflow-hidden">
     <div class="max-w-full ">
+    <div class="max-w-full mx-[10vw]">
         <?php include('../../components/heroheader.php'); ?>
-
+    </div>
         <div class="flex flex-col items-center mt-10 lg:mt-32 lg:flex-row max-w-full mx-[5vw] gap-8 lg:gap-20 md:mx-[10vw] ">
             <div class="lg:w-1/2 order-2 lg:order-1">
                 <h1 class="2xl:text-5xl text-3xl text-head font-extrabold ">
@@ -92,9 +84,9 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="max-w-7xl grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect">
             <div class="relative w-max">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser1.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/icons8-follower-64.png" class="w-16 mb-4">
             </div>
             <div class="flex-col justify-between">
                 <h3 class="text-2xl text-head font-bold mb-1">Increase Followers</h3>
@@ -102,17 +94,17 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser2.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/engagement.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Increase Engagement</h3>
                 <p class="font-livvic">We help you boost your social media interactions by creating and sharing valuable and captivating content. We use best practices and techniques to encourage likes, comments, shares, and mentions.</p>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser3.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/conversion.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Increase Traffic & Conversion</h3>
                 <p class="font-livvic">We help you drive more visitors and leads to your website or landing page by using effective and persuasive calls to action. We also help you optimize your website or landing page for conversion and retention.</p>
             </div>
