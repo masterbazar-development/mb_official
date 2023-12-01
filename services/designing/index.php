@@ -1,7 +1,9 @@
-<?php include('../../components/header.php'); ?>
-<?php include('../../components/loader.php'); ?>
-<?php include('../../components/navmenu.php');
-include('../../mb-admin/config/dbcon.php'); ?>
+<?php 
+include('../../components/header.php');
+include('../../components/loader.php'); 
+include('../../components/navmenu.php');
+include('../../mb-admin/config/dbcon.php'); 
+?>
 
 
 <!-- Ellipse Starts From Here -->
