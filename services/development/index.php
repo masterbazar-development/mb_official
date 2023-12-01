@@ -324,8 +324,8 @@ include('../../mb-admin/config/dbcon.php'); ?>
   }
 
   .Marquee-tag:hover {
-    background: rgba(255, 255, 255, .5);
-    transform: scale(1.1);
+    background: #264CC5;
+
     cursor: pointer;
   }
 
@@ -346,34 +346,34 @@ include('../../mb-admin/config/dbcon.php'); ?>
   <div class="Marquee flex ">
     <!-------- marquee running ---------->
     <div class="Marquee-content flex">
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool1.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool2.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool3.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool4.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool5.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool6.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool7.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool8.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool9.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool10.png" alt="">
       </div>
     </div>
@@ -382,34 +382,34 @@ include('../../mb-admin/config/dbcon.php'); ?>
   <!--------- marquee reverse ---------->
   <div class="Marquee flex overflow-hidden">
     <div class="Marquee-content1 flex ">
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool1.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool2.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool3.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool4.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool5.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool6.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool7.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool8.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool9.png" alt="">
       </div>
-      <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+      <div class="Marquee-tag bg-gradient-to-r rounded-md from-[#2563EB33] to-[#7DA5FB33] services-effect">
         <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool10.png" alt="">
       </div>
     </div>
@@ -481,49 +481,6 @@ include('../../mb-admin/config/dbcon.php'); ?>
   });
 </script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const sentences = [
-      'Web Development',
-      'App Development',
-      'Software '
-    ];
-
-    let currentIndex = 0;
-    let offset = 0;
-    const sentenceElement = document.querySelector('.sentence1');
-    let forwards = true;
-    let skipCount = 0;
-    const skipDelay = 25;
-    const speed = 90;
-
-    const updateSentence = () => {
-      sentenceElement.textContent = sentences[currentIndex].substring(0, offset);
-    };
-
-    const handleAnimation = () => {
-      if (forwards) {
-        if (offset >= sentences[currentIndex].length) {
-          if (++skipCount === skipDelay) {
-            forwards = false;
-            skipCount = 0;
-          }
-        }
-      } else if (offset === 0) {
-        forwards = true;
-        currentIndex = (currentIndex + 1) % sentences.length;
-      }
-
-      if (skipCount === 0) {
-        forwards ? offset++ : offset--;
-      }
-
-      updateSentence();
-    };
-
-    setInterval(handleAnimation, speed);
-  });
-</script>
 <!-- script for development page typing text effect in h1 ends here -->
 
 
