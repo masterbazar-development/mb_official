@@ -310,8 +310,7 @@ include('../../mb-admin/config/dbcon.php');
     }
 
     .Marquee-tag:hover {
-        background: rgba(255, 255, 255, .5);
-        transform: scale(1.1);
+        background: #4FD8EF;
         cursor: pointer;
     }
 
@@ -336,25 +335,25 @@ include('../../mb-admin/config/dbcon.php');
     <div class="Marquee flex ">
 <!-------- marquee running ---------->
 <div class="Marquee-content flex">
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool1.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
             </div>
 
@@ -364,29 +363,27 @@ include('../../mb-admin/config/dbcon.php');
 <!--------- marquee reverse ---------->
 <div class="Marquee flex overflow-hidden">
         <div class="Marquee-content1 flex ">
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool1.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
             </div>
-
-
         </div>
     </div>
 </section>
