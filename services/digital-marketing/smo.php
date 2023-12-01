@@ -85,14 +85,14 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!------------ our services for digital maketiing starts here --------------->
 <section class="max-w-full mx-[5vw] md:mx-[10vw] my-32 gap-8">
     <div class="">
-        <h3 class="md:text-5xl text-4xl text-head font-extrabold sm:mb-4 mb-2">Tailored Strategies to Optimize  <span class="text-[#264CC5] font-extrabold">Your Social Media Presence</span></h3>
-        <p class="text-gray-700 text-lg font-livvic font-normal">Our services encompass a wide range of social media optimization strategies, including profile optimization, content creation, audience targeting, hashtag analysis, social media analytics, and more. We offer customized solutions that align with your brand's goals and objectives, ensuring that your social media efforts are optimized for success.</p>
+        <h3 class="md:text-5xl text-4xl text-head font-extrabold sm:mb-4 mb-2 sm:text-center">Tailored Strategies to Optimize  <span class="text-[#264CC5] font-extrabold">Your Social Media Presence</span></h3>
+        <p class="text-gray-700 text-lg font-livvic font-normal sm:text-center">Our services encompass a wide range of social media optimization strategies, including profile optimization, content creation, audience targeting, hashtag analysis, social media analytics, and more. We offer customized solutions that align with your brand's goals and objectives, ensuring that your social media efforts are optimized for success.</p>
     </div>
 
     <div class="max-w-7xl grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect">
             <div class="relative w-max">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser1.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/market-research.png" class="w-16 mb-4">
             </div>
             <div class="flex-col justify-between">
                 <h3 class="text-2xl text-head font-bold mb-1">Market Research and Platform Selection</h3>
@@ -100,25 +100,25 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col ">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser2.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/branding-strategy.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Branding Strategy Development</h3>
                 <p class="font-livvic">We help you create a consistent and compelling brand identity across your social media channels. We also help you define your tone of voice, style guide, and content calendar.</p>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seosec4.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/content-creating.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Content Creation</h3>
                 <p class="font-livvic">We help you produce high-quality and engaging content for your social media platforms. We use a variety of formats, such as text, images, videos, stories, reels, live streams, and more.</p>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col ">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser3.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/monitory.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Ongoing Monitoring and Analytics</h3>
                 <p class="font-livvic">We help you track and measure the performance of your social media campaigns. We use advanced tools and metrics to provide you with actionable insights and recommendations.</p>
             </div>

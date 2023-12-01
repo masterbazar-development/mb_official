@@ -64,7 +64,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect">
             <div class="relative w-max">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/search-engine.png" class="w-16 mb-4">
 
@@ -76,7 +76,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 flex justify-between items-start flex-col services-effect">
             <div class="h-full">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/ads.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Paid Advertisement</h3>
@@ -85,7 +85,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             <button class="text-head px-6 py-2 mt-4 rounded-md bg-gray-200 text-sm font-bold">Read More</button>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col">
             <div class="h-full">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/opti.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Social Media Optimization</h3>
@@ -94,7 +94,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             <button class="text-head px-6 py-2 mt-4 rounded-md bg-white text-sm font-bold">Read More</button>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/socialmarket.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Social Media marketing</h3>

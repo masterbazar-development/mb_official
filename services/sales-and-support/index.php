@@ -107,7 +107,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="max-w-7xl grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
         <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out hover:scale-110">
             <div class="relative w-max">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser1.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/lead-generation.png" class="w-16 mb-4">
             </div>
             <div class="flex-col justify-between">
                 <h3 class="text-2xl text-head font-bold mb-1">Lead Generation</h3>
@@ -117,7 +117,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
         <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser2.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/icons8-incoming-call-64.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Inbound Call</h3>
                 <p class="font-livvic">We handle incoming calls from your existing or prospective customers. We answer their queries, provide information, resolve issues, take orders, etc. to ensure customer satisfaction and retention.</p>
             </div>
@@ -125,7 +125,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
         <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser3.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/icons8-outgoing-call-64.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Outbound Calls</h3>
                 <p class="font-livvic">We make outgoing calls to your target audience for various purposes such as sales, marketing, surveys, feedback, follow-ups, etc. We use professional and persuasive communication to achieve your desired outcomes.</p>
             </div>
@@ -133,7 +133,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
         <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seosec4.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/helpdesk.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Helpdesk Support</h3>
                 <p class="font-livvic">We offer technical or non-technical support to your customers via phone, email, chat, etc. We help troubleshoot problems, provide solutions, escalate issues, etc. to ensure smooth and efficient operations of your business.</p>
             </div>
@@ -141,7 +141,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
         <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser5.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/technical-call.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Technical Call Centre</h3>
                 <p class="font-livvic">We provide specialized technical support for your products or services. We have a team of experts who can handle complex and challenging issues related to software, hardware, network, security, etc.</p>
             </div>
@@ -149,7 +149,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
         <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser6.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/mantanance.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Maintenance</h3>
                 <p class="font-livvic">We provide ongoing after-sales support services to your customers who have purchased your products or services. We offer technical support, training and more to ensure customer satisfcation and value.</p>
             </div>

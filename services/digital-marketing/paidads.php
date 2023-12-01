@@ -92,9 +92,9 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="max-w-7xl grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect">
             <div class="relative w-max">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser1.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/search-ads.png" class="w-16 mb-4">
             </div>
             <div class="flex-col justify-between">
                 <h3 class="text-2xl text-head font-bold mb-1">Search Ads</h3>
@@ -102,17 +102,17 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 flex justify-between items-start flex-col services-effect">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser2.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/display-ads.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Display Ads</h3>
                 <p class="font-livvic">We help you create and manage ads that appear on websites, apps, and videos that are relevant to your target audience. We use eye-catching images, animations, and interactive elements to attract attention and generate clicks.</p>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser3.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/social-ads.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Social Ads</h3>
                 <p class="font-livvic">We help you create and manage ads that appear on social media platforms like Facebook, Instagram, Twitter, and LinkedIn. We use engaging content, images, videos, and stories to reach your ideal customers and grow your brand awareness.</p>
             </div>
@@ -120,9 +120,9 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="max-w-7xl grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect">
             <div class="relative w-max">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser1.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/remarketing-ads.png" class="w-16 mb-4">
             </div>
             <div class="flex-col justify-between">
                 <h3 class="text-2xl text-head font-bold mb-1">Remarketing Ads</h3>
@@ -130,9 +130,9 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser2.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/stream-ads.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">In-stream Ads</h3>
                 <p class="font-livvic">We help you create and manage ads that appear before, during, or after online videos on platforms like YouTube, Twitch, and Hulu. We use captivating videos that match the content and context of the video to capture the viewers’ interest and drive conversions.</p>
             </div>

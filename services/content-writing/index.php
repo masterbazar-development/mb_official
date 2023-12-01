@@ -108,9 +108,9 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="max-w-7xl grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect">
             <div class="relative w-max">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser1.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/blogs-generation.png" class="w-16 mb-4">
             </div>
             <div class="flex-col justify-between">
                 <h3 class="text-2xl text-head font-bold mb-1">Blogs</h3>
@@ -118,41 +118,41 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col ">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser2.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/articles.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Articles</h3>
                 <p class="font-livvic">Articles help you showcase your expertise, build your credibility reach a wider audience, and set you as 'the source of information' in your industry. They are longer, more formal, and provide information, research, analysis, or an argument on a specific topic.</p>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser3.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/content-writing.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Website Content Writing</h3>
                 <p class="font-livvic">We become your voice on your website, our content not only informs but retains and converts your target audience into paying customers. Whether you need a landing page or a full website, we can write it for you with clarity, creativity, and SEO optimization</p>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col ">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seosec4.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/seo-content-writing.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">SEO Content Writing</h3>
                 <p class="font-livvic">We do market research and competitor analysis, define keywords, audience, and goals, and write SEO-friendly content that helps you rank higher on search engines, it not only increases your visibility but boosts organic traffic to your website.</p>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 services-effect flex justify-between items-start flex-col">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser5.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/product-discription.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Product Description</h3>
                 <p class="font-livvic">We help you showcase your products or services in the most persuasive and compelling way. By highlighting features, benefits, and unique selling points our skilled writers create concise and informative descriptions that drive conversion.</p>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seoser6.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/tech-writing.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Technical Writing Services</h3>
                 <p class="font-livvic">We help you with your product or service user manuals, tutorials, FAQs, guides, white papers, and other technical documents. We help you communicate complex and technical information, instructions, or troubleshooting information in an easy-to-understand way.</p>
             </div>
