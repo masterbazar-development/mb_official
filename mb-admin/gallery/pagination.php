@@ -29,7 +29,7 @@ if (mysqli_num_rows($category_run) > 0) {
                 <a href="edit-image?id=<?= $item['id'] ?>" target="_self" class="btn btn-info" data-id="<?= $item['id'] ?>">Edit</a>
             </td> -->
             <td>
-                <a href="../masterbazar24/mb-admin/images-add?id=<?= $item['id'] ?>" target="_self" class="btn btn-info edit-btn"  data-id="<?= $item['id'] ?>" >Edit</a>
+                <a href="../masterbazar24/mb-admin/images-add?id=<?= $item['id'] ?>" target="_self" class="btn btn-info edit-btn" data-id="<?= $item['id'] ?>">Edit</a>
             </td>
             <td>
                 <form action="delete-images" method="POST">

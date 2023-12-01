@@ -1,7 +1,7 @@
 <?php include('./components/header.php'); ?>
 <?php include('./components/loader.php'); ?>
-<?php include('./components/navmenu.php'); 
-include('mb-admin/config/dbcon.php');?>
+<?php include('./components/navmenu.php');
+include('mb-admin/config/dbcon.php'); ?>
 
 
 <!-- Ellipse Starts From Here -->
@@ -16,16 +16,19 @@ include('mb-admin/config/dbcon.php');?>
 <section id="targetDiv" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-screen  w-screen overflow-hidden">
     <div class="2xl:max-w-full xl:max-w-7xl lg:max-w-6xl  2xl:mx-[10vw] mx-auto px-4 h-full">
         <header class="flex justify-between items-center">
+
             <div class="flex justify-start items-center gap-2 py-4">
-                <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="2xl:w-20 w-16 2xl:h-20 h-16" alt="masterbazar-logo">
+                <a href="<?php echo $mainUrl; ?>">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="2xl:w-20 w-16 2xl:h-20 h-16" alt="masterbazar-logo">
+                </a>
                 <div class="">
                     <h4 class="2xl:text-4xl text-3xl text-head font-extrabold">Master<span class="text-[#264CC5]">Bazar</span></h4>
                     <p class="text-xs text-head font-medium text-center">Masters of the digital world!</p>
                 </div>
-            </div>
+            </div></a>
 
             <div class="sm:flex hidden justify-center items-center gap-4 ">
-                <button role="button" class="mx-auto shadow-xl w-max py-3 px-8 font-medium font-livvic text-head bg-blue rounded-full flex justify-center gap-4 items-center">
+                <button role="button" class="mx-auto shadow-xl w-max py-3 px-8 font-medium font-livvic text-white bg-blue rounded-full flex justify-center gap-4 items-center">
                     <span>Let's Have A Talk!
                     </span>
                     <span><i class="fa-solid fa-message text-xl text-white"></i></span>
@@ -38,15 +41,15 @@ include('mb-admin/config/dbcon.php');?>
                 <h1 class="text-left 2xl:text-6xl md:text-5xl text-4xl text-head md:font-extrabold sm:font-black font-semibold">Accelerate <br /> Your Business Growth With <br /> <span class="text-[#264CC5] italic md:font-extrabold sm:font-black font-extrabold"> Master Bazar.</span></h1>
                 <p class="sm:text-lg font-livvic font-normal mt-5  text-[#334155] w-full">From Web Development to Digital Marketing, We'll Help You Grow Your Business at Lightning Speed. We understand how challenging it can be to sail through the vast sea of the digital world, which is why we are here to be your captain in your digital journey and bring growth to your business.</p>
 
-                    <a href=""><button class="mx-auto shadow-xl w-max py-3 px-8 font-medium md:mt-10 mt-6 text-white bg-blue  rounded-full">
-                            <span class="button__label flex justify-center items-center font-livvic gap-4">Boost Your Business
-                                <span class="relative flex  h-[12px] w-[12px] ml-[-8px]">
-                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white  opacity-75"></span>
-                                    <span class="relative inline-flex rounded-full h-[4px] w-[4px] bg-white ml-[4px] mt-[4px]"></span>
-                                </span>
+                <a href=""><button class="mx-auto shadow-xl w-max py-3 px-8 font-medium md:mt-10 mt-6 text-white bg-blue  rounded-full">
+                        <span class="button__label flex justify-center items-center font-livvic gap-4">Boost Your Business
+                            <span class="relative flex  h-[12px] w-[12px] ml-[-8px]">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white  opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-[4px] w-[4px] bg-white ml-[4px] mt-[4px]"></span>
                             </span>
-                        </button>
-                    </a>
+                        </span>
+                    </button>
+                </a>
             </div>
             <div class="wrapper w-full relative lg:flex hidden justify-end items-center lg:h-[100vh]">
                 <div id="gradientblob" class="blob bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[600px] xl:w-[400px] lg:w-[300px] 2xl:h-[600px] xl:h-[400px] lg:[300px]"></div>
@@ -95,28 +98,28 @@ include('mb-admin/config/dbcon.php');?>
 <!-- Why Choose us Section Ends Here -->
 
 <script>
-     function debounce(func, wait) {
-      let timeout;
-      return function() {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, arguments), wait);
-      };
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, arguments), wait);
+        };
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-      let sec_first = document.getElementById('targetDiv');
-      let sec_second = document.getElementById('whychoose');
+        let sec_first = document.getElementById('targetDiv');
+        let sec_second = document.getElementById('whychoose');
 
-      function handleScroll() {
-        if (sec_first.getBoundingClientRect().top <= -50) {
-          sec_first.style.height = 0;
-        } else if (sec_second.getBoundingClientRect().top === 0) {
-          sec_first.style.height = '100vh';
+        function handleScroll() {
+            if (sec_first.getBoundingClientRect().top <= -50) {
+                sec_first.style.height = 0;
+            } else if (sec_second.getBoundingClientRect().top === 0) {
+                sec_first.style.height = '100vh';
+            }
         }
-      }
 
-      // Use the debounced version of the scroll event handler
-      window.addEventListener('scroll', debounce(handleScroll, 200));
+        // Use the debounced version of the scroll event handler
+        window.addEventListener('scroll', debounce(handleScroll, 200));
     });
 </script>
 
@@ -134,7 +137,8 @@ include('mb-admin/config/dbcon.php');?>
 
 
 <!-- Project Slide Section Starts From Here -->
-<?php //include('./components/projectsSlide.php'); ?>
+<?php //include('./components/projectsSlide.php'); 
+?>
 <!-- Project Slide Section Ends Here -->
 
 <?php include('./components/ourservices.php'); ?>
@@ -143,7 +147,8 @@ include('mb-admin/config/dbcon.php');?>
 <?php include('./components/ourProcess.php') ?>
 <!-- Our Process Ends Here -->
 
-<?php include('./components/blogsSection.php') ?>
+<?php include('./components/blogsSection.php');
+$how= "cow"; ?>
 
 <!-- FAQs Section Starts From Here -->
 
@@ -156,10 +161,8 @@ include('mb-admin/config/dbcon.php');?>
     </div>
 
     <script>
-        // Example data (replace this with data fetched from an API or another source)
-        var faqData = [
-            {
-                question: 'Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
+        var faqData = [{
+                question: '<?php echo $how; ?>Commonly Used In The Graphic, Print, And Publishing Industries For Previewing Layouts And Visual Mockups',
                 answer: 'Ut Enim Ad Minim veniam. Quis Nostrud Exercitation ullamco laboris Nisi Ut Aliquip Ex Fa Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Fu Fugiat Nulla Pariatur',
             },
             {
@@ -229,7 +232,7 @@ include('mb-admin/config/dbcon.php');?>
         function populateFAQ() {
             var faqContainer = document.getElementById('faqContainer');
 
-            faqData.forEach(function (item) {
+            faqData.forEach(function(item) {
                 var faqItem = createFAQItem(item.question, item.answer);
                 faqContainer.appendChild(faqItem);
             });

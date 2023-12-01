@@ -37,34 +37,5 @@ if (isset($_POST['delete_images'])) {
         echo "Error fetching image data: " . mysqli_error($con);
     }
 }
-
-// Close the database connection
 mysqli_close($con);
-
-// if (isset($_POST['delete_images'])) {
-
-//     $post_id = $_POST['delete_images'];
-
-//     $delete = "SELECT FROM gallery WHERE id='$post_id' LIMIT 1";
-//     $img_res = mysqli_query($con, $delete);
-//     $res_data = mysqli_fetch_array($img_res);
-//     $image = $res_data['image'];
-
-//     $query = "DELETE FROM gallery WHERE id='$post_id' LIMIT 1";
-//     $query_run = mysqli_query($con, $query);
-
-//     if ($query_run) {
-
-//         if (file_exists('uploads/' . $image)) {
-//             unlink('uploads/' . $image);;
-//         }
-
-//         $_SESSION['message'] = "Image Deleted Successfully";
-//         header('Location: post-view');
-//         exit(0);
-//     } else {
-//         $_SESSION['message'] = "Something Went Wrong!";
-//         header('Location: Image-add');
-//         exit(0);
-//     }
-// }
+?>

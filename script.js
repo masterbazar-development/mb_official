@@ -1,5 +1,4 @@
 
-
     function show() {
         document.querySelector('.hamburger').classList.
         toggle('open')

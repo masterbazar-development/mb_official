@@ -26,11 +26,7 @@
             <button class="text-head px-6 py-2 mt-4 rounded-md bg-gray-200 text-sm font-bold">Read More</button>
         </div>
 
-<<<<<<< HEAD
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg services-shadow">
-=======
         <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg ">
->>>>>>> 42dad445cfc627eb23e93b156f2213707a520595
             <div class="relative w-max">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/ellipse.png" class="w-16 mb-4">
                 <i class="fa-solid fa-database absolute text-3xl text-blue top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>

@@ -41,20 +41,23 @@ include('../mb-admin/config/dbcon.php');
         ?>
             <p class=" text-gray-800"><?php // echo $first50Words; 
                                       ?></p>
-            <div class="image-container rounded-md">
+            <div class="rounded-md group/image">
               <div class="img-wrapper ">
-                <a href="../blogs/<?= $results['slug'] ?>" class="inline-block overflow-hidden">
-                  <img src="../assets/client/images/blog/<?= $results['image'] ?>" class="w-full rounded-md transition-all duration-700 ease-in-out hover:scale-[1.01]">
+                <a href="../blogs/<?= $results['slug'] ?>" class="inline-block overflow-hidden ">
+                  <img src="../assets/client/images/blog/<?= $results['image'] ?>" class="w-full rounded-md transition-all duration-700 ease-in-out hover:scale-[1.02]">
                 </a>
               </div>
-              <div class="p-3 md:p-6">
+              <div class="py-5">
                 <a href="../blogs/<?= $results['slug'] ?>">
-                  <h1 class=" text-head text-2xl font-semibold transition duration-150 hover:underline hover:underline-offset-4 target"><?php echo  $results['name']; ?></h1>
+                  <h1 class=" text-head text-2xl font-semibold transition duration-150 hover:underline hover:underline-offset-4  group-hover/image:underline-offset-4 group-hover/image:underline "><?php echo  $results['name']; ?></h1>
                 </a>
+                <p class="text-2xl">
+                  <?php echo  $first50Words; ?>
+                </p>
                 <a href="../blogs/<?= $results['slug'] ?>">
                   <p class=" text-gray-800 text0-md lg:text-lg pt-3 cursor-text font-livvic"><?php // echo $first50Words; 
                                                                                               ?><a href="../blogs/<?= $results['slug'] ?>"><span>
-                        Read More
+                        Read More..
                       </span>
                   </p>
                 </a>
@@ -106,16 +109,16 @@ include('../mb-admin/config/dbcon.php');
     toggle('active')
   }
 </script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script defer>
   var loadingImages = false;
   var hasMoreImages = true;
 
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function() {
     loadPosts();
     handleScroll();
 
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function() {
       handleScroll();
     });
   });
@@ -148,12 +151,12 @@ include('../mb-admin/config/dbcon.php');
     var currentPage = parseInt(document.getElementById('currentPage').value);
 
     fetch('load-more-images', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: 'page=' + currentPage,
-    })
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: 'page=' + currentPage,
+      })
       .then(response => response.json())
       .then(data => {
         loadingImages = false;
@@ -190,7 +193,7 @@ include('../mb-admin/config/dbcon.php');
 
   function fadeIn(element) {
     var opacity = 0;
-    var interval = setInterval(function () {
+    var interval = setInterval(function() {
       if (opacity < 1) {
         opacity += 0.6;
         element.style.opacity = opacity;
@@ -200,8 +203,4 @@ include('../mb-admin/config/dbcon.php');
     }, 100);
   }
 </script>
-
-
-
-<hr class="border-t-2 border-gradientdivide">
 <?php include('../components/footer.php'); ?>

@@ -76,7 +76,7 @@
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/gallery/images-add">Add Images</a>
 
-                        <!-- <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/faq/images-view">View Images</a> -->
+                        <a class="nav-link" href="<?php echo $mainurl; ?>mb-admin/gallery/team-add">Add Team</a>
                     </nav>
                 </div>
             </div>

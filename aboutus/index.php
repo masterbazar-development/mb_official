@@ -33,7 +33,7 @@
   <div class="flex justify-center mb-12">
     <p class="text-lg font-livvic font-normal text-[#334155] max-w-7xl text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></h2>
   </div>
-  <div class="text-lg max-w-7xl mx-auto">
+  <div class="text-lg mx-[10vw] max-w-full">
     <div class="lg:grid lg:grid-cols-4 gap-4">
       <div class="col-span-1">
         <div class="justify-center gap-4 grid lg:grid-cols-1 grid-cols-2 items-center">
@@ -74,55 +74,39 @@
   <div class="flex justify-center mb-12">
     <p class="text-lg font-livvic font-normal text-[#334155] max-w-7xl text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></h2>
   </div>
-  <div class="text-lg max-w-7xl mx-auto">
-    <div class="lg:grid lg:grid-cols-4 space-y-4 gap-4">
-      <div class="">
-        <div class="my-5 justify-center gap-4 grid lg:grid-cols-1 grid-cols-2 items-center">
-          <div class="">
-            <p class="bg-blue text-white rounded-md p-3 font-medium cursor-pointer">Developers</p>
-          </div>
-          <div class="">
-            <p class="faq-cat">SEO</p>
-          </div>
-          <div class="">
-            <p class="faq-cat">Birthdays</p>
-          </div>
-          <div class="">
-            <p class="faq-cat">Lorem Lysem</p>
-          </div>
+  <!-- team -->
+  <!-- <div class="text-lg mx-[10vw] max-w-full">
+    <div class="lg:grid lg:grid-cols-4 gap-4">
+      <div class="col-span-1">
+        <div class="justify-center gap-4 grid lg:grid-cols-1 grid-cols-2 items-center">
+          <?php
+          include('../mb-admin/config/dbcon.php');
+          $category = "SELECT * FROM categories WHERE status='0' AND main_category='TEAM'";
+          $category_run = mysqli_query($con, $category);
+          // print_r($category_run);
+          if (mysqli_num_rows($category_run) > 0) {
+            foreach ($category_run as $categoryitem) :
+          ?>
+              <p class="faq-cat category-item-team" data-category-id="<?php echo $categoryitem['id'] ?>"><?php echo $categoryitem['name'] ?></p>
+          <?php endforeach;
+          } ?>
         </div>
       </div>
-      <div class="col-span-3">
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
-          <div class="">
-            <img src="<?php echo $mainUrl; ?>assets/client/images/project/mb_screen.png" alt="" class="">
-          </div>
-
-
-          <div class="">
-            <img src="<?php echo $mainUrl; ?>assets/client/images/project/mb_screen.png" alt="" class="">
-          </div>
-
-          <div class="">
-            <img src="<?php echo $mainUrl; ?>assets/client/images/project/mb_screen.png" alt="" class="">
-          </div>
-
-          <div class="">
-            <img src="<?php echo $mainUrl; ?>assets/client/images/project/mb_screen.png" alt="" class="">
-          </div>
-
-          <div class="">
-            <img src="<?php echo $mainUrl; ?>assets/client/images/project/mb_screen.png" alt="" class="">
-          </div>
-
-          <div class="">
-            <img src="<?php echo $mainUrl; ?>assets/client/images/project/mb_screen.png" alt="" class="">
-          </div>
-
+      <div class="col-span-3" id="teamContainer">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4" id="teamImages">
+           images loaded here -->
         </div>
+        <div id="teampaginationContainer" class="text-center flex justify-center mt-6">
+          <!-- Pagination loaded here -->
+        <!-- </div>
+      </div>
+      <div id="teammodal" class="modal hidden fixed z-[1000] pt-36 left-0 top-0 w-full h-full overflow-auto bg-[#000000d2]">
+        <span class="close absolute top-10 right-[2rem] text-6xl text-white font-bold cursor-pointer" onclick="closeModal()">&times;</span>
+        <img id="teammodalImage" class="modal-content max-w-[80%] max-h-[80%] m-auto block opacity-0 transition-all duration-300 ease-in-out">
       </div>
     </div>
-  </div>
+  </div>  -->
+<!-- team -->
 </section>
 <script async>
   document.addEventListener('DOMContentLoaded', function() {
@@ -150,7 +134,6 @@
     if (!categoryId) {
       categoryId = document.querySelector('.category-item.active').dataset.categoryId;
     }
-    console.log(categoryId);
     // Include categoryId in the fetch URL if 
     const fetchUrl = categoryId ? `load_images?page=${page}&category=${categoryId}` : `load_images?page=${page}`;
     console.log(fetchUrl);
@@ -210,6 +193,91 @@
     document.getElementById('gallerymodal').style.display = 'none';
     modalImage.classList.remove('opacity-100');
   }
+  //---------------------------------------- team script---------------------------
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   // Load initial images on page load with custom id like 16 
+  //   const team_dcategoryId = "21";
+  //   const teamcategoryIditem = document.querySelector(`.category-item-team[data-category-id="${team_dcategoryId}"]`);
+  //   if (teamcategoryIditem) {
+  //     teamcategoryIditem.classList.add('active');
+  //   }
+  //   loadImages(1, team_dcategoryId);
+  // });
+  // // Event listener for category items
+  // document.addEventListener('click', function(event) {
+  //   if (event.target.classList.contains('category-item-team')) {
+  //     const teamcategoryId = event.target.dataset.teamcategoryId;
+  //     const teamcategoryItems = document.querySelectorAll('.category-item-team');
+  //     teamcategoryItems.forEach(item => item.classList.remove('active'));
+  //     event.target.classList.add('active');
+  //     loadImages(1, teamcategoryId); // Load images with the selected category
+  //   }
+  // });
+
+  // function loadImages(teamPage, teamcategoryId) {
+  //   const teamContainer = document.getElementById('teamContainer');
+  //   if (!teamcategoryId) {
+  //     teamcategoryId = document.querySelector('.category-item-team.active').dataset.teamcategoryId;
+  //   }
+  //   // Include categoryId in the fetch URL if 
+  //   const fetchUrlteam = teamcategoryId ? `load_images_team?page=${teamPage}&category_team=${teamcategoryId}` : `load_images_team?page=${teamPage}`;
+  //   console.log(fetchUrlteam);
+  //   fetch(fetchUrlteam)
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       displayImages(data.team);
+
+  //       displayPagination(data.totalPages, teamPage);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching images:', error);
+  //     });
+  // }
+
+  // function displayImages(team) {
+  //   const teamImages = document.getElementById('teamImages');
+  //   teamImages.innerHTML = '';
+
+  //   team.forEach(item => {
+  //     const imageElement = document.createElement('div');
+  //     imageElement.innerHTML = `
+  //           <div class="image-container" onclick="openModal('${item.url}', '${item.alt}')">
+  //               <div class="img-wrapper inline-block overflow-hidden">
+  //                   <img src="${item.url}" alt="${item.alt}" class="rounded-md cursor-pointer transition-all duration-700 ease hover:scale-[1.1]">
+  //               </div>
+  //           </div>
+  //       `;
+  //     teamImages.appendChild(imageElement);
+  //   });
+  // }
+
+  // function displayPagination(totalPages, currentPage) {
+  //   const paginationContainer = document.getElementById('teampaginationContainer');
+  //   paginationContainer.innerHTML = '';
+
+  //   for (let i = 1; i <= totalPages; i++) {
+  //     const pageLink = `
+  //   <a href="javascript:void(0)" class="pagination-link ${i === currentPage ? 'active-team' : ''} text-sm px-4 py-[0.65rem] text-gray-400 mr-[0.1rem] bg-white rounded-full font-livvic font-msemibold border border-[.08rem] border-gray-300 hover:bg-gray-200 hover:text-gray-700" data-page="${i}" onclick="loadImages(${i})">
+  //     ${i}
+  //   </a>
+  // `;
+  //     paginationContainer.insertAdjacentHTML('beforeend', pageLink);
+  //   }
+  // }
+
+  // function openModal(imagesrc, alt_tag) {
+  //   var modal = document.getElementById('teammodal');
+  //   var modalImage = document.getElementById('teammodalImage');
+  //   modal.style.display = 'block';
+  //   modalImage.src = imagesrc;
+  //   modalImage.alt = alt_tag;
+  //   modalImage.classList.add('opacity-100');
+  // }
+
+  // function closeModal() {
+  //   document.getElementById('teammodal').style.display = 'none';
+  //   modalImage.classList.remove('opacity-100');
+  // }
 </script>
 
 <?php include('../components/cursor.php'); ?>

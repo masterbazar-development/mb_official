@@ -2,21 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-    /* FAQ categories button css  */
-    .faq-cat{
-        @apply bg-[#F3F4F6] rounded-md p-3 font-medium cursor-pointer;
-    }
-<<<<<<< HEAD
-    .services-effect{
-        @apply shadow-md
+  /* FAQ categories button css  */
+  .faq-cat {
+    @apply bg-[#F3F4F6] rounded-md p-3 font-medium cursor-pointer;
+  }
+  .services-effect {
+    @apply shadow-md
         hover:-translate-y-[.4rem] transition-all duration-300 ease-in-out hover:shadow-[0_12px_12px_-2px_rgba(0,0,0,0.10)] origin-bottom-right;
-    }
+  }
 }
-=======
-
-    .services-shadow{
-        @apply shadow-md hover:-translate-y-[.4rem] transition-all duration-300 ease-in-out hover:shadow-[0_12px_12px_-2px_rgba(0,0,0,0.10)] origin-bottom-right
-    }
-}
-
->>>>>>> 694124e47b38471224e88e34a7e3af050de6bcf9

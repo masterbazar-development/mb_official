@@ -108,7 +108,7 @@ include('../includes/navbar-top.php')
                             </div>
                             <div class="col-md-12 mb-3">
                                 <button type="submit" name="images_add" onclick="uploadFiles()" class="btn btn-primary">Add Images</button>
-                                <button type= "submit" class="d-none" name="edit_add" onclick="" class="btn btn-primary">Edit Image</button>
+                                <button type="submit" class="d-none" name="edit_add" onclick="" class="btn btn-primary">Edit Image</button>
                             </div>
                         </div>
                     </form>
@@ -138,6 +138,7 @@ include('../includes/navbar-top.php')
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <!-- images loaded here  -->
                                         <?php
                                         $itemsPerPage = 10; //always put same value 
                                         $page = isset($_POST['page']) ? $_POST['page'] : 1;
@@ -149,46 +150,9 @@ include('../includes/navbar-top.php')
                                         WHERE gallery.status != '2' LIMIT $offset, $itemsPerPage";
                                         // $category = "SELECT * FROM gallery WHERE status!='2'";
                                         $category_run = mysqli_query($con, $category);
-
-                                        if (mysqli_num_rows($category_run) > 0) {
-                                            foreach ($category_run as $item) {
-                                        ?>
-                                                <tr>
-                                                    <td><?= $item['id'] ?></td>
-                                                    <td><?= $item['category_name'] ?></td>
-                                                    <td><?= $item['filename'] ?></td>
-                                                    <td><img src="<?php echo $mainurl; ?>mb-admin/gallery/uploads/<?= $item['filename'] ?>" class="" width="100" height="100" alt=""></td>
-                                                    <td><?php
-                                                        if ($item['status'] == '1') {
-                                                            echo 'Hidden';
-                                                        } else {
-                                                            echo 'Visible';
-                                                        }
-                                                        ?></td>
-                                                    <td>
-                                                        <a href="category-edit?id=<?= $item['id'] ?>" class="btn btn-info">Edit</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="images-addd?id=<?= $item['id'] ?>" class="btn btn-info">Edit</a>
-                                                    </td>
-                                                    <td>
-                                                        <!-- <form action="code.php" method="POST">
-                                                            <button type="submit" name="category_delete" value="<?= $item['id'] ?>" class="btn btn-danger">Delete</button>
-                                                        </form> -->
-                                                    </td>
-
-                                                </tr>
-                                            <?php
-                                            }
-                                        } else {
-                                            ?>
-                                            <tr>
-                                                <td colspan="5">No Record Found</td>
-                                            </tr>
-                                        <?php
-                                        }
                                         ?>
                                     </tbody>
+
                                 </table>
                                 <!-- pagi--->
                                 <div id="paginationContainer">
@@ -320,10 +284,6 @@ include('../includes/navbar-top.php')
         if (e.target.classList.contains('edit-btn')) {
             e.preventDefault();
             var editId = e.target.dataset.id;
-<<<<<<< HEAD
-=======
-            console.log(editId);
->>>>>>> 694124e47b38471224e88e34a7e3af050de6bcf9
             fetch('edit-images?id=' + editId, {
                     method: 'POST',
                 })
@@ -333,10 +293,6 @@ include('../includes/navbar-top.php')
                     }
                     return response.json();
                 })
-<<<<<<< HEAD
-=======
-
->>>>>>> 694124e47b38471224e88e34a7e3af050de6bcf9
                 .then(data => {
                     console.log('Server Response:', data);
                     if (data.success) {
