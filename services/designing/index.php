@@ -207,7 +207,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="parent lg:w-1/3">
         <div class="is-sticky mt-20 mb-10">
             <h2 class="lg:w-2/3 text-head text-4xl lg:text-6xl font-bold">What Do We Do</h2>
-            <p class="text-sm mt-6 lg:w-2/3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
+            <p class="text-base mt-6 lg:w-full font-livvic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
             <div class="flex items-center text-head text-xl mt-2 hover:translate-x-3 transition-transform duration-300 ">
                 <p class="font-semibold">see our work </p>
                 <p class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -281,6 +281,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
         height: 150px;
         margin: 1em;
         padding: .5em;
+        border-radius: 0.5rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -307,6 +308,10 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <!----------------- development marqquee tools we use section starts from here ------------->
 <section class="mt-32 overflow-hidden">
+    <div class="2xl:max-w-full 2xl:mx-[10vw]">
+        <h3 class="text-head text-5xl font-extrabold">Tools We Use To <span class="text-blue">Design.</span> </h3>
+        <p class="text-lg text-gray-700 font-livvic w-1/3 mt-3 mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aperiam laudantium. Modi, non! Ipsam molestiae ducimus ullam sapiente enim molestias.</p>
+    </div>
     <div class="Marquee flex ">
 <!-------- marquee running ---------->
 <div class="Marquee-content flex">

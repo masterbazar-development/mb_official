@@ -1,5 +1,5 @@
 <section class="mx-auto lg:max-w-5xl max-w-4xl">
-    <div id="subscription" class="border-t-0 md:px-24 sm:px-12 px-4 py-8 my-24">
+    <div id="subscription" class="border-t-0 md:px-24 sm:px-12 px-4 py-8 my-24 rounded-md">
         <h2 class="sm:text-4xl text-3xl sm:font-medium font-semibold text-white text-center ">Subscribe to Our Newsletter!</h2>
         <p class="text-gray-200 text-center font-light sm:px-12 px-4 mb-8 mt-2 font-livvic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, voluptas expedita? Dicta molestiae, maxime minima ex saepe consequuntur.</p>
         
