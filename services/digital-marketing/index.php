@@ -63,7 +63,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
         <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-xl transition duration-300 ease-in-out hover:scale-110">
             <div class="relative w-max">
-                <img src="<?php echo $mainUrl ?>/assets/client/images/seo.png" class="w-16 mb-4">
+                <img src="<?php echo $mainUrl ?>/assets/client/images/search-engine.png" class="w-16 mb-4">
 
             </div>
             <div class="flex-col justify-between">
