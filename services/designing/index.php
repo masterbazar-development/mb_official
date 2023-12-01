@@ -298,8 +298,7 @@ include('../../mb-admin/config/dbcon.php');
     }
 
     .Marquee-tag {
-        width: 250px;
-        height: 150px;
+
         margin: 1em;
         padding: .5em;
         border-radius: 0.5rem;
@@ -335,54 +334,53 @@ include('../../mb-admin/config/dbcon.php');
     <div class="Marquee flex ">
 <!-------- marquee running ---------->
 <div class="Marquee-content flex">
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool1.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool1.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
             </div>
-
         </div>
     </div>
 
 <!--------- marquee reverse ---------->
 <div class="Marquee flex overflow-hidden">
         <div class="Marquee-content1 flex ">
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool1.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool1.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
             </div>
-            <div class="Marquee-tag bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
-                <img class="w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
+            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+                <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
             </div>
         </div>
     </div>

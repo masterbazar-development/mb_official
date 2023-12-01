@@ -14,7 +14,7 @@
             <nav class="2xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-extrabold flex justify-start items-start 2xl:gap-4 md:gap-2 flex-col ">
             <a href="<?php echo $mainUrl; ?>">Home</a>
                 <a href="<?php echo $mainUrl; ?>aboutus" class="text-blue">About Us</a>
-                <a href="">Career</a>
+                <a href="<?php echo $mainUrl; ?>career">Career</a>
                 <a href="<?php echo $mainUrl; ?>blog">Blog</a>
                 <a href="<?php echo $mainUrl; ?>contactus">Contact Us</a>
 
