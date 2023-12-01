@@ -2,13 +2,8 @@
 <?php include('../components/loader.php'); ?>
 <?php include('../components/navmenu.php'); ?>
 
-<!-- Ellipse Starts From Here -->
-<img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
-<!-- Ellipse ends Here -->
 
-<!-- Navigation starts from Here -->
-<?php include('../components/menu.php'); ?>
-<!-- Navigation ends Here -->
+
 
 <!-- Hero Banner Section -->
 <section role="banner" id="targetDiv" class="bg-gradient-to-r from-slate-200 to-white lg:h-[90vh] w-screen overflow-hidden">
