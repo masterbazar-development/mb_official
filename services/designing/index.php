@@ -19,7 +19,8 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!-- Hero Banner Section starts here-->
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
     <div class="max-w-full mx-[10vw]">
-    <header class="flex justify-between items-center px-[10vw] absolute left-0 top-3 w-full z-[110]">
+    <a href="<?php echo $mainUrl; ?>">
+    <header class="flex justify-between items-center px-[10vw] absolute left-0 top-3 w-full z-[80]">
     <div class="flex justify-start items-center gap-2 py-4">
         <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="2xl:w-20 w-16 2xl:h-20 h-16" alt="masterbazar-logo">
         <div class="">
@@ -27,6 +28,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             <p class="text-xs text-head font-medium text-center">Masters of the digital world!</p>
         </div>
     </div>
+    </a>
 
     <div class=" lg:block flex justify-center items-center gap-4">
         
