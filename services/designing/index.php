@@ -393,7 +393,7 @@ include('../../mb-admin/config/dbcon.php');
 </div>
 
 <?php include('../../components/ContactUs.php'); ?>
-<?php include('../../components/subscription.php'); ?>
+
 
 <script>
     function show() {

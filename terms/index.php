@@ -8,7 +8,7 @@
 <!-- Ellipse ends Here -->
 
 <!-- Navigation starts from Here -->
-<?php include('../components/menu.php'); ?>
+
 <!-- Navigation ends Here -->
 
 <div class="justify-center flex ">
