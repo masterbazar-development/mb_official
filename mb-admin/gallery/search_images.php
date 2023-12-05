@@ -3,10 +3,10 @@
 include('../config/dbcon.php');
 if (isset($_POST['searchcategory'])) {
     $searchValue = mysqli_real_escape_string($con, $_POST['searchcategory']);
-    $category_query = "SELECT gallery.*, categories.name as category_name
+    $category_query = " SELECT gallery.*, categories.name as category_name
      FROM gallery
    JOIN categories ON gallery.category = categories.id
-      WHERE gallery.status != '2'  AND (gallery.filename LIKE '%$searchValue%' OR categories.name LIKE '%$searchValue%')";
+      WHERE gallery.status != '2'  AND (gallery.filename LIKE '%$searchValue%' OR categories.name LIKE '%$searchValue%')  ORDER BY id ASC";
     $category_run = mysqli_query($con, $category_query);
 
     // Output data

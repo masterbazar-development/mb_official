@@ -9,7 +9,7 @@ $offset = ($page - 1) * $itemsPerPage;
 $category_query = "SELECT gallery.*, categories.name as category_name
 FROM gallery
 JOIN categories ON gallery.category = categories.id
- WHERE gallery.status != '2' LIMIT $offset, $itemsPerPage";
+ WHERE gallery.status != '2' LIMIT $offset, $itemsPerPage ASC";
 $category_run = mysqli_query($con, $category_query);
 // Output data
 if (mysqli_num_rows($category_run) > 0) {

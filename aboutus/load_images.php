@@ -22,6 +22,7 @@ if (mysqli_num_rows($category_run) > 0) {
         $images[] = [
             'url' => $mainUrl . 'mb-admin/gallery/uploads/' . $item['filename'],
             'alt' => $item['alt_tag'],
+            'index'=>$item['id'],
         ];
     }
 }
