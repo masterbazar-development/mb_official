@@ -19,13 +19,13 @@
                     <form action="" class="my-4">
                         <div class="flex justify-center items-center flex-col gap-4">
                             <input type="text" class="p-3 border-b-2 border-gray-300 bg-gray-100 w-full text-lg font-livvic" placeholder="Email Id">
-                            <button class="py-3 px-6 w-full bg-blue text-white text-lg font-semibold  font-livvic">Submit</button>
+                            <button class="py-3 px-6 w-full bg-blue text-white text-lg font-semibold font-livvic">Submit</button>
                         </div>
                     </form>
                 </div>
 
                 <div class="mb-6">
-                    <h6 class="mb-8 text-3xl flex items-center text-head justify-center font-extrabold uppercase md:justify-start">
+                    <h6 class="mb-8 text-3xl flex items-center text-head justify-center font-extrabold  uppercase md:justify-start">
                         Follow Us
                     </h6>
                     <h4 class="mb-2 text-xl font-bold text-head">Social Links</h4>
