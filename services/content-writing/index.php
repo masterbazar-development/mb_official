@@ -8,11 +8,10 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="max-w-full mx-[10vw]">
         <?php include('../../components/heroheader.php'); ?>
     </div>
-    <div class=" relative flex justify-center it">
 
-
-        <div class="max-w-full min-h-full mx-[3vw] md:mx-[10vw] flex justify-center gap-20 max-h-full">
-            <div class="flex-col items-center w-[60%] min-h-full flex justify-center">
+    <div class="xl:flex xl:justify-center h-full">
+        <div class=" mx-[3vw] md:mx-[10vw] flex justify-center gap-20 max-h-full ">
+            <div class="flex-col items-center xl:w-[60%] min-h-full flex justify-center">
                 <div class="">
                     <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">Engage, Persuade, and Convert <span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
                     </h1>
@@ -22,8 +21,8 @@ include('../../mb-admin/config/dbcon.php'); ?>
                     <span class="text-center text-lg font-semibold underline text-head mt-4">Lets Connect With Us</span>
                 </div>
             </div>
-            <div class="w-[40%] min-h-full flex justify-center items-center">
-                <img id="contentImg" src="<?php echo $mainUrl; ?>assets/client/images/contentban11.png" alt="">
+            <div class="xl:w-[40%] min-h-full flex justify-center items-center ">
+                <img id="contentImg" class="h-[30rem] w-[30rem] 2xl:h-[40rem] 2xl:w-[40rem]" src="<?php echo $mainUrl; ?>assets/client/images/contban1.png" alt="">
             </div>
         </div>
     </div>
@@ -31,7 +30,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <script>
     let contentImg = document.getElementById('contentImg');
-    let imgList = ["contentban11", "contentban22", "contentban33", "contentban44", ];
+    let imgList = ["contban1", "contban2", "contban3", "contban4", ];
     const path = 'http://localhost/mb_official/assets/client/images/'
     let count = 0;
 
@@ -55,7 +54,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">
             Content Writing Solutions for Your Blog and Article Needs</h2>
-        <p class="lg:text-lg xl:text-xl mt-5">
+        <p class=" xl:text-xl mt-5">
             At MasterBazar, we are masters of the written word. Our professional content writing services are designed to captivate your audience, drive traffic, engagement, and conversions. With our expert team of writers, we create content that resonates with your target audience, tells your unique story, and positions your brand as an authority in your niche. Partner with us to unlock the true potential of your content and achieve your business goals.
         </p>
     </div>
@@ -71,7 +70,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="mt-5 my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">
             Content Writing Solutions for Your Blog and Article Needss</h2>
-        <p class="md:text-xl mt-5">
+        <p class=" mt-5">
             At MasterBazar, we are masters of the written word. Our professional content writing services are designed to captivate your audience, drive traffic, engagement, and conversions. With our expert team of writers, we create content that resonates with your target audience, tells your unique story, and positions your brand as an authority in your niche. Partner with us to unlock the true potential of your content and achieve your business goals.
         </p>
     </div>
@@ -83,7 +82,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
     <div class="lg:w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Experience, Excellence, and Exceptional Results</h2>
-        <p class="md:text-xl lg:text-lg xl:text-xl mt-5">
+        <p class="xl:text-xl mt-5">
             At MasterBazar, we understand the power of storytelling, and we use our creative writing skills to transform your ideas into compelling content. Our words paint a vivid picture, evoke emotions, and create memorable experiences for your audience. With our professional blog and article writing solutions, let us help you unleash the true storytelling potential of your brand with our exceptional content writing services.
         </p>
     </div>
@@ -154,15 +153,11 @@ include('../../mb-admin/config/dbcon.php'); ?>
 </section>
 <!------------ our services for content writing  ends here --------------->
 
-
-
-
 <div class="my-32">
     <?php include('../../components/testimonial.php'); ?>
 </div>
 
 <?php include('../../components/ContactUs.php'); ?>
-<?php include('../../components/subscription.php'); ?>
 
 <script>
     function show() {
@@ -172,8 +167,6 @@ include('../../mb-admin/config/dbcon.php'); ?>
         toggle('active')
     }
 </script>
-
-
 
 
 <?php include('../../components/footer.php'); ?>

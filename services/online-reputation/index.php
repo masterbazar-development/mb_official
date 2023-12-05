@@ -27,7 +27,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="max-w-full mx-[3vw] md:mx-[10vw] h-full ">
         <?php include('../../components/heroheader.php'); ?>
 
-        <div class="flex flex-col justify-between items-center lg:flex-row max-w-full gap-8 lg:gap-12 ">
+        <div class="flex flex-col justify-between items-center lg:flex-row max-w-full mt-10 gap-8 lg:gap-12 ">
             <div class="lg:w-[40%] order-2 lg:order-1 mt-8 h-full">
                 <h1 class="2xl:text-5xl text-3xl text-head font-extrabold ">
                     We Handle Your Calls to Keep You Connected

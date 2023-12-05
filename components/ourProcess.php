@@ -1,6 +1,6 @@
 
 
-<h3 class="2xl:max-w-full 2xl:mx-[10vw] xl:max-w-7xl mx-auto 2xl:text-6xl md:text-5xl text-4xl backdrop-blur-md py-10 text-[#172554] text-start font-extrabold md:mt-40 sm:mt-20 mt-10 md:mb-48 sm:mb-20 mb-10 px-2">Our <span class="text-blue"> creative digital agency </span> designs and develops bespoke websites with <span class="text-blue"> three things in mind. </span></h3>
+<h3 class="2xl:max-w-full 2xl:mx-[10vw] xl:max-w-7xl mx-auto 2xl:text-6xl md:text-5xl text-4xl backdrop-blur-md py-10 text-[#172554] text-start font-extrabold ">Our <span class="text-blue"> creative digital agency </span> designs and develops bespoke websites with <span class="text-blue"> three things in mind. </span></h3>
 
 <div class="2xl:max-w-full 2xl:mx-[10vw] max-w-7xl mx-auto px-4">
         <div class="section gap-40 md:min-h-screen min-h-full md:mt-0 mt-6">

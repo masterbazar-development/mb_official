@@ -12,7 +12,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
         <?php include('../../components/heroheader.php'); ?>
     </div>
 
-    <div class="flex flex-col items-center lg:flex-row max-w-full mx-[5vw] gap-8 lg:gap-20 md:mx-[10vw] ">
+    <div class="flex flex-col items-center lg:flex-row max-w-full mt-10 mx-[5vw] gap-8 lg:gap-20 md:mx-[10vw] ">
       <div class="lg:w-1/3 order-2 lg:order-1">
         <h1 class="2xl:text-5xl text-3xl text-head font-extrabold ">
         We Create Interfaces That
@@ -85,7 +85,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 </div>
 
 <?php include('../../components/ContactUs.php'); ?>
-<?php include('../../components/subscription.php'); ?>
+
 
 <script>
   function show() {

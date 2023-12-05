@@ -31,8 +31,8 @@ define('DESCRIPTION', $meta_description);
 //   define('IMAGE', $og_image);
 ?>
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="fixed -top-60 -right-32">
-<?php include('../components/menu.php'); ?>
 <?php include('../components/heroheader.php'); ?>
+<?php include('../components/navmenu.php'); ?>
 <!-- Ellipse ends Here -->
 <?php
 

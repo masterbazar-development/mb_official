@@ -39,7 +39,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <section class=" lg:flex hidden gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
     <div class="w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-3xl text-head font-extrabold leading-snug">Crafting Visual Narratives that Captivate Your Audience's Imagination</h2>
-        <p class="lg:text-lg xl:text-xl font-livvic mt-5">
+        <p class=" xl:text-xl font-livvic mt-5">
         At MasterBazar, we understand that every brand has a unique story to tell. Our expert graphic designers specialize in creating captivating visual narratives that paint a picture, evoke emotions, and engage your audience on a deeper level. From concept to creation, we bring your brand's vision to life through stunning graphic designs that leave a lasting impression.
         </p>
     </div>
@@ -54,7 +54,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
     <div class="mt-5 my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Crafting Visual Narratives that Captivate Your Audience's Imagination</h2>
-        <p class="md:text-xl font-livvic mt-5">
+        <p class=" font-livvic mt-5">
         At MasterBazar, we understand that every brand has a unique story to tell. Our expert graphic designers specialize in creating captivating visual narratives that paint a picture, evoke emotions, and engage your audience on a deeper level. From concept to creation, we bring your brand's vision to life through stunning graphic designs that leave a lasting impression.
         </p>
     </div>
@@ -66,7 +66,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
     <div class="lg:w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Graphic Design Services for Your Every Need</h2>
-        <p class="md:text-xl font-livvic lg:text-lg xl:text-xl mt-5">
+        <p class="font-livvic xl:text-xl mt-5">
         With our experienced team of designers and cutting-edge tools, we deliver high-quality designs that are tailored to your specific requirements, helping you create a cohesive and impactful brand presence across all digital platforms.
         </p>
     </div>
@@ -77,7 +77,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!----------------- our services web development timeline starts here --------------------->
 <section class="lg:flex max-w-full md:mt-32 mt-16 mx-[5vw] md:mx-[10vw]">
   <div class="parent lg:w-1/3">
-    <div class="is-sticky  mb-10">
+    <div class="is-sticky mb-10">
       <h2 class="lg:w-2/3 text-head text-4xl lg:text-6xl font-bold">What Do We Do</h2>
       <p class="text-sm mt-6 lg:w-2/3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
       <div class="flex items-center text-head text-xl mt-2 hover:translate-x-3 transition-transform duration-300 ">
@@ -189,7 +189,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 </div>
 
 <?php include('../../components/ContactUs.php'); ?>
-<?php include('../../components/subscription.php'); ?>
+
 
 <script>
   function show() {

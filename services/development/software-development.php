@@ -6,13 +6,13 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 
 <!-- Hero Banner Section -->
-<section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:h-screen w-screen overflow-hidden">
+<section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:min-h-fit w-screen overflow-hidden">
     <div class="max-w-full  mx-[10vw]">
         <?php include('../../components/heroheader.php'); ?>
 
         <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 mb-12 mt-12 lg:mby-auto">
             <div class="font-medium order-2 lg:order-1 flex flex-col justify-center max-w-7xl mx-auto text-center">
-                <img src="<?php echo $mainUrl; ?>assets/client/images/softwaredevbanner.png" class="w-[15rem] md:w-[35rem] mx-auto pt-10">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/softwaredevbanner.png" class="w-64 md:w-[30rem] lg:w-[35rem] xl:w-[25rem] 2xl:w-[35rem] mx-auto pt-10">
                 <div class="md:block hidden">
                     <div class="flex max-w-5xl mx-auto mt-2">
                         <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">
@@ -82,7 +82,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
     <div class="lg:w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold mt-5 lg:mt-0 leading-snug">Leading Innovation - Tailored Solutions for Your Digital Success</h2>
-        <p class="md:text-xl font-livvic lg:text-lg xl:text-xl mt-5 ">
+        <p class=" font-livvic  xl:text-xl mt-5 ">
             At MasterBazar, we pride ourselves on being at the forefront of technological innovation, offering a comprehensive suite of development services that cater to diverse business needs. Our dedicated team of developers, designers, and tech enthusiasts collaborate seamlessly to craft tailored solutions that elevate your digital presence. With a keen focus on leveraging cutting-edge technology, we're committed to driving your business growth through personalized strategies and innovative development. Our goal is not just to meet your expectations but to exceed them, ensuring that each solution we create is meticulously designed to propel your brand towards unparalleled success in the digital sphere.
         </p>
     </div>
@@ -151,7 +151,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 </div>
 
 <?php include('../../components/ContactUs.php'); ?>
-<?php include('../../components/subscription.php'); ?>
+
 
 <script>
     function show() {

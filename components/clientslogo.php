@@ -1,56 +1,39 @@
+<!-- important the image size ratio is 1:1 ie. every image is a square image -->
+
 <div id="client-logo" class="image-container bg-black flex justify-center items-center sm:flex-nowrap flex-wrap md:gap-12 sm:gap-8 gap-4 sm:py-12 py-8">
-<div class="image-box bg-black relative overflow-hidden">
-    <?php
-    $post = "SELECT * FROM logos  ORDER BY logos.id DESC LIMIT 4";
-    $query = mysqli_query($con, $post);
-
-    $query_run = mysqli_num_rows($query);
-    if ($post) {
-        while ($result = mysqli_fetch_assoc($query)) {
-    ?>
-                            <img src="<?php echo $mainUrl?>assets/client/images/testimonial/client-logo/<?= $result['image'] ?>" class="xl:xl:h-[150px] h-[100px] w-auto image image1">
-                    
-    <?php        }
-    }
-    ?>  
-
-    </div>
-
-    <div class="image-box bg-black relative  overflow-hidden">
-    <?php
-    $post = "SELECT * FROM logos  ORDER BY logos.id DESC LIMIT 4 offset 4";
-    $query = mysqli_query($con, $post);
-
-    $query_run = mysqli_num_rows($query);
-    if ($post) {
-        while ($result = mysqli_fetch_assoc($query)) {
-    ?>
-                            <img src="<?php echo $mainUrl?>assets/client/images/testimonial/client-logo/<?= $result['image'] ?>" class="xl:xl:h-[150px] h-[100px] w-auto image image2">
-                    
-    <?php        }
-    }
-    ?>  
+    <div class="image-box bg-black relative xl:xl:w-[150px] xl:xl:h-[150px] w-[100px] h-[100px]overflow-hidden">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl1.png" alt="Image 1" class="image image1">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl6.png" alt="Image 2" class="image image2">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl3.png" alt="Image 3" class="image image3">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl8.png" alt="Image 4" class="image image4">
     </div>
 
     <div class="image-box bg-black relative xl:xl:w-[150px] xl:xl:h-[150px] w-[100px] h-[100px]overflow-hidden">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl1.svg" alt="Image 1" class="image image1">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl2.svg" alt="Image 2" class="image image2">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl3.svg" alt="Image 3" class="image image3">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl1.svg" alt="Image 4" class="image image4">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl2.png" alt="Image 1" class="image image1">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl7.png" alt="Image 2" class="image image2">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl4.png" alt="Image 3" class="image image3">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl1.png" alt="Image 4" class="image image4">
+    </div>
+
+    <div class="image-box bg-black relative xl:xl:w-[150px] xl:xl:h-[150px] w-[100px] h-[100px]overflow-hidden">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl3.png" alt="Image 1" class="image image1">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl8.png" alt="Image 2" class="image image2">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl5.png" alt="Image 3" class="image image3">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl2.png" alt="Image 4" class="image image4">
     </div>
 
     <div class="image-box bg-black relative xl:w-[150px] xl:h-[150px] w-[100px] h-[100px]overflow-hidden">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl3.svg" alt="Image 1" class="image image1">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl4.svg" alt="Image 2" class="image image2">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl5.svg" alt="Image 3" class="image image3">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl6.svg" alt="Image 4" class="image image4">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl4.png" alt="Image 1" class="image image1">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl1.png" alt="Image 2" class="image image2">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl6.png" alt="Image 3" class="image image3">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl3.png" alt="Image 4" class="image image4">
     </div>
 
     <div class="image-box bg-black relative xl:w-[150px] xl:h-[150px] w-[100px] h-[100px]overflow-hidden">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl2.svg" alt="Image 1" class="image image1">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl5.svg" alt="Image 2" class="image image2">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl6.svg" alt="Image 3" class="image image3">
-        <img src="<?php echo $mainUrl?>assets/client/images/testimonial/cl4.svg" alt="Image 4" class="image image4">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl5.png" alt="Image 1" class="image image1">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl2.png" alt="Image 2" class="image image2">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl7.png" alt="Image 3" class="image image3">
+        <img src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-logo/cl4.png" alt="Image 4" class="image image4">
     </div>
 </div>
 

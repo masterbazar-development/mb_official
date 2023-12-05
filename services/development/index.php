@@ -52,16 +52,16 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!-- css for development page typing text effect in h1 ends here here -->
 
 <!-- Hero Banner Section -->
-<section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
+<section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% lg:min-h-fit w-screen overflow-hidden">
   <div class="max-w-full mx-[3vw] md:mx-[10vw]">
     <?php include('../../components/heroheader.php'); ?>
 
     <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 mb-12 mt-12 lg:mby-auto">
       <div class="font-medium order-2 lg:order-1 flex flex-col justify-center max-w-7xl mx-auto text-center">
-        <img src="<?php echo $mainUrl; ?>assets/client/images/development-banner.png" class="w-[15rem] md:w-[30rem] mx-auto pt-10">
+        <img src="<?php echo $mainUrl; ?>assets/client/images/development-banner.png" class="w-[15rem] lg:w-[35rem] xl:w-[20rem] 2xl:w-[30rem] mx-auto pt-10">
         <div class="md:block hidden">
           <div class="flex max-w-5xl mx-auto mt-2">
-            <h1 class="2xl:text-6xl md:text-3xl text-xl text-head font-extrabold leading-snug">
+            <h1 class="2xl:text-6xl md:text-3xl text-xl text-head text-center font-extrabold leading-snug">
               Crafting Dynamic Digital Experiences through Cutting-Edge
               <!-- <div class="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden text-blue">
             <span class="animate-word col-span-full row-span-full !text-start">Web Development</span>
@@ -71,7 +71,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </h1>
           </div>
           <div class="md:flex w-full items-center gap-4 justify-center">
-            <div class="md:w-1/2 ">
+            <div class="md:w-1/2">
               <h1 class="2xl:text-6xl md:text-end md:text-3xl text-xl text-head font-extrabold leading-snug">Solutions for</h1>
             </div>
             <div class="md:w-1/2 flex md:justify-start justify-center">
@@ -156,7 +156,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
   </div>
   <div class="lg:w-[60%] my-auto">
     <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold mt-5 lg:mt-0 leading-snug">Leading Innovation - Tailored Solutions for Your Digital Success</h2>
-    <p class="md:text-xl lg:text-lg xl:text-xl font-livvic mt-5 ">
+    <p class=" 2xl:text-xl font-livvic mt-5 ">
       At MasterBazar, we pride ourselves on being at the forefront of technological innovation, offering a comprehensive suite of development services that cater to diverse business needs. Our dedicated team of developers, designers, and tech enthusiasts collaborate seamlessly to craft tailored solutions that elevate your digital presence. With a keen focus on leveraging cutting-edge technology, we're committed to driving your business growth through personalized strategies and innovative development. Our goal is not just to meet your expectations but to exceed them, ensuring that each solution we create is meticulously designed to propel your brand towards unparalleled success in the digital sphere.
     </p>
   </div>
@@ -322,7 +322,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
   }
 
   .Marquee-tag:hover {
-    background: #264CC5;
+    background: #C6D6FB;
 
     cursor: pointer;
   }

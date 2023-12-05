@@ -9,21 +9,21 @@ include('../../mb-admin/config/dbcon.php'); ?>
     <div class="max-w-full mx-[3vw] md:mx-[10vw]">
         <?php include('../../components/heroheader.php'); ?>
 
-        <div class="flex flex-col justify-between items-center   lg:flex-row max-w-full gap-8 lg:gap-12  ">
-            <div class="lg:w-[40%] order-2 lg:order-1 mt-28">
-                
-                    <h1 class="2xl:text-5xl text-3xl text-head font-extrabold ">
-                        We Handle Your Calls to Keep You Connected
-                        <span class="text-blue">  With Your Customers</span>
-                    </h1>
-                    <p class=" md:text-lg lg:text-lg md:mt-5 text-start">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    </p>
-                    <div class="flex gap-2 md:gap-5 items-center justify-center lg:justify-start mt-5 lg:mt-8 mb-10 lg:mb-0">
-                        <button class="sm:text-sm text-xs white bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] rounded-full text-head font-semibold sm:px-3 px-6 md:px-12 py-3 md:py-4 sm:py-3">Make An Appointment</button>
-                        
-                    </div>
-               
+        <div class="flex flex-col justify-between items-center  mt-16 lg:flex-row max-w-full gap-8 lg:gap-12  ">
+            <div class="lg:w-[40%] order-2 lg:order-1 xl:mt-28">
+
+                <h1 class="2xl:text-5xl text-3xl text-head font-extrabold ">
+                    We Handle Your Calls to Keep You Connected
+                    <span class="text-blue"> With Your Customers</span>
+                </h1>
+                <p class=" md:text-lg lg:text-lg md:mt-5 text-start">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="flex gap-2 md:gap-5 items-center justify-center lg:justify-start mt-5 lg:mt-8 mb-10 lg:mb-0">
+                    <button class="sm:text-sm text-xs white bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] rounded-full text-head font-semibold sm:px-3 px-6 md:px-12 py-3 md:py-4 sm:py-3">Make An Appointment</button>
+
+                </div>
+
             </div>
             <div class="lg:w-[60%] order-1 lg:order-2 ">
                 <img src="<?php echo $mainUrl; ?>assets/client/images/salesbanner.png" alt="" class="w-full">
@@ -37,7 +37,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 <!-- second section starts here -->
 
 <section class="lg:block hidden lg:flex gap-12 xl:gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-32">
-<div class="w-[40%] ">
+    <div class="w-[40%] ">
         <img src="<?php echo $mainUrl; ?>assets/client/images/sales2.jpg" alt="" class="w-full">
     </div>
     <div class="w-[60%] my-auto">
@@ -51,7 +51,6 @@ include('../../mb-admin/config/dbcon.php'); ?>
             MasterBazar being one of the best call center companies in India and US, we provide a unique model that allows your company to pay for labor only when it is required, enabling you to save the high cost of waste while still being able to soak up spikes in the volume of calls during and after hours. We provide inbound call services, outsourced customer service, and full contact center outsourcing.
         </p>
     </div>
-   
 </section>
 
 <section class="lg:hidden block  max-w-full mx-[5vw] md:mx-[10vw] mt-16 md:mt-32">
@@ -72,7 +71,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 </section>
 
 <section class="lg:flex gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-20 md:mt-32">
-    
+
     <div class="lg:w-[60%] my-auto">
         <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold leading-snug">Implementing Technology For Better Customer Service.</h2>
         <p class=" lg:text-base font-livvic xl:text-xl mt-5 text-gray-700">
@@ -95,7 +94,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="max-w-7xl grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg services-effect">
             <div class="relative w-max">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/lead-generation.png" class="w-16 mb-4">
             </div>
@@ -105,7 +104,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/icons8-incoming-call-64.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Inbound Call</h3>
@@ -113,7 +112,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg flex justify-between items-start flex-col services-effect">
             <div class="h-full">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/icons8-outgoing-call-64.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Outbound Calls</h3>
@@ -121,7 +120,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/helpdesk.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Helpdesk Support</h3>
@@ -129,7 +128,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg flex justify-between items-start flex-col services-effect">
             <div class="h-full">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/technical-call.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Technical Call Centre</h3>
@@ -137,7 +136,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
                 <img src="<?php echo $mainUrl ?>/assets/client/images/mantanance.png" class="w-16 mb-4">
                 <h3 class="text-2xl text-head font-bold mb-1">Maintenance</h3>
@@ -157,14 +156,14 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="max-w-7xl grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mx-auto md:mt-10 mt-12">
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg services-effect">
             <div class="flex-col justify-between">
                 <h3 class="text-2xl text-head font-bold mb-1">Cost Saving</h3>
                 <p class="font-livvic">We help you find and attract potential customers for you products or services. We use various methods such as cold calling, email marketing, Zoom calls, etc. to generate interest and qualify leads for your business.</p>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
 
                 <h3 class="text-2xl text-head font-bold mb-1">More Flexibility</h3>
@@ -172,7 +171,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] text-gray-800 px-4 py-6 rounded-lg flex justify-between items-start flex-col services-effect">
             <div class="h-full">
 
                 <h3 class="text-2xl text-head font-bold mb-1">More Efficiency</h3>
@@ -180,7 +179,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
             </div>
         </div>
 
-        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg shadow-md hover:shadow-xl flex justify-between items-start flex-col transition duration-300 ease-in-out hover:scale-110">
+        <div class="bg-white text-gray-800 px-4 py-6 rounded-lg  flex justify-between items-start flex-col services-effect">
             <div class="h-full">
 
                 <h3 class="text-2xl text-head font-bold mb-1">More Technology</h3>
@@ -200,7 +199,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
 </div>
 
 <?php include('../../components/ContactUs.php'); ?>
-<?php include('../../components/subscription.php'); ?>
+
 
 <script>
     function show() {
