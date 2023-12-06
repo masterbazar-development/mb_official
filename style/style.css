@@ -744,7 +744,7 @@ select::-ms-expand {
   left: 0;
   background: currentcolor;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.5s ease-out;
 }
 
 .halo:hover::after {

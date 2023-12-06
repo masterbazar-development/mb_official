@@ -12,32 +12,32 @@
             </div>
 
             <nav class="2xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-extrabold flex justify-start items-start 2xl:gap-4 md:gap-2 flex-col ">
-                <a href="<?php echo $mainUrl; ?>">Home</a>
-                <a href="<?php echo $mainUrl; ?>aboutus" class="text-blue">About Us</a>
-                <a href="<?php echo $mainUrl; ?>career">Career</a>
-                <a href="<?php echo $mainUrl; ?>blog">Blog</a>
-                <a href="<?php echo $mainUrl; ?>contactus">Contact Us</a>
+                <a class="halo" href="<?php echo $mainUrl; ?>">Home</a>
+                <a class="halo" href="<?php echo $mainUrl; ?>aboutus" class="text-blue">About Us</a>
+                <a class="halo" href="<?php echo $mainUrl; ?>career">Career</a>
+                <a class="halo" href="<?php echo $mainUrl; ?>blog">Blog</a>
+                <a class="halo" href="<?php echo $mainUrl; ?>contactus">Contact Us</a>
 
                 <div class="lg:block hidden">
                     <h3 class="text-head font-extrabold text-2xl mt-10">Social Links
                         <nav class="text-blue mt-4">
                             <ul class="flex justify-start items-center flex-wrap 2xl:gap-4 gap-2">
-                                <li class="text-blue font-normal text-xl 2xl:w-12 w-8 2xl:h-12 h-8 border-2 border-blue rounded-full flex justify-center items-center hover:scale-110 transition ease-in-out delay-150 hover:-translate-y-1  duration-300">
+                                <li class="text-blue font-normal text-xl 2xl:w-12 w-8 2xl:h-12 h-8 border-2 border-blue rounded-full flex justify-center items-center hover:scale-105 transition ease-in-out    duration-150">
                                     <a href="https://www.facebook.com/themasterbazar" target="_blank">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </li>
-                                <li class="text-blue font-normal text-xl 2xl:w-12 w-8 2xl:h-12 h-8 border-2 border-blue rounded-full flex justify-center items-center hover:scale-110 transition ease-in-out delay-150 hover:-translate-y-1  duration-300">
+                                <li class="text-blue font-normal text-xl 2xl:w-12 w-8 2xl:h-12 h-8 border-2 border-blue rounded-full flex justify-center items-center hover:scale-105 transition ease-in-out   duration-150">
                                     <a href="https://www.instagram.com/themasterbazar?igshid=YmMyMTA2M2Y=" target="_blank">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
-                                <li class="text-blue font-normal text-xl 2xl:w-12 w-8 2xl:h-12 h-8 border-2 border-blue rounded-full flex justify-center items-center hover:scale-110 transition ease-in-out delay-150 hover:-translate-y-1  duration-300">
+                                <li class="text-blue font-normal text-xl 2xl:w-12 w-8 2xl:h-12 h-8 border-2 border-blue rounded-full flex justify-center items-center hover:scale-105 transition ease-in-out    duration-150">
                                     <a href="https://twitter.com/themasterbazar?t=uRCSV95fXGDOPCOgA59lgg&amp;s=09" target="_blank">
                                         <i class="fab fa-twitter"></i>
                                     </a>
                                 </li>
-                                <li class="text-blue font-normal text-xl 2xl:w-12 w-8 2xl:h-12 h-8 border-2 border-blue rounded-full flex justify-center items-center hover:scale-110 transition ease-in-out delay-150 hover:-translate-y-1  duration-300">
+                                <li class="text-blue font-normal text-xl 2xl:w-12 w-8 2xl:h-12 h-8 border-2 border-blue rounded-full flex justify-center items-center hover:scale-105 transition ease-in-out   duration-150">
                                     <a href="https://www.linkedin.com/company/masterbazar/" target="_blank">
                                         <i class="fab fa-linkedin-in "></i>
                                     </a>
@@ -97,8 +97,8 @@
             </nav>
             <nav class="2xl:text-2xl text-xl font-medium flex justify-start items-start flex-col ">
                 <h3 class="2xl:text-4xl lg:text-3xl text-2xl xl:mb-4 mb-2 text-blue font-extrabold">Quick Links</h3>
-                <a href="" class="2xl:text-xl text-lg font-bold">Terms and Conditions</a>
-                <a href="" class="2xl:text-xl text-lg font-bold">Privacy and Policy</a>
+                <a href="<?php echo $mainUrl; ?>terms" class="2xl:text-xl text-lg font-bold">Terms and Conditions</a>
+                <a href="<?php echo $mainUrl; ?>privacy" class="2xl:text-xl text-lg font-bold">Privacy and Policy</a>
             </nav>
         </div>
     </div>
