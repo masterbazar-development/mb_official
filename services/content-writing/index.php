@@ -10,7 +10,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
     </div>
 
     <div class="xl:flex xl:justify-center h-full">
-        <div class=" mx-[3vw] md:mx-[10vw] flex justify-center gap-20 max-h-full ">
+        <div class=" mx-[3vw] md:mx-[10vw] xl:flex justify-center gap-20 max-h-full mt-28 xl:mt-0">
             <div class="flex-col items-center xl:w-[60%] min-h-full flex justify-center">
                 <div class="">
                     <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">Engage, Persuade, and Convert <span class="text-[#264CC5] font-extrabold">with the Power of Words</span>
@@ -22,7 +22,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
                 </div>
             </div>
             <div class="xl:w-[40%] min-h-full flex justify-center items-center ">
-                <img id="contentImg" class="h-[30rem] w-[30rem] 2xl:h-[40rem] 2xl:w-[40rem]" src="<?php echo $mainUrl; ?>assets/client/images/contban1.png" alt="">
+                <img id="contentImg" class="h-[20rem] w-[20rem] md:h-[30rem] md:w-[30rem] 2xl:h-[40rem] 2xl:w-[40rem]" src="<?php echo $mainUrl; ?>assets/client/images/contban1.png" alt="">
             </div>
         </div>
     </div>

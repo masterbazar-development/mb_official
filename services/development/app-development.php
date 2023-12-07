@@ -14,13 +14,13 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
         <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 mb-12 mt-12 lg:mby-auto">
             <div class="font-medium order-2 lg:order-1 flex flex-col justify-center max-w-7xl mx-auto text-center">
-                <img src="<?php echo $mainUrl; ?>assets/client/images/appbanner.png" class="w-64 pt-10 md:w-[40rem] lg:w-[45rem] xl:w-[30rem] 2xl:w-[45rem] mx-auto">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/appbanner.png" class="w-64 pt-10 md:w-[40rem] lg:w-[45rem] xl:w-[25rem] 2xl:w-[45rem] mx-auto">
                 <div class="md:block hidden">
                     <div class="flex max-w-5xl mx-auto mt-2">
                         <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">
-                        Unlock New Possibilities with Innovative 
+                            Unlock New Possibilities with Innovative
                             <span class="text-[#264CC5] font-extrabold">Mobile Solutions for Modern Businesses</span>
-                            
+
                         </h1>
                     </div>
                 </div>
@@ -28,14 +28,24 @@ include('../../mb-admin/config/dbcon.php'); ?>
                 <div class="md:hidden block">
                     <div class="flex max-w-5xl mx-auto mt-2">
                         <h1 class="2xl:text-6xl md:text-3xl text-2xl text-head font-extrabold leading-snug">
-                        Unlock New Possibilities with Innovative 
+                            Unlock New Possibilities with Innovative
                             <span class="text-[#264CC5] font-extrabold">Mobile Solutions for Modern Businesses</span>
                         </h1>
                     </div>
 
                 </div>
                 <p class="md:text-lg font-livvic font-normal mt-5 text-[#334155] lg:px-40 w-full">Transforming Your Ideas into Powerful and Engaging Mobile Experiences, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
-                <span class="text-center text-lg font-semibold underline text-head mt-4">Lets Connect With Us</span>
+                <div class="mt-2">
+                    <a href="#_" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#264CC5] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#264CC5] group-hover:translate-x-0 ease">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#264CC5] transition-all duration-300 transform group-hover:translate-x-full ease">Lets Connect with Us</span>
+                        <span class="relative invisible">Lets Connect With Us</span>
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -81,15 +91,15 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 
 <section class="lg:flex gap-20 max-w-full mx-[5vw] md:mx-[10vw] mt-20 md:mt-32">
-  <div class="lg:w-[40%]">
-    <img src="<?php echo $mainUrl; ?>assets/client/images/appdevsec.jpg" alt="" class="w-full">
-  </div>
-  <div class="lg:w-[60%] my-auto">
-    <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold mt-5 lg:mt-0 leading-snug">Leading Innovation - Tailored Solutions for Your Digital Success</h2>
-    <p class=" font-livvic  xl:text-xl mt-5">
-      At MasterBazar, we pride ourselves on being at the forefront of technological innovation, offering a comprehensive suite of development services that cater to diverse business needs. Our dedicated team of developers, designers, and tech enthusiasts collaborate seamlessly to craft tailored solutions that elevate your digital presence. With a keen focus on leveraging cutting-edge technology, we're committed to driving your business growth through personalized strategies and innovative development. Our goal is not just to meet your expectations but to exceed them, ensuring that each solution we create is meticulously designed to propel your brand towards unparalleled success in the digital sphere.
-    </p>
-  </div>
+    <div class="lg:w-[40%]">
+        <img src="<?php echo $mainUrl; ?>assets/client/images/appdevsec.jpg" alt="" class="w-full">
+    </div>
+    <div class="lg:w-[60%] my-auto">
+        <h2 class="2xl:text-5xl text-2xl md:text-3xl text-head font-extrabold mt-5 lg:mt-0 leading-snug">Leading Innovation - Tailored Solutions for Your Digital Success</h2>
+        <p class=" font-livvic  xl:text-xl mt-5">
+            At MasterBazar, we pride ourselves on being at the forefront of technological innovation, offering a comprehensive suite of development services that cater to diverse business needs. Our dedicated team of developers, designers, and tech enthusiasts collaborate seamlessly to craft tailored solutions that elevate your digital presence. With a keen focus on leveraging cutting-edge technology, we're committed to driving your business growth through personalized strategies and innovative development. Our goal is not just to meet your expectations but to exceed them, ensuring that each solution we create is meticulously designed to propel your brand towards unparalleled success in the digital sphere.
+        </p>
+    </div>
 
 </section>
 

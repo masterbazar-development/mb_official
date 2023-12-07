@@ -6,7 +6,7 @@
 <footer class="lg:text-left border-t-2 border-gray-400 mt-32">
     <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
     <div class="mx-6 py-12 text-center flex justify-center md:text-left">
-        <div class=" mx-[10vw]">
+        <div class=" mx-[2vw] 2xl:mx-[10vw]">
             <div class="grid-1 grid gap-4 lg:gap-32 md:grid-cols-3">
                 <div class="text-center grid items-center md:my-0 my-6  ">
                     <a href="<?php echo $mainUrl; ?>" class=" ">
@@ -70,7 +70,7 @@
                         Contact Us
                     </h6>
                     <div class="flex justify-start items-start gap-4 font-livvic text-gray-700 font-semibold">
-                        <span><i class="fa-solid fa-location-dot text-4xl text-blue"></i></span>
+                        <span><i class="fa-solid fa-location-dot text-4xl text-blue hover:scale-110 transition ease-in-out delay-150 hover:-translate-y-1  duration-300"></i></span>
                         <span>
                             <p> P-67, 4th Floor, Pandav Nagar,</p>
                             <p> Mayur Vihar, East Delhi, 110091, </p>
@@ -78,21 +78,21 @@
                         </span>
                     </div>
                     <a href="mailto:info@masterbazar.com" class="flex items-start justify-start gap-4 font-livvic text-gray-700 mt-2">
-                        <i class="fa-solid fa-envelope text-3xl text-blue"></i>
+                        <i class="fa-solid fa-envelope text-3xl text-blue hover:scale-110 transition ease-in-out delay-150 hover:-translate-y-1  duration-300"></i>
                         <p class="mb-4 font-semibold flex items-center justify-center md:justify-start">
                             info@masterbazar.com
                         </p>
                     </a>
 
                     <a href="tel:+14434783833" class="flex items-center justify-start gap-4 font-livvic text-gray-700 mt-2">
-                        <img src="<?php echo $mainUrl ?>assets/client/images/usa-flag.png" class="w-8" alt="">
+                        <img src="<?php echo $mainUrl ?>assets/client/images/usa-flag.png" class="w-8 hover:scale-110 transition ease-in-out delay-150 hover:-translate-y-1  duration-300" alt="">
                         <p class=" font-semibold flex items-center justify-center md:justify-start">
                             +1-443-478-3833
                         </p>
                     </a>
 
                     <a href="tel:+14434783833" class="flex items-center justify-start gap-4 font-livvic text-gray-700 mt-2">
-                        <img src="<?php echo $mainUrl ?>assets/client/images/indian-flag.png" class="w-8" alt="">
+                        <img src="<?php echo $mainUrl ?>assets/client/images/indian-flag.png" class="w-8 hover:scale-110 transition ease-in-out delay-150 hover:-translate-y-1  duration-300" alt="">
                         <p class=" font-semibold flex items-center justify-center md:justify-start">
                             +91-820-920-5305
                         </p>

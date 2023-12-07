@@ -1,5 +1,5 @@
 <header id="navbar" class="z-[95]" >
-    <div class="flex justify-between items-center mx-[2vw] xl:mx-[10vw]">
+    <div class="flex justify-between items-center mx-[2vw] 2xl:mx-[10vw]">
         <div>
             <a href="<?php echo $mainUrl; ?>" class="z-[100] ">
                 <div class="flex justify-start items-center gap-2 py-4">
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="mr-10 xl:mr-0">
+            <div class="mr-10 xl:mr-16 2xl:mr-0">
                 <div id="blurButton" class="hamburger xl:top-[55px] cursor-pointer z-[99]">
                     <div id="bar1" class="bar bg-[#264CC5] rounded-md"></div>
                     <div id="bar2" class="bar bg-[#264CC5] w-1/2 rounded-md"></div>

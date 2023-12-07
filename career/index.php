@@ -11,7 +11,25 @@
 <section class="fading flex bg-[url('<?php echo $mainUrl; ?>assets/client/images/career-mb.jpg')] bg-center bg-cover h-[70vh] items-center justify-center bg-[#294497] font-bold text-white">
     <div class="fade"></div>
 </section>
-<div class="text-white font-rubik px-5 sm:px-8 lg:px-20 xl:px-40 pt-16 md:pt-32 backu">
+<section class="2xl:max-w-5xl mx-auto my-16">
+    <div class="container flex flex-col items-center  mx-auto text-center ">
+        <h2 class=" mx-auto lg:text-3xl font-bold tracking-tight text-head 2xl:text-5xl dark:text-white">
+        MasterBazar: A Community Of <span class="text-blue">Passionate Professionals</span>
+        </h2>
+
+        <p class="max-w-7xl 2xl:text-lg lg:text-base mt-8 text-center text-gray-700 dark:text-gray-300 font-livvic">
+        Work with a team of experts who can help you in your career growth.
+
+MasterBazar is more than just a technology solution provider. We are a community of passionate professionals who understand the needs and challenges of different industries and sectors. We work closely with our clients and candidates to deliver customized and effective solutions. We promise to grow together and enjoy our work and our environment. At MasterBazar, we inspire each other to work together. Join us and become what you want to be.
+
+At MasterBazar, you will have the opportunity to work on exciting projects with leading corporations, government agencies, and non-profits. You will also learn from diverse and experienced colleagues who will inspire you to grow and excel. If you are looking for a new career or a new challenge, MasterBazar can help you achieve your goals.
+
+Join us today and grow your career.
+        </p>
+
+    </div>
+</section>
+<div class="text-white font-rubik px-5 sm:px-8 lg:px-20 xl:px-40 pt-16 md:pt-16 backu">
     <h3 class="text-left md:text-center font-extrabold text-5xl  text-head  capitalize ">
         Job Application <span class="text-blue">Form</span>
     </h3>
