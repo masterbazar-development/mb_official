@@ -93,7 +93,7 @@
                             Fill up the form below to send us a message.
                         </p>
                     </div>
-                    <div class="m-7">
+                    <div class="md:m-7">
                         <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
                             <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
                             <input type="hidden" name="subject" value="New Submission from Web3Forms" />

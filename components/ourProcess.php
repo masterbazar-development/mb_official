@@ -1,6 +1,6 @@
 
 
-<h3 class="2xl:max-w-full 2xl:mx-[10vw] xl:max-w-7xl mx-auto 2xl:text-6xl md:text-5xl text-4xl backdrop-blur-md py-10 text-[#172554] text-start font-extrabold ">Our <span class="text-blue"> creative digital agency </span> designs and develops bespoke websites with <span class="text-blue"> three things in mind. </span></h3>
+<h3 class="2xl:max-w-full 2xl:mx-[10vw] xl:max-w-7xl mx-[4vw] lg:mx-auto 2xl:text-6xl md:text-5xl text-4xl backdrop-blur-md py-10 text-[#172554] text-start font-extrabold ">Our <span class="text-blue"> creative digital agency </span> designs and develops bespoke websites with <span class="text-blue"> three things in mind. </span></h3>
 
 <div class="2xl:max-w-full 2xl:mx-[10vw] max-w-7xl mx-auto px-4">
         <div class="section gap-40 md:min-h-screen min-h-full md:mt-0 mt-6">
@@ -16,7 +16,7 @@
                         life online. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid facilis fugit. Ullam, illum dignissimos? Ducimus.</p>
                         <button class="py-3 px-12 font-livvic mt-6 rounded-full bg-blue text-white font-medium">Read More.</button>
                 </div>
-                <img src="<?php echo $mainUrl; ?>assets/client/images/Untitled.png" alt="" class="md:hidden block sm:mt-10 mt-4">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/design2.jpg" alt="" class="md:hidden block sm:mt-10 mt-4">
             </div>
         </div>
     
@@ -34,7 +34,7 @@
                         trust with your target audience. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio iste quae non magnam perspiciatis, quam voluptatibus.</p>
                         <button class="py-3 px-12 font-livvic mt-6 rounded-full bg-blue text-white font-medium">Read More.</button>
                 </div>
-                <img src="<?php echo $mainUrl; ?>assets/client/images/Untitled1.png" alt="" class="md:hidden block sm:mt-10 mt-4">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/design3.jpg" alt="" class="md:hidden block sm:mt-10 mt-4">
             </div>
         </div>
     
@@ -52,7 +52,7 @@
                         them to act. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad, porro praesentium excepturi dolor quas voluptates?</p>
                         <button class="py-3 px-12 font-livvic mt-6 rounded-full bg-blue text-white font-medium">Read More.</button>
                 </div>
-                <img src="<?php echo $mainUrl; ?>assets/client/images/Untitled2.png" alt="" class="md:hidden block sm:mt-10 mt-4">
+                <img src="<?php echo $mainUrl; ?>assets/client/images/design4.jpg" alt="" class="md:hidden block sm:mt-10 mt-4">
             </div>
         </div>
     </div>

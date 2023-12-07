@@ -1,9 +1,9 @@
 <?php include('./mb-admin/config/dbcon.php');
 ?>
-<section class="sm:my-28 my-10 z-[40] bg-white py-20">
+<section class="mx-[4vw] lg:mx-0 sm:my-28 my-10 z-[40] bg-white py-20">
     
-        <h4 class="text-center md:text-5xl text-4xl sm:mb-3 mb-6 text-head font-extrabold">Frequently Asked <span class="text-blue">Questions</span> </h4>
-        <p class="text-center max-w-5xl text-lg mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ab quae! Mollitia illum tenetur ducimus voluptate, et ipsum fuga debitis sit nam laudantium nisi. Repudiandae accusantium ratione eos ea eligendi?</p>
+        <h4 class="lg:text-center md:text-5xl text-4xl sm:mb-3 mb-6 text-head font-extrabold">Frequently Asked <span class="text-blue">Questions</span> </h4>
+        <p class="lg:text-center max-w-5xl text-base lg:text-lg mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ab quae! Mollitia illum tenetur ducimus voluptate, et ipsum fuga debitis sit nam laudantium nisi. Repudiandae accusantium ratione eos ea eligendi?</p>
 
     <div id="faqContainer" class="grid divide-y divide-neutral-200 max-w-5xl mx-auto space-y-3 mt-10">
     </div>

@@ -11,46 +11,46 @@
     <!--Our Client Reviews Swiper -->
     <div class="swiper mySwiper sm:mx-10 mx-4">
         <div class="swiper-wrapper py-16">
-        <?php
-    $post = "SELECT * FROM testimonials ORDER BY testimonials.id DESC";
-    $query = mysqli_query($con, $post);
+            <?php
+            $post = "SELECT * FROM testimonials ORDER BY testimonials.id DESC";
+            $query = mysqli_query($con, $post);
 
-    $query_run = mysqli_num_rows($query);
-    if ($post) {
-        while ($result = mysqli_fetch_assoc($query)) {
-    ?>
-            <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
-                <div class="">
-                    <div class="flex justify-between items-center mb-6">
+            $query_run = mysqli_num_rows($query);
+            if ($post) {
+                while ($result = mysqli_fetch_assoc($query)) {
+            ?>
+                    <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
                         <div class="">
-                            <img class="rounded-full w-32 h-32" src="<?php echo $mainUrl?>assets/client/images/testimonial/client-image/<?= $result['image'] ?>" alt="">
-                        </div>
-                        <div class="text-right text-white">
-                            <i class="fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
+                            <div class="md:flex justify-between items-center mb-6">
+                                <div class="">
+                                    <img class="rounded-full m-auto w-32 h-32 mb-4 md:mb-0" src="<?php echo $mainUrl ?>assets/client/images/testimonial/client-image/<?= $result['image'] ?>" alt="">
+                                </div>
+                                <div class="text-right text-white">
+                                    <i class="hidden md:block fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
 
-                            <p class="text-2xl font-semibold tracking-wide"><?= $result['title'] ?></p>
-                            <p class="font-normal text-gray-400"><?= $result['name'] ?></p>
+                                    <p class="text-2xl font-semibold tracking-wide"><?= $result['title'] ?></p>
+                                    <p class="font-normal text-gray-400"><?= $result['name'] ?></p>
+                                </div>
+                            </div>
+                            <div class="text-white text-left font-light font-livvic">
+                                <p>
+                                    <?= $result['review'] ?>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="text-white text-left font-light font-livvic">
-                        <p>
-                        <?= $result['review'] ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
             <?php        }
-    }
-    ?>  
+            }
+            ?>
 
             <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
                 <div class="">
-                    <div class="flex justify-between items-center mb-6">
+                    <div class="md:flex justify-between items-center mb-6">
                         <div class="">
-                            <img class="rounded-full w-32 h-32" src="<?php echo $mainUrl ?>assets/client/images/testimonial/profile2.webp" alt="">
+                            <img class="rounded-full m-auto w-32 h-32 mb-4 md:mb-0" src="http://localhost/mb_official/assets/client/images/testimonial/profile2.webp" alt="">
                         </div>
                         <div class="text-right text-white">
-                            <i class="fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
+                            <i class="hidden md:block fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
 
                             <p class="text-2xl font-semibold tracking-wide">Expert did A great job</p>
                             <p class="font-normal text-gray-400">Magna j Bahadur</p>
@@ -67,12 +67,12 @@
 
             <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
                 <div class="">
-                    <div class="flex justify-between items-center mb-6">
+                    <div class="md:flex justify-between items-center mb-6">
                         <div class="">
-                            <img class="rounded-full w-32 h-32" src="<?php echo $mainUrl ?>assets/client/images/testimonial/profile2.webp" alt="">
+                            <img class="rounded-full m-auto w-32 h-32 mb-4 md:mb-0" src="http://localhost/mb_official/assets/client/images/testimonial/profile2.webp" alt="">
                         </div>
                         <div class="text-right text-white">
-                            <i class="fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
+                            <i class="hidden md:block fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
 
                             <p class="text-2xl font-semibold tracking-wide">Expert did A great job</p>
                             <p class="font-normal text-gray-400">Magna j Bahadur</p>
@@ -89,12 +89,12 @@
 
             <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
                 <div class="">
-                    <div class="flex justify-between items-center mb-6">
+                    <div class="md:flex justify-between items-center mb-6">
                         <div class="">
-                            <img class="rounded-full w-32 h-32" src="<?php echo $mainUrl ?>assets/client/images/testimonial/profile2.webp" alt="">
+                            <img class="rounded-full m-auto w-32 h-32 mb-4 md:mb-0" src="http://localhost/mb_official/assets/client/images/testimonial/profile2.webp" alt="">
                         </div>
                         <div class="text-right text-white">
-                            <i class="fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
+                            <i class="hidden md:block fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
 
                             <p class="text-2xl font-semibold tracking-wide">Expert did A great job</p>
                             <p class="font-normal text-gray-400">Magna j Bahadur</p>
@@ -111,12 +111,12 @@
 
             <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
                 <div class="">
-                    <div class="flex justify-between items-center mb-6">
+                    <div class="md:flex justify-between items-center mb-6">
                         <div class="">
-                            <img class="rounded-full w-32 h-32" src="<?php echo $mainUrl ?>assets/client/images/testimonial/profile2.webp" alt="">
+                            <img class="rounded-full m-auto w-32 h-32 mb-4 md:mb-0" src="http://localhost/mb_official/assets/client/images/testimonial/profile2.webp" alt="">
                         </div>
                         <div class="text-right text-white">
-                            <i class="fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
+                            <i class="hidden md:block fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
 
                             <p class="text-2xl font-semibold tracking-wide">Expert did A great job</p>
                             <p class="font-normal text-gray-400">Magna j Bahadur</p>
@@ -133,12 +133,12 @@
 
             <div class="swiper-slide bg-black rounded-xl shadow-md xl:p-10 p-6">
                 <div class="">
-                    <div class="flex justify-between items-center mb-6">
+                    <div class="md:flex justify-between items-center mb-6">
                         <div class="">
-                            <img class="rounded-full w-32 h-32" src="<?php echo $mainUrl ?>assets/client/images/testimonial/profile2.webp" alt="">
+                            <img class="rounded-full m-auto w-32 h-32 mb-4 md:mb-0" src="http://localhost/mb_official/assets/client/images/testimonial/profile2.webp" alt="">
                         </div>
                         <div class="text-right text-white">
-                            <i class="fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
+                            <i class="hidden md:block fa-solid fa-quote-left text-5xl" style="color: #4d8eff;"></i>
 
                             <p class="text-2xl font-semibold tracking-wide">Expert did A great job</p>
                             <p class="font-normal text-gray-400">Magna j Bahadur</p>
@@ -160,174 +160,174 @@
         <div class="Marquee FirstRow">
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>        
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>      
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>        
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
 
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
             <div class="marquee Item p-4 rounded-md min-w-[20rem]">
                 <span class="text-[#264CC9] mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </span>
                 <h4 class="text-gray-200 font-semibold mb-1 text-lg">Amzing Working Culture!</h4>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <div class="w-full mt-1">
-                <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
+                    <p class="text-white font-light text-xs text-end">- Monohar Lal Chadda</p>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 
@@ -351,14 +351,14 @@
             clickable: true,
         },
         breakpoints: {
-        1000: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+            1000: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1352: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
         },
-        1352: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
     });
 </script>

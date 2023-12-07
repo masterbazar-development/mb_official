@@ -1,8 +1,8 @@
-<section class="mt-28 z-[40] bg-white pt-20">
-    <h4 class="text-center text-5xl mb-4 text-head font-extrabold">Our Blogs</h4>
+<section class="mx-[4vw] lg:mx-0 mt-20 md:mt-0 z-[40] bg-white">
+    <h4 class="lg:text-center text-5xl mb-4 text-head font-extrabold">Our Blogs</h4>
 
     <div class="text-lg max-w-7xl mx-auto">
-        <h4 class="text-center font-livvic text-lg mb-12 text-gray-700 max-w-5xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt consequuntur nisi hic quasi earum ea esse nemo suscipit cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque porro voluptas, possimus sed perferendis vel quos hic illum voluptatibus consequatur sit iure ut labore magnam tempore nihil vero totam nam!</h4>
+        <h4 class="lg:text-center font-livvic text-base lg:text-lg mb-12 text-gray-700 max-w-5xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt consequuntur nisi hic quasi earum ea esse nemo suscipit cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque porro voluptas, possimus sed perferendis vel quos hic illum voluptatibus consequatur sit iure ut labore magnam tempore nihil vero totam nam!</h4>
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             <?php

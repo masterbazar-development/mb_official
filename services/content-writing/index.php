@@ -21,7 +21,7 @@ include('../../mb-admin/config/dbcon.php'); ?>
                     <span class="text-center text-lg font-semibold underline text-head mt-4">Lets Connect With Us</span>
                 </div>
             </div>
-            <div class="xl:w-[40%] min-h-full flex justify-center items-center ">
+            <div class="xl:w-[40%] min-h-full flex justify-center items-center my-10 lg:my-0 ">
                 <img id="contentImg" class="h-[20rem] w-[20rem] md:h-[30rem] md:w-[30rem] 2xl:h-[40rem] 2xl:w-[40rem]" src="<?php echo $mainUrl; ?>assets/client/images/contban1.png" alt="">
             </div>
         </div>

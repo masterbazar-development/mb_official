@@ -10,7 +10,7 @@ include('../../mb-admin/config/dbcon.php');
 <img src="<?php echo $mainUrl; ?>assets/client/images/ellipse.png" class="hidden xl:block fixed -top-60 sm:-right-40 -right-40 z-[95]">
 <!-- Ellipse ends Here -->
 
-<div id="blurButton" class="hamburger top-[3rem] right-8 cursor-pointer z-[99]">
+<div id="blurButton" class="hamburger top-[3rem] right-6 lg:right-8 cursor-pointer z-[99]">
     <div id="bar1" class="bar bg-[#264CC5] rounded-md"></div>
     <div id="bar2" class="bar bg-[#264CC5] w-1/2 rounded-md"></div>
     <div id="bar3" class="bar bg-[#264CC5] rounded-md"></div>
@@ -24,11 +24,11 @@ include('../../mb-admin/config/dbcon.php');
 <section role="banner" class="bg-gradient-to-r from-slate-200 from-20% to-white to-70% h-full lg:h-screen w-screen overflow-hidden">
     <div class="max-w-full mx-[10vw]">
         <a href="<?php echo $mainUrl; ?>">
-            <header class="flex justify-between items-center px-[10vw] absolute left-0 top-3 w-full z-[80]">
-                <div class="flex justify-start items-center gap-2 py-4">
-                    <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="2xl:w-20 w-16 2xl:h-20 h-16" alt="masterbazar-logo">
+            <header class="flex justify-between items-center px-[3vw] lg:px-[10vw] absolute left-0 top-3 w-full z-[80]">
+                <div class="flex justify-start items-center gap-2 py-3 lg:py-4">
+                    <img src="<?php echo $mainUrl; ?>assets/client/images/masterbazar_logo.png" class="w-10 2xl:w-20 2xl:h-20 h-10" alt="masterbazar-logo">
                     <div class="">
-                        <h4 class="2xl:text-4xl text-3xl text-head font-extrabold">Master<span class="text-[#264CC5]">Bazar</span></h4>
+                        <h4 class="2xl:text-4xl text-2xl text-head font-extrabold">Master<span class="text-[#264CC5]">Bazar</span></h4>
                         <p class="text-xs text-head font-medium text-center">Masters of the digital world!</p>
                     </div>
                 </div>
@@ -393,7 +393,7 @@ include('../../mb-admin/config/dbcon.php');
 
     .Marquee-tag {
 
-        margin: 1em;
+        margin: 0.5em;
         padding: .5em;
         border-radius: 0.5rem;
         display: inline-flex;
@@ -421,32 +421,32 @@ include('../../mb-admin/config/dbcon.php');
 
 <!----------------- development marqquee tools we use section starts from here ------------->
 <section class="mt-32 overflow-hidden">
-    <div class="2xl:max-w-full 2xl:mx-[10vw]">
+    <div class="2xl:max-w-full 2xl:mx-[10vw] mx-[4vw] lg:mx-0">
         <h3 class="text-head text-5xl font-extrabold">Tools We Use To <span class="text-blue">Design.</span> </h3>
-        <p class="text-lg text-gray-700 font-livvic w-1/3 mt-3 mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aperiam laudantium. Modi, non! Ipsam molestiae ducimus ullam sapiente enim molestias.</p>
+        <p class="text-lg text-gray-700 font-livvic lg:w-1/3 mt-3 mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aperiam laudantium. Modi, non! Ipsam molestiae ducimus ullam sapiente enim molestias.</p>
     </div>
     <div class="Marquee flex ">
         <!-------- marquee running ---------->
         <div class="Marquee-content flex">
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/tool1.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
             </div>
         </div>
@@ -455,25 +455,25 @@ include('../../mb-admin/config/dbcon.php');
     <!--------- marquee reverse ---------->
     <div class="Marquee flex overflow-hidden">
         <div class="Marquee-content1 flex ">
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool1.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool2.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool3.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool4.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool5.png" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool6.svg" alt="">
             </div>
-            <div class="Marquee-tag w-32 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
+            <div class="Marquee-tag w-40 md:w-64  md:h-36 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33] services-effect">
                 <img class="w-16 md:w-24" src="<?php echo $mainUrl; ?>assets/client/images/destool7.png" alt="">
             </div>
         </div>
@@ -482,7 +482,7 @@ include('../../mb-admin/config/dbcon.php');
 
 <!--------- development marqquee tools we use section ends from here --------->
 
-<div class="my-32">
+<div class="my-20 md:my-32">
     <?php include('../../components/testimonial.php'); ?>
 </div>
 

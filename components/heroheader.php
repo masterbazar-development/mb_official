@@ -1,4 +1,4 @@
-<header id="navbar" class="z-[95]" >
+<header id="navbar" class="z-[95] backdrop-blur-3xl md:backdrop-blur-none" >
     <div class="flex justify-between items-center mx-[2vw] 2xl:mx-[10vw]">
         <div>
             <a href="<?php echo $mainUrl; ?>" class="z-[100] ">

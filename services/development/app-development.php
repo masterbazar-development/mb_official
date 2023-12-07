@@ -35,15 +35,15 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
                 </div>
                 <p class="md:text-lg font-livvic font-normal mt-5 text-[#334155] lg:px-40 w-full">Transforming Your Ideas into Powerful and Engaging Mobile Experiences, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
-                <div class="mt-2">
-                    <a href="#_" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#264CC5] rounded-full shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#264CC5] group-hover:translate-x-0 ease">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="my-4">
+                    <a href="#_" class="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-[#264CC5] border-2 border-[#264CC5] rounded-full hover:text-white group hover:bg-gray-50">
+                        <span class="absolute left-0 block w-full h-0 transition-all bg-[#264CC5] opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+                        <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-[#264CC5] transition-all duration-300 transform group-hover:translate-x-full ease">Lets Connect with Us</span>
-                        <span class="relative invisible">Lets Connect With Us</span>
+                        <span class="relative">Lets Connect with Us</span>
                     </a>
                 </div>
             </div>

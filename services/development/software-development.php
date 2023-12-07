@@ -16,9 +16,9 @@ include('../../mb-admin/config/dbcon.php'); ?>
                 <div class="md:block hidden">
                     <div class="flex max-w-5xl mx-auto mt-2">
                         <h1 class="2xl:text-5xl md:text-3xl text-xl text-head font-extrabold leading-snug">
-                        Scalable Software Development 
+                            Scalable Software Development
                             <span class="text-[#264CC5] font-extrabold">Solutions for Growing Businesses</span>
-                            
+
                         </h1>
                     </div>
                 </div>
@@ -26,23 +26,17 @@ include('../../mb-admin/config/dbcon.php'); ?>
                 <div class="md:hidden block">
                     <div class="flex max-w-5xl mx-auto mt-2">
                         <h1 class="2xl:text-6xl md:text-3xl text-2xl text-head font-extrabold leading-snug">
-                        Scalable Software Development 
+                            Scalable Software Development
                             <span class="text-[#264CC5] font-extrabold">Solutions for Growing Businesses</span>
                         </h1>
                     </div>
 
                 </div>
                 <p class="md:text-lg font-livvic font-normal mt-5 text-[#334155] lg:px-40 w-full">Transforming Your Ideas into Powerful and Engaging Mobile Experiences, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
-                <div class="mt-2">
-                    <a href="#_" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#264CC5] rounded-full shadow-md group">
-                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#264CC5] group-hover:translate-x-0 ease">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </span>
-                        <span class="absolute flex items-center justify-center w-full h-full text-[#264CC5] transition-all duration-300 transform group-hover:translate-x-full ease">Lets Connect with Us</span>
-                        <span class="relative invisible">Lets Connect With Us</span>
-                    </a>
+                <div class="mt-4 m-auto">
+                    <button class="relative flex h-[50px] w-64 border  items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl rounded-full transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
+                        <span class="relative z-10 font-bold py-2 px-4">Lets Connect with Us</span>
+                    </button>
                 </div>
             </div>
 
@@ -101,56 +95,56 @@ include('../../mb-admin/config/dbcon.php'); ?>
 
 <!----------------- our services web development timeline starts here --------------------->
 <section class="lg:flex max-w-full md:mt-32 mt-16 mx-[5vw] md:mx-[10vw]">
-  <div class="parent lg:w-1/3">
-    <div class="is-sticky mb-10">
-      <h2 class="lg:w-2/3 text-head text-4xl lg:text-6xl font-bold">What Do We Do</h2>
-      <p class="text-sm mt-6 lg:w-2/3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
-      <div class="flex items-center text-head text-xl mt-2 hover:translate-x-3 transition-transform duration-300 ">
-        <p class="font-semibold">see our work </p>
-        <p class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25" />
-          </svg></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="lg:w-2/3">
-    <div class="scroll-par flex items-center my-6">
-      <div>
-        <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold text-head w-10 md:w-16 lg:w-24">01</h2>
-      </div>
-      <div class="relative bg-slate-700 h-52 w-[1px]">
-      </div>
-      <div class="webdev my-auto items-center w-full p-4 md:p-8 ml-4 md:ml-8 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
-        <p class="text-lg lg:text-3xl font-extrabold text-head">Custom Software Development</p>
-        <p class="text-sm lg:text-lg font-livvic font-light mt-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
-      </div>
-    </div>
-    <div class="flex items-center my-6">
-      <div>
-        <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold text-blue w-10 md:w-16 lg:w-24">02</h2>
-      </div>
-      <div class="relative bg-slate-700 h-52 w-[1px]">
-      </div>
-      <div class="webdev my-auto items-center w-full p-4 md:p-8 ml-4 md:ml-8 bg-white">
-        <p class="text-lg lg:text-3xl font-extrabold text-head">Support & Maintenance</p>
-        <p class="text-sm lg:text-lg font-livvic font-light mt-1 ">We provide support, maintenance, testing, and quality assurance for your existing software. We will help you test & debug your software, update features, optimize performance, improve functionality, and ensure security and reliability.</p>
-      </div>
-    </div>
-    <div class="flex items-center my-6">
-      <div>
-        <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold text-head w-10 md:w-16 lg:w-24">03</h2>
-      </div>
-      <div class="relative bg-slate-700 h-52 w-[1px]">
-      </div>
-      <div class="webdev my-auto items-center w-full p-4 md:p-8 ml-4 md:ml-8 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
-        <p class="text-lg lg:text-3xl font-extrabold text-head">CRM/SRM/ERP Development</p>
-        <p class="text-sm lg:text-lg font-livvic font-light mt-1 ">We develop softwares like CRM, SRM, and ERP, to help you manage customer relationships, supplier relationships, and your enterprise resources. We craft and implement solutions for automatic, integrated, and smoother business operations.
-        </p>
-      </div>
+    <div class="parent lg:w-1/3">
+        <div class="is-sticky mb-10">
+            <h2 class="lg:w-2/3 text-head text-4xl lg:text-6xl font-bold">What Do We Do</h2>
+            <p class="text-sm mt-6 lg:w-2/3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
+            <div class="flex items-center text-head text-xl mt-2 hover:translate-x-3 transition-transform duration-300 ">
+                <p class="font-semibold">see our work </p>
+                <p class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25" />
+                    </svg></p>
+            </div>
+        </div>
     </div>
 
-  </div>
+    <div class="lg:w-2/3">
+        <div class="scroll-par flex items-center my-6">
+            <div>
+                <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold text-head w-10 md:w-16 lg:w-24">01</h2>
+            </div>
+            <div class="relative bg-slate-700 h-52 w-[1px]">
+            </div>
+            <div class="webdev my-auto items-center w-full p-4 md:p-8 ml-4 md:ml-8 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+                <p class="text-lg lg:text-3xl font-extrabold text-head">Custom Software Development</p>
+                <p class="text-sm lg:text-lg font-livvic font-light mt-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, beatae explicabo consequuntur omnis rerum, saepe quos tempora dicta ratione repellendus debitis quae qui eum voluptates voluptatum id aliquam, atque quaerat!</p>
+            </div>
+        </div>
+        <div class="flex items-center my-6">
+            <div>
+                <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold text-blue w-10 md:w-16 lg:w-24">02</h2>
+            </div>
+            <div class="relative bg-slate-700 h-52 w-[1px]">
+            </div>
+            <div class="webdev my-auto items-center w-full p-4 md:p-8 ml-4 md:ml-8 bg-white">
+                <p class="text-lg lg:text-3xl font-extrabold text-head">Support & Maintenance</p>
+                <p class="text-sm lg:text-lg font-livvic font-light mt-1 ">We provide support, maintenance, testing, and quality assurance for your existing software. We will help you test & debug your software, update features, optimize performance, improve functionality, and ensure security and reliability.</p>
+            </div>
+        </div>
+        <div class="flex items-center my-6">
+            <div>
+                <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold text-head w-10 md:w-16 lg:w-24">03</h2>
+            </div>
+            <div class="relative bg-slate-700 h-52 w-[1px]">
+            </div>
+            <div class="webdev my-auto items-center w-full p-4 md:p-8 ml-4 md:ml-8 bg-gradient-to-r from-[#2563EB33] to-[#7DA5FB33]">
+                <p class="text-lg lg:text-3xl font-extrabold text-head">CRM/SRM/ERP Development</p>
+                <p class="text-sm lg:text-lg font-livvic font-light mt-1 ">We develop softwares like CRM, SRM, and ERP, to help you manage customer relationships, supplier relationships, and your enterprise resources. We craft and implement solutions for automatic, integrated, and smoother business operations.
+                </p>
+            </div>
+        </div>
+
+    </div>
 </section>
 <!----------------- our services web development timeline ends here --------------------->
 

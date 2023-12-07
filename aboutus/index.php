@@ -24,9 +24,9 @@
 
 <!-- FAQs Section Starts From Here -->
 <section class="lg:mt-28 z-[40] bg-white py-20 px-8">
-  <h4 class="text-center text-5xl mb-5 text-head font-black">Gallery</h4>
+  <h4 class="lg:text-center text-5xl mb-5 text-head font-black">Gallery</h4>
   <div class="flex justify-center mb-12">
-    <p class="text-lg font-livvic font-normal text-[#334155] max-w-7xl text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></h2>
+    <p class="text-base lg:text-lg font-livvic font-normal text-[#334155] max-w-7xl lg:text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></h2>
   </div>
   <div class="text-lg mx-[10vw] max-w-full">
     <div class="lg:grid lg:grid-cols-4 gap-4">
@@ -72,9 +72,9 @@
 
 <!-- Our Team Section -->
 <section class="mb-14 z-[40] bg-white lg:pb-20 px-8">
-  <h4 class="text-center text-5xl mb-5 text-head font-black">Our Team</h4>
+  <h4 class="lg:text-center text-5xl mb-5 text-head font-black">Our Team</h4>
   <div class="flex justify-center mb-12">
-    <p class="text-lg font-livvic font-normal text-[#334155] max-w-7xl text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></h2>
+    <p class="text-base lg:text-lg font-livvic font-normal text-[#334155] max-w-7xl lg:text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></h2>
   </div>
   <!-- team -->
   <div class="text-lg mx-[10vw] max-w-full">
