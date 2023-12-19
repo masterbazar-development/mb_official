@@ -6,17 +6,26 @@
 
 
 <!-- Hero Banner Section -->
-<section role="banner" id="targetDiv" class="bg-gradient-to-r from-slate-200 to-white lg:h-[90vh] w-screen overflow-hidden">
+<section role="banner" class="bg-gradient-to-r from-slate-200 to-white 2xl:h-[100vh] w-screen overflow-hidden">
   <div class="max-w-full  mx-[10vw]">
     <?php include('../components/heroheader.php'); ?>
 
-    <div class="lg:flex grid items-center justify-between 2xl:gap-16 gap-12 my-12 lg:my-auto">
-      <div class="lg:w-[50%] font-medium order-2 lg:order-1 2xl:py-20 flex flex-col justify-center">
-        <h1 class="text-left 2xl:text-7xl text-5xl text-head font-extrabold">About Us</h1>
-        <p class="text-lg font-livvic font-normal mt-5 text-[#334155] w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
+    <div class="lg:flex grid items-start justify-between 2xl:gap-16 gap-12 my-16 lg:my-auto">
+      <div class="lg:w-[65%] font-medium lg:py-32 py-20 flex flex-col justify-center">
+        <h1 class="text-left 2xl:text-5xl text-3xl text-head">We are the master of the digital world. We present you digitally, economically, and globally</h1>
+        <p class="text-lg font-livvic font-normal mt-5 text-[#334155] w-full mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, odio? Eveniet consequuntur tempore accusamus eum! Doloremque voluptatibus ea tenetur libero, facere expedita fuga a blanditiis. Illo veniam maxime quisquam quibusdam vitae architecto voluptas commodi? Nisi illo omnis rerum sapiente sit, dolores eum, excepturi mollitia, illum facilis eaque. Molestias, ex laboriosam.<br><span class="text-3xl xl:text-[2.9rem] font-medium"></span></p>
+        <div class="relative">
+        <img src="<?php echo $mainUrl; ?>assets/client/images/1696115035174.jpg" alt="" class="rounded-xl mt-4 2xl:h-[460px] w-full">
+        <img src="<?php echo $mainUrl; ?>assets/client/images/about-us-badge.png" alt="" class="rounded-xl absolute -top-6 -right-24">
+        
+        </div>
       </div>
-      <div class="w-full lg:w-[50%] wrapper order-1 lg:order-2 relative flex justify-center items-center lg:h-[80vh]">
-        <img src="<?php echo $mainUrl; ?>assets/client/images/about-us.png" alt="" class="hover:scale-[1.04] transition duration-500 ease-in-out">
+      <div class="w-full lg:w-[35%] hidden lg:block lg:h-[80vh] lg:py-32 py-20">
+        <div class="flex justify-between mb-4">
+          <h1 class="text-left 2xl:text-5xl text-4xl text-head ">Diwali Celebrations</h1>
+          <img src="<?php echo $mainUrl; ?>assets/client/images/arrow-coon.png" alt="" class="rounded-xl w-[60px] h-[60px]">
+        </div>
+        <img src="<?php echo $mainUrl; ?>assets/client/images/about-us-left.webp" alt="" class="rounded-xl">
       </div>
     </div>
   </div>
