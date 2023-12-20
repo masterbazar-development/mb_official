@@ -12,7 +12,7 @@ include('mb-admin/config/dbcon.php'); ?>
         <?php include('./components/heroheader.php'); ?>
         <!-- Navigation ends Here -->
 
-        <div class="flex lg:items-center items-end h-full lg:justify-between justify-end xl:mt-20 2xl:mt-10 lg:flex-row flex-col 2xl:gap-16 lg:gap-8 lb:pb-0 pb-40">
+        <div class="flex lg:items-center items-end h-full lg:justify-between justify-end xl:mt-20 2xl:mt-10 lg:flex-row flex-col 2xl:gap-16 lg:gap-8 lg:pb-0 md:pb-40 pb-40">
             <div class="font-medium 2xl:py-20 flex flex-col justify-center">
                 <h1 class="text-left 2xl:text-6xl md:text-5xl text-4xl text-head md:font-extrabold sm:font-black font-semibold">Accelerate <br /> Your Business Growth With <br /> <span class="text-[#264CC5] italic md:font-extrabold sm:font-black font-extrabold"> Master Bazar.</span></h1>
                 <p class="sm:text-lg font-livvic font-normal mt-5  text-[#334155] w-full">From Web Development to Digital Marketing, We'll Help You Grow Your Business at Lightning Speed. We understand how challenging it can be to sail through the vast sea of the digital world, which is why we are here to be your captain in your digital journey and bring growth to your business.</p>
@@ -28,7 +28,7 @@ include('mb-admin/config/dbcon.php'); ?>
                 </a>
             </div>
             <div class="wrapper w-full relative lg:flex hidden justify-end items-center lg:h-[100vh]">
-                <div id="gradientblob" class="blob bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[600px] xl:w-[400px] lg:w-[300px] 2xl:h-[600px] xl:h-[400px] lg:[300px]"></div>
+                <div id="gradientblob" class="blob bg-gradient-to-br from-[#2563EB33] to-[#7DA5FB33] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[600px] xl:w-[400px] lg:w-[300px] 2xl:h-[600px] xl:h-[400px] lg:h-[300px]"></div>
                 <div id="imageblob" class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:w-[550px] xl:w-[350px] lg:w-[250px] 2xl:h-[550px] xl:h-[350px] lg:h-[250px]"></div>
             </div>
         </div>
